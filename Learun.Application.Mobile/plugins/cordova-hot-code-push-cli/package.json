@@ -39,7 +39,7 @@
     "express": "^4.13.1",
     "fs-extra": "^0.22.1",
     "hidefile": "^1.1.0",
-    "lodash": "^3.10.0",
+    "lodash": "^4.17.15",
     "minimatch": "^3.0.0",
     "ngrok": "^2.1.6",
     "prompt": "^0.2.14",
