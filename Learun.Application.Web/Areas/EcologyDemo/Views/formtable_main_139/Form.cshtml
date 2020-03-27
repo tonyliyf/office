@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "formtable_main_139";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">房屋名称</div>
+        <div id="fwmc"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">申请人</div>
+        <input id="sqyh" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">维修地点</div>
+        <input id="wxdd" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">维修日期</div>
+        <input id="wxrq" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#wxrq').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">预计维修金额</div>
+        <input id="yjwxje" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_139" >
+        <div class="lr-form-item-title">故障描述</div>
+        <textarea id="gzms" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/EcologyDemo/Views/formtable_main_139/Form.js")

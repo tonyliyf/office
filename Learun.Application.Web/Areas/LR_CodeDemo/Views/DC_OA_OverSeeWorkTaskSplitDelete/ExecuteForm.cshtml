@@ -1,0 +1,17 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "DC_OA_OverSeeWorkTaskSplit";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskExecute">
+        <div class="lr-form-item-title">执行时间<font face="宋体">*</font></div>
+        <input id="F_ExecuteDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_ExecuteDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskExecute">
+        <div class="lr-form-item-title">执行内容</div>
+        <textarea id="F_ExecuteContent" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkTaskSplitDelete/ExecuteForm.js")

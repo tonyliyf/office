@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "工程项目单位信息管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    @*<div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+            <div class="lr-form-item-title">单位类型</div>
+            <div id="F_UnitType"></div>
+        </div>*@
+
+    @*<div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+            <div class="lr-form-item-title">基本单位</div>
+            <div id="F_PIId"></div>
+        </div>*@
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">单位名称<font face="宋体">*</font></div>
+        <input id="F_UnitName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">单位地址</div>
+        <input id="F_UnitAddress" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">公司法人</div>
+        <input id="F_Manager" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">营业执照</div>
+        <input id="F_CertifacateNo" type="text" class="form-control" />
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">资质证书</div>
+        <input id="F_CerticateZizi" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">单位联系人</div>
+        <input id="F_UnitContact" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">联系人电话</div>
+        <input id="F_UnitContactPhone" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+        <div class="lr-form-item-title">相关附件</div>
+        <div id="F_File"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit" style="display:none">
+        <div class="lr-form-item-title">当前部门</div>
+        <input id="F_CreateDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div id="num2" class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">记录人</div>
+        <input id="F_CreateUserid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div id="num1" class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoUnit">
+        <div class="lr-form-item-title">记录时间</div>
+        <input id="F_CreateDatetime" type="text" readonly class="form-control currentInfo lr-currentInfo-time" />
+    </div>
+
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectInfoUnit/Form.js")

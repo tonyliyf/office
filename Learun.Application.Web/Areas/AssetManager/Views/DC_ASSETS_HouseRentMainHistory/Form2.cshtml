@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseRentMainHistory";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">年度<font face="宋体">*</font></div>
+        <input id="F_RentYear" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">批次<font face="宋体">*</font></div>
+        <input id="F_RentNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">状态<font face="宋体">*</font></div>
+        <div id="F_RentState" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">招租名称<font face="宋体">*</font></div>
+        <input id="F_RentName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">招租单位<font face="宋体">*</font></div>
+        <input id="F_Unit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">招租时间<font face="宋体">*</font></div>
+        <input id="F_RentTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_RentTime').trigger('change'); } })" />
+
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMainHistory">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Accessories"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseRentMainHistory/Form2.js")

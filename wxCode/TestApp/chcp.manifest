@@ -1,0 +1,1314 @@
+[
+  {
+    "file": "config/config.js",
+    "hash": "4bcca774336e4536b4c8d94d7b581f96"
+  },
+  {
+    "file": "cordova-hcp.json",
+    "hash": "cde08d95fad6a6e2cbcb4f49e194dfc1"
+  },
+  {
+    "file": "css/index.css",
+    "hash": "cddb6fe5a5782ae1da6dcec9aef6b9d9"
+  },
+  {
+    "file": "css/lrmui.min.css",
+    "hash": "94721442faadc17475a8c1187cb9310a"
+  },
+  {
+    "file": "data/city.js",
+    "hash": "3f5a9c6d9312ab491ccef357192028ed"
+  },
+  {
+    "file": "favicon.ico",
+    "hash": "dcfc55af6359b6abb4b070498828e357"
+  },
+  {
+    "file": "font/iconfont.css",
+    "hash": "988b518d2ac520b1d5210207e6e8185e"
+  },
+  {
+    "file": "font/iconfont.eot",
+    "hash": "ed26e83599a41dc9f8ae752dbf0ae46e"
+  },
+  {
+    "file": "font/iconfont.js",
+    "hash": "0d27e338f6b716f636e791e1d920ba7e"
+  },
+  {
+    "file": "font/iconfont.svg",
+    "hash": "cd8abfd60ac55943359a24e598a75880"
+  },
+  {
+    "file": "font/iconfont.ttf",
+    "hash": "b287b432b4bdc0d8dde74f6b60f25a48"
+  },
+  {
+    "file": "font/iconfont.woff",
+    "hash": "8684fd2d6cd316d4c86bf80e0307e183"
+  },
+  {
+    "file": "images/1.jpg",
+    "hash": "b374845228c56be1a5aff10ba3a14dc9"
+  },
+  {
+    "file": "images/2.jpg",
+    "hash": "71ec23131f69e5172dfcec748c7cc939"
+  },
+  {
+    "file": "images/3.jpg",
+    "hash": "4a02747961cf01222db02c6b6e6da7bc"
+  },
+  {
+    "file": "images/4.jpg",
+    "hash": "ed052e2d0028835a118ef51f1b0574f1"
+  },
+  {
+    "file": "images/banner.png",
+    "hash": "d626c3c307cfb56eb234b98ab2cdddd6"
+  },
+  {
+    "file": "images/banner1.png",
+    "hash": "526f2b1afcbdb5da9b7db5009555755d"
+  },
+  {
+    "file": "images/banner160.png",
+    "hash": "7f6fbf93fc2dbefd9b7d655b2ffa5d41"
+  },
+  {
+    "file": "images/logo.png",
+    "hash": "7757878f4ca43fc1b175070cc1a42004"
+  },
+  {
+    "file": "images/logo.png_blue.png",
+    "hash": "41a70934eb8140cf6331f0b49762ec66"
+  },
+  {
+    "file": "images/logo22.png",
+    "hash": "c1c2b79231779b380f8046ca63c15dba"
+  },
+  {
+    "file": "images/logo3.jpg",
+    "hash": "413e9770421377fc4a33be49150ab35c"
+  },
+  {
+    "file": "images/myCardBg.png",
+    "hash": "b17b6c1e5b12c512eb71367f65305626"
+  },
+  {
+    "file": "images/notification.png",
+    "hash": "3e8e119d27351f8fcdb16988f4156e74"
+  },
+  {
+    "file": "images/on-boy.jpg",
+    "hash": "f7b15b7dd371ae1539c434a932548621"
+  },
+  {
+    "file": "images/on-girl.jpg",
+    "hash": "630c5443b3c0ff9292cbf2cdd09f4bfc"
+  },
+  {
+    "file": "images/tab10.png",
+    "hash": "91528f0b3e268c780efddb9654a5b956"
+  },
+  {
+    "file": "images/tab11.png",
+    "hash": "8cb401b7900a0d7364ec0a27e65f1955"
+  },
+  {
+    "file": "images/tab20.png",
+    "hash": "8230a4883157bf406e7254aef19a42b0"
+  },
+  {
+    "file": "images/tab21.png",
+    "hash": "46d01cdfd0e65023ad424e305c68190e"
+  },
+  {
+    "file": "images/tab30.png",
+    "hash": "ff7142042301d2731426b7e958338b86"
+  },
+  {
+    "file": "images/tab31.png",
+    "hash": "87a0989714db06216284bd5ca64e8508"
+  },
+  {
+    "file": "images/tab40.png",
+    "hash": "c18ed18f9d19e744846aa7e4b2c713e4"
+  },
+  {
+    "file": "images/tab41.png",
+    "hash": "a5375dc0cca528ed0ae13b51430a3c33"
+  },
+  {
+    "file": "images/wechat.jpg",
+    "hash": "316ac613315917bdc4dcf94f35a29428"
+  },
+  {
+    "file": "images/welcomeBanner.jpg",
+    "hash": "73bcc159841abff8069ea4eb6a174238"
+  },
+  {
+    "file": "index.html",
+    "hash": "84be15a53901ad46cad0cf766a45dbfe"
+  },
+  {
+    "file": "pages/chat/chat.css",
+    "hash": "ab1c73fd9d55b8241f64897616e035a3"
+  },
+  {
+    "file": "pages/chat/chat.html",
+    "hash": "8f63e6c123b89f3ab6088b6b17d40d3e"
+  },
+  {
+    "file": "pages/chat/chat.js",
+    "hash": "ddb12b1c5cddfd017e5b2bd62d503469"
+  },
+  {
+    "file": "pages/contacts/contacts.css",
+    "hash": "20aec53f43f99695316a39b4c0a2071a"
+  },
+  {
+    "file": "pages/contacts/contacts.html",
+    "hash": "531b6045cc20be0d1990d9e653078fe6"
+  },
+  {
+    "file": "pages/contacts/contacts.js",
+    "hash": "ef371fb97e575a5a1d975fa665c79255"
+  },
+  {
+    "file": "pages/contacts/search/search.css",
+    "hash": "a8a567082b48515fb0c632dae07995c1"
+  },
+  {
+    "file": "pages/contacts/search/search.html",
+    "hash": "127502a6ca73361670c41c489a8cda6d"
+  },
+  {
+    "file": "pages/contacts/search/search.js",
+    "hash": "00c897a660249498e60ae230ff43d504"
+  },
+  {
+    "file": "pages/crm/invoice/form/form.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/crm/invoice/form/form.html",
+    "hash": "e1d3ebd34a8b4ace1521e9e7db962090"
+  },
+  {
+    "file": "pages/crm/invoice/form/form.js",
+    "hash": "f4470444e1a2d55c2e45d614df904596"
+  },
+  {
+    "file": "pages/crm/invoice/invoice.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/crm/invoice/invoice.html",
+    "hash": "b5c1c02902b47544904a41448ed61791"
+  },
+  {
+    "file": "pages/crm/invoice/invoice.js",
+    "hash": "0112843191e854dc8f71c99c132e41a9"
+  },
+  {
+    "file": "pages/crm/order/form/form.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/crm/order/form/form.html",
+    "hash": "7e5f29314c9bd1bfb22d27de2f462bc9"
+  },
+  {
+    "file": "pages/crm/order/form/form.js",
+    "hash": "da0272a322e24a41eb63801f773d7714"
+  },
+  {
+    "file": "pages/crm/order/order.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/crm/order/order.html",
+    "hash": "b22e75e56c2e27d61d68cd522c8a6190"
+  },
+  {
+    "file": "pages/crm/order/order.js",
+    "hash": "cf6d9e48637b7e132041a1169336f8ed"
+  },
+  {
+    "file": "pages/custmerform/custmerform.css",
+    "hash": "29bb117547805cf09242b1caf293608d"
+  },
+  {
+    "file": "pages/custmerform/custmerform.html",
+    "hash": "d686747aff33ac9901baf9acdfdcc024"
+  },
+  {
+    "file": "pages/custmerform/custmerform.js",
+    "hash": "f29734a260d4bdaa17ea73faa8537754"
+  },
+  {
+    "file": "pages/custmerform/form/form.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/custmerform/form/form.html",
+    "hash": "25a25a4d37c1bae6d9913e049afe50da"
+  },
+  {
+    "file": "pages/custmerform/form/form.js",
+    "hash": "f06d7bb62a75a67633dff5567dbfbba4"
+  },
+  {
+    "file": "pages/demo/actionsheet/actionsheet.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/demo/actionsheet/actionsheet.html",
+    "hash": "f1b75f3938b34cf60d545327f008c70b"
+  },
+  {
+    "file": "pages/demo/actionsheet/actionsheet.js",
+    "hash": "bb56d266b9c71bac40d19789d4005610"
+  },
+  {
+    "file": "pages/demo/amap/amap.css",
+    "hash": "3059b61f9e03f5f0e8f1883da89c2b82"
+  },
+  {
+    "file": "pages/demo/amap/amap.html",
+    "hash": "2493bc43234dc15dbf28a42aed785aea"
+  },
+  {
+    "file": "pages/demo/amap/amap.js",
+    "hash": "f3392eefcda435e7de7e85003318b62c"
+  },
+  {
+    "file": "pages/demo/badge/badge.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/badge/badge.html",
+    "hash": "ad7fa5ffc79f257c3d523e0898a8d1eb"
+  },
+  {
+    "file": "pages/demo/badge/badge.js",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/button/button.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/demo/button/button.html",
+    "hash": "d298886b0f858974f707f6d3e470d440"
+  },
+  {
+    "file": "pages/demo/button/button.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/cardview/cardview.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/cardview/cardview.html",
+    "hash": "a188cae9f64988564dcb4422aa9f6bc8"
+  },
+  {
+    "file": "pages/demo/cardview/cardview.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/demo.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/demo.html",
+    "hash": "3cace8f7ab76178ae1a956d26d3a9478"
+  },
+  {
+    "file": "pages/demo/demo.js",
+    "hash": "89016f63d9e1ac7f509c57ccbf69ab20"
+  },
+  {
+    "file": "pages/demo/dialog/dialog.css",
+    "hash": "2ec604ef7dc78b1a11fa0a7183f0eac6"
+  },
+  {
+    "file": "pages/demo/dialog/dialog.html",
+    "hash": "73dcdda56ab68ebc9971f442e2171acd"
+  },
+  {
+    "file": "pages/demo/dialog/dialog.js",
+    "hash": "12d99f1fd89b14174d288b1e37df1166"
+  },
+  {
+    "file": "pages/demo/form/form.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/form/form.html",
+    "hash": "f794f4c6aad0d255d887175fe2bd0a0d"
+  },
+  {
+    "file": "pages/demo/form/form.js",
+    "hash": "bafb572982b0d5c27b377cda60961958"
+  },
+  {
+    "file": "pages/demo/formvalidator/formvalidator.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/formvalidator/formvalidator.html",
+    "hash": "d0a570d567266cc26147661bffb4e235"
+  },
+  {
+    "file": "pages/demo/formvalidator/formvalidator.js",
+    "hash": "2dfb9c231b08b5a73f936bc60eebac52"
+  },
+  {
+    "file": "pages/demo/getpage/getpage.css",
+    "hash": "2ec604ef7dc78b1a11fa0a7183f0eac6"
+  },
+  {
+    "file": "pages/demo/getpage/getpage.html",
+    "hash": "2e3f2492fda7a45e32f12ea45feafdb7"
+  },
+  {
+    "file": "pages/demo/getpage/getpage.js",
+    "hash": "bb536fa8f1ee02215a8e1eb82c8563d7"
+  },
+  {
+    "file": "pages/demo/grid/grid.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/grid/grid.html",
+    "hash": "4bea6811404c65c392b2f0fe40ff5535"
+  },
+  {
+    "file": "pages/demo/grid/grid.js",
+    "hash": "700ece6b55b426f0597a5e46c8276b1d"
+  },
+  {
+    "file": "pages/demo/icon/icon.css",
+    "hash": "ec38cc00e5f790a33c37947a3cce2713"
+  },
+  {
+    "file": "pages/demo/icon/icon.html",
+    "hash": "b99cf796d488c60a2ee81f73f462e176"
+  },
+  {
+    "file": "pages/demo/icon/icon.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/iconlist/iconlist.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/iconlist/iconlist.html",
+    "hash": "425768242f7ac041fc131a820f72b43a"
+  },
+  {
+    "file": "pages/demo/iconlist/iconlist.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/iconlist2/iconlist2.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/iconlist2/iconlist2.html",
+    "hash": "c19b636b4a8e9a19819d3732bdfdf0d8"
+  },
+  {
+    "file": "pages/demo/iconlist2/iconlist2.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/layer/layer.css",
+    "hash": "bbb507b066b85f274e6be3dbd5e6307d"
+  },
+  {
+    "file": "pages/demo/layer/layer.html",
+    "hash": "cde6a7c987d876c832c611e8a7da4346"
+  },
+  {
+    "file": "pages/demo/layer/layer.js",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/list/list.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/list/list.html",
+    "hash": "f1849f8ecdad79b1dabc108b837f4b04"
+  },
+  {
+    "file": "pages/demo/list/list.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/listbadge/listbadge.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/listbadge/listbadge.html",
+    "hash": "36cd0685c31c413cca28dc0be121a0e0"
+  },
+  {
+    "file": "pages/demo/listbadge/listbadge.js",
+    "hash": "51b9bb2ae061e1f1d4a124c08fdbd195"
+  },
+  {
+    "file": "pages/demo/listmedia/listmedia.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/listmedia/listmedia.html",
+    "hash": "58ed7d8eac318d18caabfe7d67d94de2"
+  },
+  {
+    "file": "pages/demo/listmedia/listmedia.js",
+    "hash": "cc2a500f78e3674468f752683241f5ca"
+  },
+  {
+    "file": "pages/demo/listmulti/listmulti.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/demo/listmulti/listmulti.html",
+    "hash": "c4b964090f16d4230c5e91435cbd13e1"
+  },
+  {
+    "file": "pages/demo/listmulti/listmulti.js",
+    "hash": "6b6829df427dde2e8f70223ffa485a55"
+  },
+  {
+    "file": "pages/demo/listswipe/listswipe.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/listswipe/listswipe.html",
+    "hash": "898ab947377d095a0bfc0b027e3bf900"
+  },
+  {
+    "file": "pages/demo/listswipe/listswipe.js",
+    "hash": "e339d657487c6a23368a10164450ca4a"
+  },
+  {
+    "file": "pages/demo/loaddata/loaddata.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/loaddata/loaddata.html",
+    "hash": "cde6a7c987d876c832c611e8a7da4346"
+  },
+  {
+    "file": "pages/demo/loaddata/loaddata.js",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/page/cpage/cpage.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/page/cpage/cpage.html",
+    "hash": "54793bee4d95f91b16e14f095cecdcdf"
+  },
+  {
+    "file": "pages/demo/page/cpage/cpage.js",
+    "hash": "ba3bbed132ac519cfe6320ad384bdd1c"
+  },
+  {
+    "file": "pages/demo/page/page.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/page/page.html",
+    "hash": "7ba34f3ff104cf513e4a779f16b5b87f"
+  },
+  {
+    "file": "pages/demo/page/page.js",
+    "hash": "92e6789cd9f2e95f8a97667638ba84be"
+  },
+  {
+    "file": "pages/demo/picture/picture.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/picture/picture.html",
+    "hash": "0c4768b454eb962693cf8ef5e8f23a87"
+  },
+  {
+    "file": "pages/demo/picture/picture.js",
+    "hash": "b5eb863c3829ac59fdbfe35b4360e96a"
+  },
+  {
+    "file": "pages/demo/pictureupload/pictureupload.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/pictureupload/pictureupload.html",
+    "hash": "5505c9e2bed6d6b8cbdb47ce6e3cfd91"
+  },
+  {
+    "file": "pages/demo/pictureupload/pictureupload.js",
+    "hash": "4ab42918412609eacc8a8d66a54eee04"
+  },
+  {
+    "file": "pages/demo/progressbar/progressbar.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/demo/progressbar/progressbar.html",
+    "hash": "c8d45fd000ea3a6372efc66572c43718"
+  },
+  {
+    "file": "pages/demo/progressbar/progressbar.js",
+    "hash": "868b57b96a5d8b008182926c19d5bd11"
+  },
+  {
+    "file": "pages/demo/pulltorefresh/pulltorefresh.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/pulltorefresh/pulltorefresh.html",
+    "hash": "f2a48708de7e18dac3c6c7c18e3b54cf"
+  },
+  {
+    "file": "pages/demo/pulltorefresh/pulltorefresh.js",
+    "hash": "69a7c6bf851fd18d3d8f2e9627b0ea5d"
+  },
+  {
+    "file": "pages/demo/pulltorefresh2/pulltorefresh2.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/pulltorefresh2/pulltorefresh2.html",
+    "hash": "a59bc39f7f19918697b6471aee2e0f22"
+  },
+  {
+    "file": "pages/demo/pulltorefresh2/pulltorefresh2.js",
+    "hash": "31bce64498e591d286d2b4f1bb1b6adb"
+  },
+  {
+    "file": "pages/demo/scan/scan.css",
+    "hash": "2ec604ef7dc78b1a11fa0a7183f0eac6"
+  },
+  {
+    "file": "pages/demo/scan/scan.html",
+    "hash": "cac7d1f4e1f1dd39b37dc0a706646068"
+  },
+  {
+    "file": "pages/demo/scan/scan.js",
+    "hash": "b2252ac5f3ef811897b447bc9fb20b34"
+  },
+  {
+    "file": "pages/demo/timeline/timeline.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/timeline/timeline.html",
+    "hash": "16b84855a2eb5677887adec7efa7e42d"
+  },
+  {
+    "file": "pages/demo/timeline/timeline.js",
+    "hash": "4f16ae63035c2553b5e1d6cbd3ead0b9"
+  },
+  {
+    "file": "pages/demo/toptab/toptab.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/demo/toptab/toptab.html",
+    "hash": "1ddf45b0d43c9c2186a266f5d78dd174"
+  },
+  {
+    "file": "pages/demo/toptab/toptab.js",
+    "hash": "e974050a81a9e260c4cfdd61dea3348d"
+  },
+  {
+    "file": "pages/demo/webstorage/webstorage.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/demo/webstorage/webstorage.html",
+    "hash": "5fd7e43a1a5a3768447378fdb218d53e"
+  },
+  {
+    "file": "pages/demo/webstorage/webstorage.js",
+    "hash": "b33a9ed2abb58584a6f6d60c66e7dd7f"
+  },
+  {
+    "file": "pages/login/login.css",
+    "hash": "549e0f7498c91634b22d33e0f8aa28e6"
+  },
+  {
+    "file": "pages/login/login.html",
+    "hash": "9e15a3a32fcfc5f71fe19fe71c28ece8"
+  },
+  {
+    "file": "pages/login/login.js",
+    "hash": "4d1f4321c0a1a4912f3b149d92908329"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/DC_OA_AttenceRecord.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/DC_OA_AttenceRecord.html",
+    "hash": "ca2351c9afea005c5675c4facdc34812"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/DC_OA_AttenceRecord.js",
+    "hash": "199edd8ce22831ea262d0274b5fac031"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/form/form.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/form/form.html",
+    "hash": "8ea64b4c568b26f4789674261421cc0d"
+  },
+  {
+    "file": "pages/LR_CodeDemo/DC_OA_AttenceRecord/form/form.js",
+    "hash": "d9ac1bce122d5232edf0f6c181464e84"
+  },
+  {
+    "file": "pages/lrselect/company/company.css",
+    "hash": "f0f60ec0ac6d3e40eb561b4369e55e2a"
+  },
+  {
+    "file": "pages/lrselect/company/company.html",
+    "hash": "69ba7fe88425c8eeaccedd8fdd1000ba"
+  },
+  {
+    "file": "pages/lrselect/company/company.js",
+    "hash": "0b7343227aa12d8367f6c1924c88bc0b"
+  },
+  {
+    "file": "pages/lrselect/department/department.css",
+    "hash": "da636583ec1c860615b9075503afbfa0"
+  },
+  {
+    "file": "pages/lrselect/department/department.html",
+    "hash": "1470a6381f610ce73abd9ffc7b009e10"
+  },
+  {
+    "file": "pages/lrselect/department/department.js",
+    "hash": "a2856d3767f1b6f6df042118ccf95bbf"
+  },
+  {
+    "file": "pages/lrselect/layer/layer.css",
+    "hash": "079fe8e10e72f569f2b53597a806b259"
+  },
+  {
+    "file": "pages/lrselect/layer/layer.html",
+    "hash": "7b0cefe8909daaf99ff5ed1504da53d0"
+  },
+  {
+    "file": "pages/lrselect/layer/layer.js",
+    "hash": "33a7396c2d6bd3b338f26702dd878b78"
+  },
+  {
+    "file": "pages/lrselect/user/user.css",
+    "hash": "7821c6dffe1fd892f6873422a676392a"
+  },
+  {
+    "file": "pages/lrselect/user/user.html",
+    "hash": "9c7e3fc0e6bb93d48649949953afeb78"
+  },
+  {
+    "file": "pages/lrselect/user/user.js",
+    "hash": "8706164485a7e79d8690dd2ef8767691"
+  },
+  {
+    "file": "pages/message/message.css",
+    "hash": "f73e256a43ea3e0d381cd7aa11fa7430"
+  },
+  {
+    "file": "pages/message/message.html",
+    "hash": "0c984df2bceb2d328461741f85e2978c"
+  },
+  {
+    "file": "pages/message/message.js",
+    "hash": "7973b9ae32a52f2eda1cf421f1502a09"
+  },
+  {
+    "file": "pages/my/aboutadms/aboutadms.css",
+    "hash": "fbc690ba95e65ab033d7a1a176e87302"
+  },
+  {
+    "file": "pages/my/aboutadms/aboutadms.html",
+    "hash": "ac2423b1df2830acdb83b32ac0df9ffe"
+  },
+  {
+    "file": "pages/my/aboutadms/aboutadms.js",
+    "hash": "1fc2395784947b03ce69645ee254acf3"
+  },
+  {
+    "file": "pages/my/aboutlearun/aboutlearun.css",
+    "hash": "13409181226ca729de784e5e69423b6c"
+  },
+  {
+    "file": "pages/my/aboutlearun/aboutlearun.html",
+    "hash": "7d13ac5292a819b50dab337d4770ac91"
+  },
+  {
+    "file": "pages/my/aboutlearun/aboutlearun.js",
+    "hash": "1fc2395784947b03ce69645ee254acf3"
+  },
+  {
+    "file": "pages/my/contactInfo/contactInfo.css",
+    "hash": "31675cda4d3c3e047c3ae55da6de1b9f"
+  },
+  {
+    "file": "pages/my/contactInfo/contactInfo.html",
+    "hash": "d111b243a95ef6b4338453736dddbdc0"
+  },
+  {
+    "file": "pages/my/contactInfo/contactInfo.js",
+    "hash": "1350c4da225ef1123892ed60b5f8bad9"
+  },
+  {
+    "file": "pages/my/modifypassword/modifypassword.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/my/modifypassword/modifypassword.html",
+    "hash": "0483899db706ca24f45f19416f4fd0f5"
+  },
+  {
+    "file": "pages/my/modifypassword/modifypassword.js",
+    "hash": "cb135cd70ebe6e7c6a0cfa645dfbddf4"
+  },
+  {
+    "file": "pages/my/my.css",
+    "hash": "67f99e79c016016c21525d4ebf884aab"
+  },
+  {
+    "file": "pages/my/my.html",
+    "hash": "f1f25734fa7d3ec6e0e9a17bfc42b7f1"
+  },
+  {
+    "file": "pages/my/my.js",
+    "hash": "c91aba5fb8d7b2fbccbcd35d3433b4a4"
+  },
+  {
+    "file": "pages/my/mycode/mycode.css",
+    "hash": "32902085b6c7545f508a2d0618ab9adb"
+  },
+  {
+    "file": "pages/my/mycode/mycode.html",
+    "hash": "934c69fab2868a6dc3a1889d88c366aa"
+  },
+  {
+    "file": "pages/my/mycode/mycode.js",
+    "hash": "ea68ee4abd8a486e68fab21eec0221fe"
+  },
+  {
+    "file": "pages/my/userInfo/userInfo.css",
+    "hash": "8a8a958ac31ef75b679efbf041198619"
+  },
+  {
+    "file": "pages/my/userInfo/userInfo.html",
+    "hash": "cb0f436a4215720813e5b3fbac37e684"
+  },
+  {
+    "file": "pages/my/userInfo/userInfo.js",
+    "hash": "8ea1560752544e75d93362e73bd68b75"
+  },
+  {
+    "file": "pages/newpage/newpage.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/newpage/newpage.html",
+    "hash": "847706db87af6a5a8a220e5dee05156c"
+  },
+  {
+    "file": "pages/newpage/newpage.js",
+    "hash": "146711088802e6974204c20568de7648"
+  },
+  {
+    "file": "pages/nworkflow/againcreateflow/againcreateflow.css",
+    "hash": "17ced709c695b4008f5cac2ecffaa57e"
+  },
+  {
+    "file": "pages/nworkflow/againcreateflow/againcreateflow.html",
+    "hash": "a915f6f354c58533e50ea391fefcbad9"
+  },
+  {
+    "file": "pages/nworkflow/againcreateflow/againcreateflow.js",
+    "hash": "9bc09b52376156f0ab9cb9644ebd5986"
+  },
+  {
+    "file": "pages/nworkflow/audit/audit.css",
+    "hash": "5d38db90b3ea60e373ce07277388d8d4"
+  },
+  {
+    "file": "pages/nworkflow/audit/audit.html",
+    "hash": "871bb6fde66c9210cd50b6106fd3e415"
+  },
+  {
+    "file": "pages/nworkflow/audit/audit.js",
+    "hash": "52afabcd7677a2c83c94be971c2c062f"
+  },
+  {
+    "file": "pages/nworkflow/audit/sign/sign.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/nworkflow/audit/sign/sign.html",
+    "hash": "fe0256b3ff9dca9431642ff82c110e78"
+  },
+  {
+    "file": "pages/nworkflow/audit/sign/sign.js",
+    "hash": "0fbc805cf6ffc586b043f5f579dedf27"
+  },
+  {
+    "file": "pages/nworkflow/audit/verify/verify.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/nworkflow/audit/verify/verify.html",
+    "hash": "303c94b1c0cced341b808e1e5a82a79e"
+  },
+  {
+    "file": "pages/nworkflow/audit/verify/verify.js",
+    "hash": "a7e2edc749367cdffcad64fe920b8424"
+  },
+  {
+    "file": "pages/nworkflow/chlidaudit/chlidaudit.css",
+    "hash": "1a43d6d110e8b578a6ac41f66c5cc9f0"
+  },
+  {
+    "file": "pages/nworkflow/chlidaudit/chlidaudit.html",
+    "hash": "5ba690f53a7a31d18211c0a1a3aba718"
+  },
+  {
+    "file": "pages/nworkflow/chlidaudit/chlidaudit.js",
+    "hash": "ff7ddc7bccdd3443a11d73e94302a010"
+  },
+  {
+    "file": "pages/nworkflow/chlidlook/chlidlook.css",
+    "hash": "ce35a8c3a38cf81e0399d063aadc11c7"
+  },
+  {
+    "file": "pages/nworkflow/chlidlook/chlidlook.html",
+    "hash": "26648987bd1edec93464a2510133e189"
+  },
+  {
+    "file": "pages/nworkflow/chlidlook/chlidlook.js",
+    "hash": "168b204687f4abf5d44beb9ac2c8b982"
+  },
+  {
+    "file": "pages/nworkflow/createflow/createflow.css",
+    "hash": "a79be5ba5e8e4f0c12bf33cbe1cd509a"
+  },
+  {
+    "file": "pages/nworkflow/createflow/createflow.html",
+    "hash": "16d80bf887bfb8545b5c4db13842d502"
+  },
+  {
+    "file": "pages/nworkflow/createflow/createflow.js",
+    "hash": "e5612ed704a4928193058832dacd5c66"
+  },
+  {
+    "file": "pages/nworkflow/createflow/form/form.css",
+    "hash": "3bab25a3e651a9e4a00473d2257b99f9"
+  },
+  {
+    "file": "pages/nworkflow/createflow/form/form.html",
+    "hash": "64daf0a7d89052778a3bcd9da12ffd8a"
+  },
+  {
+    "file": "pages/nworkflow/createflow/form/form.js",
+    "hash": "db4c95d2480dd6cc3424d4c1f3444a84"
+  },
+  {
+    "file": "pages/nworkflow/draft/draft.css",
+    "hash": "781a4d15926839ec43ad9ecda37e6ede"
+  },
+  {
+    "file": "pages/nworkflow/draft/draft.html",
+    "hash": "543f1b951de3f8e2259a7a7bd7687224"
+  },
+  {
+    "file": "pages/nworkflow/draft/draft.js",
+    "hash": "77dca7bd428b43fab3f22ec65d006db2"
+  },
+  {
+    "file": "pages/nworkflow/draft/form/form.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/nworkflow/draft/form/form.html",
+    "hash": "64daf0a7d89052778a3bcd9da12ffd8a"
+  },
+  {
+    "file": "pages/nworkflow/draft/form/form.js",
+    "hash": "080f840560ef98b8a1b09bd780312bb8"
+  },
+  {
+    "file": "pages/nworkflow/myaudit/myaudit.css",
+    "hash": "cb019dceb9e11e9b65cdce88588bb916"
+  },
+  {
+    "file": "pages/nworkflow/myaudit/myaudit.html",
+    "hash": "c161074da8c534a5a0f258b71820a431"
+  },
+  {
+    "file": "pages/nworkflow/myaudit/myaudit.js",
+    "hash": "0a5927f9e38d1f4c9ecccebd60690fdc"
+  },
+  {
+    "file": "pages/nworkflow/mycreate/mycreate.css",
+    "hash": "59c0b675ed1cbc20705055e371661fd9"
+  },
+  {
+    "file": "pages/nworkflow/mycreate/mycreate.html",
+    "hash": "8d3403b53620c19f0ccba3cc7bbf193f"
+  },
+  {
+    "file": "pages/nworkflow/mycreate/mycreate.js",
+    "hash": "b9bb5d0abea2e0db834ddcef0aa050b4"
+  },
+  {
+    "file": "pages/nworkflow/mydone/mydone.css",
+    "hash": "4a841b20ddfa77608aee638f9a8b57e0"
+  },
+  {
+    "file": "pages/nworkflow/mydone/mydone.html",
+    "hash": "e93060548715d20e8a807c02e95569ff"
+  },
+  {
+    "file": "pages/nworkflow/mydone/mydone.js",
+    "hash": "c28d9e131fa9e1ddd15b10f94dbe96cf"
+  },
+  {
+    "file": "pages/nworkflow/myflow/myflow.css",
+    "hash": "482c18331015bb6fa3e7590fd47caf1f"
+  },
+  {
+    "file": "pages/nworkflow/myflow/myflow.html",
+    "hash": "8435a68037149759ab2f07a74c0d628c"
+  },
+  {
+    "file": "pages/nworkflow/myflow/myflow.js",
+    "hash": "0f76262513586b8fb848a6fa127b60c2"
+  },
+  {
+    "file": "pages/nworkflow/myprocessInfo/myprocessInfo.css",
+    "hash": "f1a61f9d5d46ff0596e774ba425a5a73"
+  },
+  {
+    "file": "pages/nworkflow/myprocessInfo/myprocessInfo.html",
+    "hash": "0729807a54cde2ae30a00f4eac05926a"
+  },
+  {
+    "file": "pages/nworkflow/myprocessInfo/myprocessInfo.js",
+    "hash": "d73c7f4570bd03f98288e3d695377b69"
+  },
+  {
+    "file": "pages/nworkflow/processInfo/processInfo.css",
+    "hash": "c799c99c7f8dcbd214c1463ece671249"
+  },
+  {
+    "file": "pages/nworkflow/processInfo/processInfo.html",
+    "hash": "3e8dc593e7d5b00716d16de5d122309d"
+  },
+  {
+    "file": "pages/nworkflow/processInfo/processInfo.js",
+    "hash": "aa7c118f96ca5a1ba1f2f812d1debcdd"
+  },
+  {
+    "file": "pages/nworkflow/refer/refer.css",
+    "hash": "422945bbada7d2be21d94c6da95eaac1"
+  },
+  {
+    "file": "pages/nworkflow/refer/refer.html",
+    "hash": "c9bec1a71032c8f06f385fdfe803e1a1"
+  },
+  {
+    "file": "pages/nworkflow/refer/refer.js",
+    "hash": "2877c67f83d466fe61d5f7ccd1a57985"
+  },
+  {
+    "file": "pages/nworkflow/releasetask/releasetask.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/nworkflow/releasetask/releasetask.html",
+    "hash": "9e58bafdd4e5abee148b7eff99b22d84"
+  },
+  {
+    "file": "pages/nworkflow/releasetask/releasetask.js",
+    "hash": "94242409c0aac6671983bcc6e13930da"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/sign/sign.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/sign/sign.html",
+    "hash": "fe0256b3ff9dca9431642ff82c110e78"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/sign/sign.js",
+    "hash": "2395589adee1bcbba2435b8aac8a7598"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/signAudit.css",
+    "hash": "4620374bb6a3529740797eb014d8e6da"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/signAudit.html",
+    "hash": "7fa6f69002814074b33eb90a007165fb"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/signAudit.js",
+    "hash": "22e9782d3a0d06e12d41c257d27c0852"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/verify/verify.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/verify/verify.html",
+    "hash": "303c94b1c0cced341b808e1e5a82a79e"
+  },
+  {
+    "file": "pages/nworkflow/signAudit/verify/verify.js",
+    "hash": "b800840fff8f07febe23fae4e59adf6f"
+  },
+  {
+    "file": "pages/search/search.css",
+    "hash": "d9a853a38ff42c3b61a9abe487e02712"
+  },
+  {
+    "file": "pages/search/search.html",
+    "hash": "9e14f02f8156035ea6116a648c16f708"
+  },
+  {
+    "file": "pages/search/search.js",
+    "hash": "68dcfb9d8c4b71ece50abf6bd87f8e09"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/againbootstraper.css",
+    "hash": "dab2b57004dd1178f4737779cefb7fe3"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/againbootstraper.html",
+    "hash": "3b82b27c402e243bd5d4ccebcdd625b8"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/againbootstraper.js",
+    "hash": "f07e55f2708b18dca991e18fa19b0105"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/form/form.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/form/form.html",
+    "hash": "219b9d106eedb62a75a6227261043a61"
+  },
+  {
+    "file": "pages/workflow/againbootstraper/form/form.js",
+    "hash": "9e0e1c5c20d7e8361d0d34fbe1aafb7c"
+  },
+  {
+    "file": "pages/workflow/audit/audit.css",
+    "hash": "e0d39a8077326c15861fd856e3acb249"
+  },
+  {
+    "file": "pages/workflow/audit/audit.html",
+    "hash": "a2e21f89b5666c5ee24f1b215751529b"
+  },
+  {
+    "file": "pages/workflow/audit/audit.js",
+    "hash": "94e11261598dd4b4a6ed3e3adaa0b6c5"
+  },
+  {
+    "file": "pages/workflow/audit/sign/sign.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/workflow/audit/sign/sign.html",
+    "hash": "fe0256b3ff9dca9431642ff82c110e78"
+  },
+  {
+    "file": "pages/workflow/audit/sign/sign.js",
+    "hash": "9008b5001a6a34ddba8c116d62bcac28"
+  },
+  {
+    "file": "pages/workflow/audit/verify/verify.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/workflow/audit/verify/verify.html",
+    "hash": "303c94b1c0cced341b808e1e5a82a79e"
+  },
+  {
+    "file": "pages/workflow/audit/verify/verify.js",
+    "hash": "be6803aa7e5abc570f485ffcb6964aa5"
+  },
+  {
+    "file": "pages/workflow/bootstraper/bootstraper.css",
+    "hash": "eb3bd7da087cffbe8e0378b0726c8a11"
+  },
+  {
+    "file": "pages/workflow/bootstraper/bootstraper.html",
+    "hash": "1fc202681546306a9dfedd5d6d44bdf5"
+  },
+  {
+    "file": "pages/workflow/bootstraper/bootstraper.js",
+    "hash": "4a8e7589986ebb7db6c9b91d1f122d66"
+  },
+  {
+    "file": "pages/workflow/bootstraper/form/form.css",
+    "hash": "ecfe91f89c97efe5e5778607852ab4d7"
+  },
+  {
+    "file": "pages/workflow/bootstraper/form/form.html",
+    "hash": "219b9d106eedb62a75a6227261043a61"
+  },
+  {
+    "file": "pages/workflow/bootstraper/form/form.js",
+    "hash": "81f4e16e32f5149f82b5027641593c26"
+  },
+  {
+    "file": "pages/workflow/mytask/mytask.css",
+    "hash": "565c8e4f0d091aa49f74890280062cce"
+  },
+  {
+    "file": "pages/workflow/mytask/mytask.html",
+    "hash": "25bff5c5df281e6b2f9dfd96567f33e3"
+  },
+  {
+    "file": "pages/workflow/mytask/mytask.js",
+    "hash": "439236c8654bef2869b0d6de370cc3ca"
+  },
+  {
+    "file": "pages/workflow/processInfo/processInfo.css",
+    "hash": "251c2532b76e111072cdc8033d039a9e"
+  },
+  {
+    "file": "pages/workflow/processInfo/processInfo.html",
+    "hash": "164bfe29af0fbee8ca276e30e7b16271"
+  },
+  {
+    "file": "pages/workflow/processInfo/processInfo.js",
+    "hash": "7638d3251192156d4abced1252755d42"
+  },
+  {
+    "file": "pages/workflow/releasetask/releasetask.css",
+    "hash": "ecaa88f7fa0bf610a5a26cf545dcd3aa"
+  },
+  {
+    "file": "pages/workflow/releasetask/releasetask.html",
+    "hash": "9e58bafdd4e5abee148b7eff99b22d84"
+  },
+  {
+    "file": "pages/workflow/releasetask/releasetask.js",
+    "hash": "bad9d1a69c2486a38f25365e6ad95a49"
+  },
+  {
+    "file": "pages/workspace/listdetaile/listdetaile.css",
+    "hash": "f24c1ec81e513956f076618e849e221e"
+  },
+  {
+    "file": "pages/workspace/listdetaile/listdetaile.html",
+    "hash": "73864e53d7413755acc344cb0e019fc9"
+  },
+  {
+    "file": "pages/workspace/listdetaile/listdetaile.js",
+    "hash": "5164e696ecd14adbfafceb3e7fdf6112"
+  },
+  {
+    "file": "pages/workspace/modulelist/edit/edit.css",
+    "hash": "b09d099a2aa00122d84cb6a2a8df1fc7"
+  },
+  {
+    "file": "pages/workspace/modulelist/edit/edit.html",
+    "hash": "b7abb60ae0b7394a767b46475bdb1ff4"
+  },
+  {
+    "file": "pages/workspace/modulelist/edit/edit.js",
+    "hash": "9efe23d8d12f0909158bb1be8c1829e8"
+  },
+  {
+    "file": "pages/workspace/modulelist/modulelist.css",
+    "hash": "583b8b95bfc6cc7655a4358172ffc9a5"
+  },
+  {
+    "file": "pages/workspace/modulelist/modulelist.html",
+    "hash": "091461a00b196bc1954bcd35ba2113bf"
+  },
+  {
+    "file": "pages/workspace/modulelist/modulelist.js",
+    "hash": "6a2f00c330700c8c76031198af53ddd8"
+  },
+  {
+    "file": "pages/workspace/search/search.css",
+    "hash": "a945140a330b2c353020d792d4257681"
+  },
+  {
+    "file": "pages/workspace/search/search.html",
+    "hash": "597f5ab7f94ecdee56eb96f391bccd57"
+  },
+  {
+    "file": "pages/workspace/search/search.js",
+    "hash": "aa8ee38d0a7d229c3a8637f4d46ab753"
+  },
+  {
+    "file": "pages/workspace/workspace.css",
+    "hash": "4b89e2412e6f0a8b5a32c2cb44aa4378"
+  },
+  {
+    "file": "pages/workspace/workspace.html",
+    "hash": "e5e320d6b9cb012d5afd689090a5d26e"
+  },
+  {
+    "file": "pages/workspace/workspace.js",
+    "hash": "9fca46651c8e24eac813666fe59b1d37"
+  },
+  {
+    "file": "scripts/echarts.js",
+    "hash": "99c93638ab3396bd49a05223f50abb7d"
+  },
+  {
+    "file": "scripts/index.js",
+    "hash": "0119e8dfaf25ea73c0c8cf8096ed4610"
+  },
+  {
+    "file": "scripts/jquery-1.10.2.min.js",
+    "hash": "248b71dda521aa38d72f872b588aea69"
+  },
+  {
+    "file": "scripts/jquery.md5.min.js",
+    "hash": "bb92c49a676417e864040670c9783ec6"
+  },
+  {
+    "file": "scripts/learun-custmerform.js",
+    "hash": "4728d5b41201b28261a5347c8d556ab3"
+  },
+  {
+    "file": "scripts/lrmui.js",
+    "hash": "4b8e44e03016d8a90f5298753b9ee034"
+  },
+  {
+    "file": "scripts/lrmuiex.js",
+    "hash": "e8c1511d9b7977f44ff8063361198a9d"
+  },
+  {
+    "file": "scripts/platformOverrides.js",
+    "hash": "82614147abba72d09e3345fe997876d7"
+  }
+]

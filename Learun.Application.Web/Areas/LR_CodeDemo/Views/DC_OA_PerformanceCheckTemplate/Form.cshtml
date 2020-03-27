@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceCheckTemplate";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">考核模板名称<font face="宋体">*</font></div>
+        <input id="F_TemplateName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">考核周期<font face="宋体">*</font></div>
+        <div id="F_TimeType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">被考核角色</div>
+        <div id="F_Roleid" isvalid="yes"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">考核模板选择<font face="宋体">*</font></div>
+        <div id="F_Path" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">模板优先级<font face="宋体">*</font></div>
+        <input id="F_level" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+   
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">是否启用</div>
+        <div id="F_Enabled"></div>
+    </div>
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheckTemplate">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheckTemplate/Form.js")

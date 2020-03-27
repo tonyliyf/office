@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>综合信息|快速开发平台|开发框架|@ViewBag.Title</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <script>
+        function onLoad() {
+            var map = new AMap.Map('mapDiv', {
+                resizeEnable: true, //是否监控地图容器尺寸变化
+                zoom: 18, //初始化地图层级
+                center: [111.754821, 30.431865] //初始化地图中心点
+            });
+
+            AMapUI.loadUI(['overlay/SimpleInfoWindow'], function (SimpleInfoWindow) {
+
+                var marker = new AMap.Marker({
+                    map: map,
+                    zIndex: 9999999,
+                    position: [111.754821, 30.431865]
+                });
+
+                var infoWindow = new SimpleInfoWindow({
+
+                    infoTitle: '<strong>金润源集团</strong>',
+                    infoBody: '<p class="my-desc"> 枝江金润源集团公司是枝江市政府直属企业，承担着政府投融资、城市基础设施建设、国有资产管理、为中小微企业提供政策性金融服务等职能。2015年3月改革重组以来，金润源集团公司在集团党委的领导下，按照建立现代化企业制度要求，建立健全了董事会、监事会、经理层协调运转、有效制衡的法人治理结构，建成了公共服务、交通文化旅游、建筑房地产、金融服务等多元化发展的产业格局，转型发展工作全面推进，2016年获得枝江市政府通令嘉奖，获得湖北省政府债券融资最高奖励资金100万元，2017年被枝江市委市政府表彰为“2016年度经济发展特别贡献单位”。</p>',
+
+                    //基点指向marker的头部位置
+                    offset: new AMap.Pixel(0, -31)
+                });
+
+                function openInfoWin() {
+                    infoWindow.open(map, marker.getPosition());
+                }
+
+                //marker 点击时打开
+                AMap.event.addListener(marker, 'click', function () {
+                    openInfoWin();
+                });
+
+                openInfoWin();
+            });
+        }
+    </script>
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/Home/AdminDesktopTemp/index.css")
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	.lr-theme-setting.opened{
+    		display: none;
+    	}
+    </style>
+</head>
+<body onload="onLoad()" class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme()">
+    <div class="lr-desktop-panel">
+        <div class="col-xs-12">
+            <div class="portal-panel-title">
+                <i class="fa fa-balance-scale"></i>&nbsp;&nbsp;业务系统
+            </div>
+            <div class="portal-panel-content">
+                <div class="lr-item-25">
+                    <div class="task-stat" onclick="parent.location.href='../../assethome/index'" style="background-color: #578ebe;">
+                        <div class="visual">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                高投资产管理
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #4884b8;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #e35b5a;" onclick="parent.location.href='../../projecthome/index'">
+                        <div class="visual">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                工程项目监管
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #e04a49;" href="javascript:;" >
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #44b6ae;" onclick="parent.location.href='../../leaderhome/index'">
+                        <div class="visual">
+                            <i class="fa fa-windows"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                领导驾驶舱
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #3ea7a0;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #8775a7;">
+                        <div class="visual">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                更多应用
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #7c699f;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="overflow:auto;position:absolute;top:200px;bottom:0" class="col-xs-12">
+
+            <div class="col-xs-6">
+                <div class="portal-panel-title">
+                    <i class="fa fa-coffee"></i>&nbsp;&nbsp;新闻列表（Top 5）
+                    <a onclick="" class="fagd">更多>></a>
+                </div>
+                <div class="portal-panel-content" style="overflow: hidden; padding-top: 20px; padding-left: 30px; padding-right: 50px;">
+                    <style>
+                        .tabs-header, .tabs-scroller-right, .tabs-scroller-left {
+                            border: none !important;
+                            background-color: inherit !important;
+                        }
+
+                        .tabs li .tabs-inner {
+                            color: black !important;
+                        }
+
+                        .tabs-selected > a.tabs-inner {
+                            background: #9ABBD8 !important;
+                            color: white !important;
+                            border: none !important;
+                            font-weight: 500 !important;
+                        }
+                    </style>
+                    <div style="width:100%;height:300px;" id="NewList" class="easyui-tabs">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="portal-panel-title">
+                    <i class="fa fa-bullhorn"></i>&nbsp;&nbsp;公告/通知（Top 5）
+                     <a class="fagd" onclick="parent.location.href='../../Newslist/Index'">更多>></a>
+                </div>
+                <div class="portal-panel-content" style="overflow: hidden; padding-top: 20px; padding-left: 30px; padding-right: 50px;">
+                    <div style="width:100%;height:300px;" id="NoticeList" class="easyui-tabs"></div>
+                </div>
+            </div>
+            <!--<div class="col-xs-12">
+                <div class="portal-panel-content">
+                    <div id="mapDiv" style="width:99%; height:500px"></div>
+                </div>
+            </div>-->
+
+        </div>
+    </div>
+
+
+
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/echarts/echarts.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/jquery.easyui.min.js"></script>
+    <link href="~/Content/jQuery-EasyUi/themes/bootstrap/easyui.css" rel="stylesheet" />
+    @Html.AppendJsFile("/Views/Home/AdminDesktopTemp/index.js")
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

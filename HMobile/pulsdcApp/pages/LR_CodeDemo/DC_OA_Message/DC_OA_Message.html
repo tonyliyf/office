@@ -1,0 +1,158 @@
+<style type="text/css">
+			.xt_home{
+				background: #fff;
+			}
+			.xt_list{
+				padding: 10px;
+				border-bottom: 1px solid #d8d8d8;
+				position: relative;
+				overflow: hidden;
+				
+			}
+			.xt_left{
+				width: 20%;
+				float: left;
+				overflow: hidden;
+			}
+			.xt_right{
+				float: left;
+				width: 70%;
+			}
+			.xr_title{
+				line-height: 27px;
+				overflow: hidden;
+			}
+			.xr_left{
+				float: left;
+				color: #333333;
+				font-size: 14px;
+			}
+			.xt_left img{
+				width: 50px;
+			}
+			.xr_right{
+				color: #888888;
+				float: right;
+				font-size: 12px;
+			}
+			.xr_list{
+				color: #666;
+				font-size: 13px;
+				margin-top: 2px;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			.xt_numb{
+				width: 20px;
+				height: 20px;
+				color: #FFFFFF;
+				background: red;
+				border-radius: 10px;
+				text-align: center;
+				line-height: 20px;
+				font-size: 13px;
+				position: absolute;
+				right: 17px;
+				bottom: 18px;
+			}
+		</style>
+	
+<div class="lr-page lr-LR_CodeDemoDC_OA_Message-page"> 
+    
+    <div class="lr-page-content" id="lr_LR_CodeDemoDC_OA_Message_list"></div> 
+    <div class="xt_home">
+			<div class="xt_list">
+				<div class="xt_left">
+					<img src="images/xxx.png"/>
+				</div>
+				<div class="xt_right">
+					 <div class="xr_title">
+					 	<div class="xr_left">
+					 		日程计划
+					 	</div>
+					 	<div class="xr_right">
+					 		2019-05-06 15:25:54
+					 	</div>
+					 </div>
+					 <div class="xr_list">
+					 	日程提醒：2019-05-06 15：25：53 开始，日程标准
+					 </div>
+				</div>
+				<div class="xt_numb">
+					5
+				</div>
+			</div>
+			<div class="xt_list">
+				<div class="xt_left">
+					<img src="images/xxx.png"/>
+				</div>
+				<div class="xt_right">
+					 <div class="xr_title">
+					 	<div class="xr_left">
+					 		日程计划
+					 	</div>
+					 	<div class="xr_right">
+					 		2019-05-06 15:25:54
+					 	</div>
+					 </div>
+					 <div class="xr_list">
+					 	日程提醒：2019-05-06 15：25：53 开始，日程标准
+					 </div>
+				</div>
+				<div class="xt_numb">
+					5
+				</div>
+			</div>
+			<div class="xt_list">
+				<div class="xt_left">
+					<img src="images/xxx.png"/>
+				</div>
+				<div class="xt_right">
+					 <div class="xr_title">
+					 	<div class="xr_left">
+					 		日程计划
+					 	</div>
+					 	<div class="xr_right">
+					 		2019-05-06 15:25:54
+					 	</div>
+					 </div>
+					 <div class="xr_list">
+					 	日程提醒：2019-05-06 15：25：53 开始，日程标准
+					 </div>
+				</div>
+				<div class="xt_numb">
+					5
+				</div>
+			</div>
+		</div>
+</div> 
+
+<script>
+//	xtxiaoxi()  //系统消息
+	function xtxiaoxi(){
+		top.learun.httpAsync('GET', top.$.rootUrl + '/learun/adms/LR_CodeDemo/DC_OA_Message/GetOAMessage', {}, function (data) {
+	        if (data) {
+	            if (data.rows.length > 0) {
+	            	var bcd=0
+	                $(".xt_home").empty();
+	                $.each(data.rows, function (index, item) {
+	                	bcd++
+	                	var html="<div class='xt_list'><div class='xt_left'><img src='images/xxx.png'/></div>"+
+						"<div class='xt_right'><div class='xr_title'><div class='xr_left'>"+item.f_strategyname+"</div>"+
+						"<div class='xr_right'></div></div><div class='xr_list'></div></div><div class='xt_numb'>"item.count"</div></div>"
+                   		$(".xt_home").append(html);
+	                    if(item.count<0||item.count==null){
+	                    	$(".xt_numb").eq(bcd).hide()
+	                    }
+	                    bcd++
+	                })
+	            }
+	
+	        } else {
+	            console.log("error");
+	        }
+	    })
+	}
+   
+</script>

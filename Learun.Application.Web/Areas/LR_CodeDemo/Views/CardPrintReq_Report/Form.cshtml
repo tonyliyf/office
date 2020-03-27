@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "用章报表";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">标题<font face="宋体">*</font></div>
+        <input id="F_Title" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">申请部门</div>
+        <input id="F_Dept" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">申请人</div>
+        <input id="F_Applicant" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">公章类型<font face="宋体">*</font></div>
+        <div id="F_CacheType" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">授函单位<font face="宋体">*</font></div>
+        <input id="F_LetterUnit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">函件名称<font face="宋体">*</font></div>
+        <input id="F_LetterName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">申请时间<font face="宋体">*</font></div>
+        <input id="F_Datatime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_Datatime').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">相关项目</div>
+        <input id="F_Project" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">相关客户</div>
+        <input id="F_Customer" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="CachetReq" >
+        <div class="lr-form-item-title">使用原因<font face="宋体">*</font></div>
+        <textarea id="F_UseReason" class="form-control" style="height:100px;" isvalid="yes" checkexpession="NotNull" ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/CardPrintReq_Report/Form.js")

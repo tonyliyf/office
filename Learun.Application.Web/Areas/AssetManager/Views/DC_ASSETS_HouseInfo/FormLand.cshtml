@@ -1,0 +1,190 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseInfo";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-tabs" id="lr_form_tabs">
+    <ul class="nav nav-tabs">
+        <li><a data-value="tab1">土地信息</a></li>
+        <li><a data-value="tab2">房屋信息</a></li>
+        <li><a data-value="tab3">合同信息</a></li>
+        <li><a data-value="tab4">票据信息</a></li>
+    </ul>
+</div>
+<div class="tab-content lr-tab-content" id="lr_tab_content">
+    <div class="lr-form-wrap tab-pane" id="tab1">
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_BuildingBaseInfo">
+            <div class="lr-form-item-title">选择土地</div>
+            <div id="F_LBIId"></div>
+        </div>
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">土地名称</div>
+            <input id="F_LandName" type="text" class="form-control" />
+
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">原单位</div>
+            <input id="F_Transferor" type="text" class="form-control" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">所有权人</div>
+            <div id="F_Assignee"></div>
+        </div>
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">权属证号</div>
+            <input id="F_LandCertificate" type="text" class="form-control" />
+        </div>
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">行政区划</div>
+            <div id="F_area" class="col-xs-12 lr-form-area">
+                <div id="F_ProvinceId" placeholder="省" class="col-xs-3"></div>
+                <div id="F_CityId" placeholder="市" class="col-xs-3"></div>
+                <div id="F_CountyId" placeholder="县" class="col-xs-3"></div>
+                <div id="F_CommunityCode" placeholder="区" class="col-xs-3"></div>
+            </div>
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <span><i class="fa fa-map-marker"></i></span>
+            <input id="btn_area" type="button" class="btn btn-primary lrUploader-input-btn" value="选择区域" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">地类用途</div>
+            <div id="F_LandUseNature"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">使用权类型</div>
+            <div id="F_LandUseRight"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">使用面积<font face="宋体">*</font></div>
+            <input id="F_Area" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+        </div>
+
+
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">
+                账面价值(元)<font face="宋体">*</font>
+            </div>
+            <input id="F_TransferAmount" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+        </div>
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">土地坐落<font face="宋体">*</font></div>
+            <input id="F_ParcelAddress" type="text" class="form-control" isvalid="yes" checkexpession="NotNull"/>
+        </div>
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+            <div class="lr-form-item-title">图片附件</div>
+            <div id="F_PictureAccessories"></div>
+        </div>
+
+
+    </div>
+    <div class="lr-form-wrap tab-pane" id="tab2">
+      
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BuildingBaseInfo">
+            <div class="lr-form-item-title">建筑名称<font face="宋体">*</font></div>
+            <input id="F_ConstructionName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+            <input id="F_BBIId" type="hidden" class="form-control" />
+        </div>
+
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">总楼层数</div>
+            <input id="F_HouseFloorCount" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+        </div>
+
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">资产价值</div>
+            <input id="F_BuildingValue" type="text" class="form-control" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">建筑用途</div>
+            <div id="F_UseCategories"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">经营性质</div>
+            <div id="F_BuildingClass"></div>
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">原管联系人</div>
+            <input id="F_FormerUnitContacts" type="text" class="form-control" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">联系人电话</div>
+            <input id="F_ContactsPhone" type="text" class="form-control" isvalid="yes" checkexpession="MobileOrPhoneOrNull" />
+        </div>
+
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">房屋名称<font face="宋体">*</font></div>
+            <input id="F_HouseName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">所在楼层</div>
+            <input id="F_FloorNumber" type="text" class="form-control"  />
+        </div>
+      
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">使用性质<font face="宋体">*</font></div>
+            <div id="F_RoomUsage" isvalid="yes" checkexpession="NotNull"></div>
+        </div>
+
+
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">房产证号</div>
+            <input id="F_CertificateNo" type="text" class="form-control" />
+        </div>
+        <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">建筑面积</div>
+            <input id="F_HouseArea" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+        </div>
+           
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">相关附件</div>
+            <div id="F_PictureAccessories_HouseInfo"></div>
+        </div>
+
+        <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+            <div class="lr-form-item-title">备注</div>
+            <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+        </div>
+     </div>
+        <div class="lr-form-wrap tab-pane" id="tab3">
+            <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">合同编号</div>
+                <input id="F_ContractNumber" type="text" class="form-control" />
+            </div>
+            <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">合同名称</div>
+                <input id="F_ContractName" type="text" class="form-control" />
+            </div>
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">合同附件</div>
+                <div id="F_ContractAccessories"></div>
+            </div>
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">成交确认书附件</div>
+                <div id="F_SalesConfirmation"></div>
+            </div>
+        </div>
+        <div class="lr-form-wrap tab-pane" id="tab4">
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">票据说明</div>
+                <input id="F_NoteDescription" type="text" class="form-control" />
+            </div>
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">票据附件</div>
+                <div id="F_NoteAccessories"></div>
+            </div>
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">其他资料附件</div>
+                <div id="F_OtherAccessories"></div>
+            </div>
+            <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+                <div class="lr-form-item-title">备注</div>
+                <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+            </div>
+        </div>
+    </div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseInfo/FormLand.js")

@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "~/Views/Shared/_index.cshtml";
+}
+<style>
+    .lr-form-item-title {
+        width: 110px !important;
+        text-align: right;
+    }
+
+    .lr-form-item {
+        padding-left: 110px !important
+    }
+</style>
+<div class="lr-layout ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle " style="padding-top:115px">
+            <div class="lr-layout-tool" style="height:115px">
+                <div class="col-xs-6 lr-form-item">
+                    <div class="lr-form-item-title">被考核人部门</div>
+                    <input id="department" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-6 lr-form-item">
+                    <div class="lr-form-item-title">被考核人岗位</div>
+                    <input id="post" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-6 lr-form-item">
+                    <div class="lr-form-item-title">考核表名称</div>
+                    <input id="tableName" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-6 lr-form-item">
+                    <div class="lr-form-item-title">当前考核周期</div>
+                    <input id="dateString" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-2 lr-form-item">
+                    <div class="lr-form-item-title">自评得分</div>
+                    <input id="selfScore" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-2 lr-form-item">
+                    <div class="lr-form-item-title">考核得分</div>
+                    <input id="totalScore" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-1">
+
+                </div>
+                <div class="col-xs-2 lr-form-item">
+                    <div class="lr-form-item-title">管理监督责任扣分</div>
+                    <input id="decScore" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-2 lr-form-item">
+                    <div class="lr-form-item-title">奖励加分</div>
+                    <input id="incScore" readonly type="text" class="form-control" />
+                </div>
+                <div class="col-xs-2 lr-form-item">
+                    <div class="lr-form-item-title">最终得分</div>
+                    <input id="resultScore" readonly type="text" class="form-control" />
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+<style>
+    .lr-layout-tool {
+        text-align: left;
+        font-weight: 900
+    }
+
+        .lr-layout-tool span {
+            text-align: left;
+            font-weight: 500
+        }
+</style>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceExecute/Info.js")

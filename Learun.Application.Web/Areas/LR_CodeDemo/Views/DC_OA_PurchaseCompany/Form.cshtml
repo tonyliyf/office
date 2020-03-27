@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PurchaseCompany";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PurchaseCompany" >
+        <div class="lr-form-item-title">机构名称<font face="宋体">*</font></div>
+        <input id="F_PurchaseCompanyName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_PartyMember">
+        <div class="lr-form-item-title">机构类型</div>
+        <div id="F_CompanyType"></div>
+    </div>
+    <div class="col-xs-4 lr-form-item"  data-table="DC_OA_PurchaseCompany" >
+        <div class="lr-form-item-title">联系人</div>
+        <input id="F_PurchaseContactUser" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-4 lr-form-item"  data-table="DC_OA_PurchaseCompany" >
+        <div class="lr-form-item-title">联系电话</div>
+        <input id="F_PurchaseContactPhone" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PurchaseCompany" >
+        <div class="lr-form-item-title">详细地址</div>
+        <textarea id="F_Address" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PurchaseCompany/Form.js")

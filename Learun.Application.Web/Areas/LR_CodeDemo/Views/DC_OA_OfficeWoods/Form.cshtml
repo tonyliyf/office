@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "办公物品管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span>办公物品</span>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">名称<font face="宋体">*</font></div>
+        <input id="DC_OA_WoodsName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">物品编码</div>
+        <input id="DC_OA_WoodsNO" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">物品类型</div>
+        <div id="DC_OA_WoodsType"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">单价</div>
+        <input id="DC_Price" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">单位</div>
+        <input id="DC_Unit" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:150px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OfficeWoods" >
+        <div class="lr-form-item-title">当前信息</div>
+        <input id="F_CreateUserId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OfficeWoods/Form.js")

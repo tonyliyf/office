@@ -1,0 +1,85 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<table class="mytable" style="margin-top: 102px;">
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        @Html.Raw(ViewBag.content)
+    </tbody>
+</table>
+<img style="position: fixed;width: 120px;right: 2%;top: 0px;" src="@ViewBag.url" alt="Alternate Text" />
+<style>
+    table.mytable, table.mytable tr th, table.mytable tr td {
+        border: 1px solid #000;
+        line-height: 35px;
+    }
+
+        table.mytable > tbody > tr:nth-child(1) > td {
+            width: 100px;
+            border: none;
+        }
+
+        table.mytable > tbody > tr:nth-child(1) {
+            border: none;
+        }
+
+    table.mytable {
+        border-top: none;
+        max-width: 290mm;
+        max-height: 290mm;
+    }
+
+    table {
+        width: 100%;
+        min-height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-collapse: collapse;
+        white-space:pre;
+    }
+
+        table.mytable table {
+            border: none
+        }
+
+            table.mytable table > tbody > tr:nth-child(1) > td {
+                border-top: none
+            }
+
+            table.mytable table > tbody > tr:nth-last-child(1) > td {
+                border-bottom: none
+            }
+
+            table.mytable table > tbody > tr > td:nth-child(1) {
+                border-left: none
+            }
+
+            table.mytable table > tbody > tr > td:nth-last-child(1) {
+                border-right: none
+            }
+
+    body {
+        padding: 20px;
+        overflow: auto;     
+    }
+</style>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/WfPrint/Index.js")

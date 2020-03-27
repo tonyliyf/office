@@ -1,0 +1,227 @@
+﻿<!--右侧字母目录-->
+<style type="text/css">
+	.xxct{
+		font-size: 14px;
+	}
+	.tit{
+		font-size: 14px;
+		font-weight: bold;
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000000;
+	}
+	.tcct{
+		position: fixed;
+		top: 0px;
+		left: 0%;
+		background: #ffffff;
+		width: 100%;
+		z-index: 10;
+		font-size: 14px;
+		padding: 10px;
+		overflow: auto;
+		bottom: 0px;
+	}
+	.tcbj{
+		/*position: fixed;*/
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-index: 100;
+		display: none;
+		/*height: 1000px;*/
+		background: rgba(0,0,0,0.5);
+	}
+	.nr_list{
+		overflow: hidden;
+		/*line-height: 24px;
+		margin: 9px auto;*/
+		line-height: 23px;
+		margin: 7px auto;
+	}
+	.nr_left{
+		float: left;
+		width: 46%;
+		color: #626262;
+		font-size: 13px;
+	}
+	.nr_rig{
+		float: right;
+		width: 54%;
+		font-size: 13px;
+	}
+	.tcct_top{
+		/*overflow: hidden;*/
+		border-bottom: 1px solid #adadad;
+		position: fixed;
+		left: 5px;
+		right: 5px;
+		background:
+		white;
+		padding-top: 10px;
+		top: 44px;
+		z-index: 10000;
+		display: none;
+	}
+	.tct_rig{
+		float: right;
+	}
+	.tct_rig img{
+		width: 25px;
+	}
+	.tct_left{
+		float: left;
+		font-size: 15px;
+		color: #0c86d8;
+	}
+	body{
+		height: 100%;
+		overflow: hidden;
+	}
+	*{
+		touch-action: auto !important;
+	}
+	.xl_ul {
+	    padding: 5px;
+	    color: #333;
+	    margin: 0px;
+	}
+	.xlcd{
+		background: #fff;
+		border: 1px solid #949494;
+		position: absolute;
+		padding-top: 28px;
+		top: 6px;
+		display: none;
+	}
+	.xl_li {
+	    list-style: none;
+	    line-height: 28px;
+	    font-size: 14px;
+		width: 95px;
+	}
+	.amap-logo{
+      display: none;
+    }
+    .amap-copyright{
+      display: none;
+    }
+	.nr{
+		display: none;
+		overflow: auto;
+		overflow-y: scroll;
+		padding-top: 35px;
+		/*min-height: 140px;
+		max-height: 350px;*/
+	}
+	strong{
+		font-size: 15px;
+	}
+	.cuzy .nr_left{
+		width: 58%;
+	}
+	.cuzy .nr_rig{
+		width: 42%;
+	}
+	.f-scroll{
+		/*overflow: hidden;*/
+		/*height: 100%;*/
+	}
+	.f-page{
+		/*overflow: hidden;*/
+	}
+.amap-logo{
+      opacity:0;
+    }
+    .amap-copyright{
+      opacity:0;
+     }
+     
+     .bus_list .nr_left{
+     	width: 42%;
+     }
+	.bus_list .nr_rig{
+     	width: 58%;
+     }
+    .bus_list {
+	    border-bottom: 1px solid #b7b7b7;
+	    margin-bottom: 15px;
+	    padding-bottom: 5px;
+    }
+</style>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<div class="tcbj">
+	<div class="tcct" style="">
+		<!--<div class="tcct_top">
+			<div class="tct_left">
+				<span class="tcsp" style="position: absolute;z-index: 100;margin-left: 5px;">项目信息</span>
+				<div class="xlcd">
+					<ul class="xl_ul">
+						<li class="xl_li" type="0">项目信息</li>
+						<li class="xl_li" type="1">合同管理</li>
+						<li class="xl_li" type="2">前期管理</li>
+						<li class="xl_li" type="3">项目施工信息</li>
+						<li class="xl_li" type="4">考勤统计</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tct_rig">
+				<img src="images/guanb.png"/>
+			</div>
+		</div>-->
+		<div class="nr" style="display: block;">
+		</div>
+		<div class="nr">
+			
+		</div>
+		<div class="nr">
+			
+		</div>
+		<div class="nr">
+			
+		</div>
+		<div class="nr">
+			
+		</div>
+		
+	</div>
+</div>
+<div class="mac" style="width: 100%;height: 100%;background: #fff;">
+	<div id="mapDiv" style="width:100%; height:100%;display: none;">
+		
+	</div>
+	<div class="xm_list">
+		<!--<div class="xm_box">
+			<div class="xm_box_left">
+				<img src="images/tix.png"/>
+			</div>
+			<div class="xm_box_right">
+				<div class="xbox_top">
+					<div class="xbox_tit">
+						枝江民主路改造
+					</div>
+					<div class="xobx_time">
+						2019-07-25
+					</div>
+				</div>
+				<div class="xbox_bottom">
+					枝江金润源建设投资控股集团有限公司
+				</div>
+			</div>
+		</div>-->
+		
+		
+	</div>
+</div>
+<!--<div class="lr-contact-page">
+    <div class="searchBox">
+        <i class="iconfont icon-search"></i>
+        <div class="search" >搜索联系人</div>
+    </div>
+
+    <div class="lr-list"  id="lr_contact_companylist" >
+       
+    </div>
+</div>-->

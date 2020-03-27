@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceUserWork";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout lr-layout-left-center" id="lr_layout">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title lrlg ">考核列表</div>
+            <div id="dataTree" class="lr-layout-body"></div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap  ">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">考核信息</span>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="btn_excute" class="btn btn-default"><i class="fa fa-gavel"></i>&nbsp;执行</a>
+                        <a id="btn_begin" class="btn btn-default"><i class="fa fa-upload"></i>&nbsp;填写工作计划</a>
+                        <a id="btn_info" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看信息</a>
+                        <a id="btn_info1" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看流程</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceUserWork/Index.js")

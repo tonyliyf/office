@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">姓名</div>
+        <div id="F_CheckUserid" disabled="disabled"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">分管部室/子公司</div>
+        <div id="F_CheckUserDeptId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">加分</div>
+        <input id="F_AddNumber" type="text" class="form-control"  readonly="readonly"/>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">加分说明</div>
+        <textarea id="F_AddNumberComments" readonly="readonly" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">分管单位扣分</div>
+        <input id="F_CheckNumber" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">管理扣分</div>
+        <input id="F_manageComments" type="text" class="form-control" readonly="readonly" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">绩效办扣分</div>
+        <input id="F_JixaoNumber" type="text" class="form-control" readonly="readonly" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">总经理扣分</div>
+        <input id="F_GeneralManagerScore" type="text" class="form-control" readonly="readonly" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">董事长扣分</div>
+        <input id="F_ChairmanScore" type="text" class="form-control" readonly="readonly" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">扣分合计</div>
+        <input id="F_KofenNum" type="text" class="form-control" readonly="readonly" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">扣分说明</div>
+        <textarea id="F_RecNumberComments" class="form-control" style="height:100px;" readonly="readonly"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceCheck">
+        <div class="lr-form-item-title">合计得分</div>
+        <input id="F_JiafenNum" type="text" class="form-control" readonly="readonly" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheck/baobiao4gForm.js")

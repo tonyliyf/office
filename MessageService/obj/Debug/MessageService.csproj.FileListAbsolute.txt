@@ -1,0 +1,445 @@
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz_jobs.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\ioc.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Util.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Newtonsoft.Json.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\MySql.Data.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Aspose.Words.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OOXML.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\LumiSoft.Net.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Yahoo.Yui.Compressor.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Aspose.Cells.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.Synchronized.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OpenXml4Net.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Compression.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\EcmaScript.NET.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.mshtml.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\netstandard.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Net.Sockets.dll
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Util.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Util.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Newtonsoft.Json.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll.config
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\LumiSoft.Net.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.xml
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csprojAssemblyReference.cache
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe.config
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CoreCompileInputs.cache
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CopyComplete
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe
+D:\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.pdb
+D:\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz_jobs.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\ioc.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Newtonsoft.Json.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\MySql.Data.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Aspose.Words.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.AspNet.SignalR.Client.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OOXML.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\LumiSoft.Net.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Yahoo.Yui.Compressor.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Aspose.Cells.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.Synchronized.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OpenXmlFormats.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.OpenXml4Net.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Compression.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\EcmaScript.NET.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.mshtml.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\netstandard.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Net.Sockets.dll
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Util.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Util.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.AspNet.SignalR.Client.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\NPOI.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\LumiSoft.Net.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.pdb
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csprojAssemblyReference.cache
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe.config
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CoreCompileInputs.cache
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CopyComplete
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe
+D:\JYYOAProtal\Code\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz_jobs.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\ioc.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\quartz.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.exe
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\MessageService.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Newtonsoft.Json.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\MySql.Data.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.Synchronized.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Pechkin.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Compression.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.mshtml.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\netstandard.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Net.Sockets.dll
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Mapping.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.TwoDevelopment.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Common.Logging.Core.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Dapper.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\EntityFramework.SqlServer.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Base.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.IM.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Message.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WorkFlow.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.MySqlEx.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Oracle.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.Repository.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.SqlServer.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Ioc.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Workflow.Engine.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\log4net.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Quartz.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Topshelf.Log4Net.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.AppMagager.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.CRM.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Excel.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Form.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.OA.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Organization.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.Report.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Base.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Factory.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.DataBase.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Application.WeChat.dll.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.XLS.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Doc.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Learun.Cache.Redis.pdb
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.Pdf.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Spire.License.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\StackExchange.Redis.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Memory.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Channels.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.IO.Pipelines.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\Pipelines.Sockets.Unofficial.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Buffers.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Numerics.Vectors.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csprojAssemblyReference.cache
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe.config
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CoreCompileInputs.cache
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.csproj.CopyComplete
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.exe
+D:\LeaRun.Framework V7.1\LeaRun.Framework V7.1\MessageService\obj\Debug\MessageService.pdb

@@ -1,0 +1,8 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_LandBaseInfo";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=f73d50800f65d1aa1533a45ab869a6ac&plugin=AMap.MouseTool"></script>
+<div id='container' style="height:100%"></div>
+<button id="btn_clear" class="btn btn-primary" style="position:absolute;top:5px;right:5px;display:none">清除痕迹</button>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_LandHandUpInfo/MapForm.js")

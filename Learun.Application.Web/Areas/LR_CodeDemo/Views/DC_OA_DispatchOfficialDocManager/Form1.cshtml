@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "发文管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_DispatchOfficialDoc">
+        <div class="lr-form-item-title">外部单位</div>
+        <textarea id="txt_send" class="form-control" style="height:150px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_DispatchOfficialDoc">
+        <div class="lr-form-item-title">内部单位</div>
+        <ul id="organizationTree"></ul>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DocUpload.js", "/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/Form1.js")

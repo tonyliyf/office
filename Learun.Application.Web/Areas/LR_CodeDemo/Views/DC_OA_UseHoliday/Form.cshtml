@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "DC_OA_UseHoliday";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_UseHoliday">
+        <div class="lr-form-item-title">姓名</div>
+        <input readonly id="F_RealName" type="text" class="form-control" />
+    </div>    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">公司</div>
+        <input readonly id="company" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">部门</div>
+        <input readonly id="department" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_UseHoliday">
+        <div class="lr-form-item-title">入职时间</div>
+        <input readonly id="F_StartWorkDate" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_UseHoliday">
+        <div class="lr-form-item-title">参加工作时间</div>
+        <input readonly id="F_JoinDate" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_UseHoliday">
+        <div class="lr-form-item-title">已休年假天数</div>
+        <input id="F_Password" type="text" class="form-control" isvalid="yes" checkexpession="Num"/>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_UseHoliday/Form.js")

@@ -1,0 +1,66 @@
+﻿@{
+    ViewBag.Title = "考勤参数设置";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span>考勤参数设置</span>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">考勤中心地址<font face="宋体">*</font></div>
+        <input id="DC_OA_AttenceCenterPlace" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">经度</div>
+        <input id="DC_OA_AttenceLongitude" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">纬度</div>
+        <input id="DC_OA_AttenceLatitude" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">考勤类型</div>
+        <div id="DC_OAAttenceType"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">有效范围(米）<font face="宋体">*</font></div>
+        <input id="DC_OA_AttenceDistance" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">早上签到<font face="宋体">*</font></div>
+        <input id="DC_OA_AttenceTimeUp1" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeUp1').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">早上签退<font face="宋体">*</font></div>
+        <input id="DC_OA_AttenceTimeOut1" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeOut1').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">下午签到<font face="宋体">*</font></div>
+        <input id="DC_OA_AttencetTimeUp2" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttencetTimeUp2').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">下午签退<font face="宋体">*</font></div>
+        <input id="DC_OA_AttenceTimeOut2" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeOut2').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">中班签到</div>
+        <input id="DC_OA_AttenceTimeUp3" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeUp3').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">中班签退</div>
+        <input id="DC_OA_AttenceTimeOut3" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeOut3').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">晚班签到</div>
+        <input id="DC_OA_AttenceTimeUp4" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeUp4').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">晚班签退</div>
+        <input id="DC_OA_AttenceTimeOut4" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm:ss',onpicked: function () { $('#DC_OA_AttenceTimeOut4').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_AttenceSetting" >
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_AttenceSetting/Form.js")

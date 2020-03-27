@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_LandBaseInfo";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout "  >
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="multiple_condition_query">
+                            <div class="lr-query-formcontent">
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">所有权人</div>
+                                    <div id="F_Assignee"></div>
+                                </div>
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">土地名称</div>
+                                    <input id="F_LandName" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">建筑名称</div>
+                                    <input id="F_ConstructionName" type="text" class="form-control" />
+                                </div>
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">房屋名称</div>
+                                    <input id="F_HouseName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;导出</a>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"  style="height:100%"></div>
+            
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_LandBaseInfo/IndexCom.js")

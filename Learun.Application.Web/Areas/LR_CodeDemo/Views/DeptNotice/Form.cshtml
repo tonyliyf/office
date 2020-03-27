@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "DeptNotice";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;">
+        <span>会议通知</span>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">标题<font face="宋体">*</font></div>
+        <input id="F_Title" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">紧急程度</div>
+        <div id="F_Degree"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">申请人</div>
+        <input id="F_Applicant" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">部门</div>
+        <input id="F_Dept" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">开始时间<font face="宋体">*</font></div>
+        <input id="F_StartDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_StartDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">结束时间<font face="宋体">*</font></div>
+        <input id="F_EndDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_EndDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">通知对象<font face="宋体">*</font></div>
+        <div id="F_NoticeStaff" checkexpession="NotNull" isvalid="yes"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">会议地址<font face="宋体">*</font></div>
+        <input id="F_Address" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+      
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DeptNotice">
+        <div class="lr-form-item-title">通知内容</div>
+        <textarea id="F_NoticeContent" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DeptNotice/Form.js")

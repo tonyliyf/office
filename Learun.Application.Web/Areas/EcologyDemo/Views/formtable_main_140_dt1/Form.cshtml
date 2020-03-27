@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "formtable_main_140_dt1";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">广告名称</div>
+        <input id="ggmc" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">产权人</div>
+        <input id="cqr" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">招租日期</div>
+        <input id="zzksrq" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#zzksrq').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">招租年限</div>
+        <input id="zznx" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">招租底价<font face="宋体">*</font></div>
+        <input id="zzdj" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">招租价格</div>
+        <input id="zzjg" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140_dt1" >
+        <div class="lr-form-item-title">招租数量</div>
+        <input id="zzsl" type="text" class="form-control"  />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/EcologyDemo/Views/formtable_main_140_dt1/Form.js")

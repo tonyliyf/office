@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PurchaseDeposit";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<div class="lr-layout ui-report ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_open" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;预览文件</a>
+                   
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid">
+                <div class="grid-title">采购退还保证金统计表</div>
+                <div class="lr-layout-body" id="gridtable"></div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PurchaseDeposit/Index.js")

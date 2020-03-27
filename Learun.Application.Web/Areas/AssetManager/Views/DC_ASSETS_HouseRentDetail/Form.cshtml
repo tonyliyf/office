@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseRentDetail";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">资产编号</div>
+        <input id="num" type="text" class="form-control" readonly />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋名称</div>
+        <input id="name" type="text" class="form-control" readonly />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">原管单位</div>
+        <input id="unit" type="text" class="form-control" readonly />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋面积</div>
+        <input id="area" type="text" class="form-control" readonly />
+    </div>
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">地址</div>
+        <input id="address" type="text" class="form-control" readonly style="float:left;width:75%" />
+        <button id="seePicture" class="btn btn-primary btn-sm" style="float:left;margin-center:5px">查看图片</button>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">评估价</div>
+        <input id="F_ValuationPrice" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">招租底价<font face="宋体">*</font></div>
+        <input id="F_RentReservePrice" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">竞租保证金</div>
+        <input id="F_RentDeposit" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">原租赁价</div>
+        <input id="oldPrice" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">出租年限<font face="宋体">*</font></div>
+        <input id="F_RentAge" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">出租面积<font face="宋体">*</font></div>
+        <input id="F_RentArea" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁状态</div>
+        <div id="F_LeaseState"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁起始日</div>
+        <input id="F_RentStartTime" type="text" class="form-control lr-input-wdatepicker"
+               onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_RentStartTime').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁结束日</div>
+        <input id="F_RentEndTime" readonly type="text" class="form-control lr-input-wdatepicker" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租金提醒</div>
+        <input id="F_RentReminder" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租金提醒日期</div>
+        <input id="F_RentReminderDate" type="text" readonly class="form-control lr-input-wdatepicker" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租金到期</div>
+        <input id="F_ExpireReminder" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租金到期时间</div>
+        <input id="F_ExpireReminderDate" type="text" readonly class="form-control lr-input-wdatepicker" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁人</div>
+        <input id="F_Renter" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁人单位</div>
+        <input id="F_RenterCompany" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁人身份证</div>
+        <input id="F_RenterIDNo" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">租赁人电话</div>
+        <input id="F_RenterPhone" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentDetail">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseRentDetail/Form.js")

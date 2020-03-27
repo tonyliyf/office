@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PRREvaluationUserRelation";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PRREvaluationUserRelation" >
+        <div class="lr-form-item-title">考核人<font face="宋体">*</font></div>
+        <div id="F_EvaluationUserId" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PRREvaluationUserRelation" >
+        <div class="lr-form-item-title">考核权重<font face="宋体">*</font></div>
+        <input id="F_EvaluationWeight" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PRREvaluationUserRelation" >
+        <div class="lr-form-item-title">排序<font face="宋体">*</font></div>
+        <input id="F_EvaluationSort" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PRREvaluationUserRelation/Form.js")

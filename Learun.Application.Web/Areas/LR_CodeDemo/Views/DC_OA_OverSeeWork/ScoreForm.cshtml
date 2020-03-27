@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWork";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWork">
+        <div class="lr-form-item-title">分数<font face="宋体">*</font></div>
+        <input id="score" type="text"  class="form-control" isvalid="yes" checkexpession="Num"/>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWork">
+        <div class="lr-form-item-title">评价</div>
+        <textarea id="advice" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWork/ScoreForm.js")

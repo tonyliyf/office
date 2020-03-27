@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "附件查看";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+   #dowebok {
+	    width: 1200px;
+	    margin: 0 auto;
+	    font-size: 0;
+	}
+	#dowebok li{
+	    display: inline-block;
+	    width: 32%;
+	    margin-left: 1%;
+	    padding-top: 1%;
+	}
+	#dowebok li img {
+	    width: 100%;
+	    height: 420px;
+	}
+	body{
+		overflow-y: auto;
+	}
+</style>
+<ul id="dowebok">
+     
+</ul>
+
+
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/viewer.min.js")
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/ImageViewer.js")
+

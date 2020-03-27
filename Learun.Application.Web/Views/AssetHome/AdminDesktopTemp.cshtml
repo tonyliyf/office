@@ -1,0 +1,740 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>综合信息|快速开发平台|开发框架|@ViewBag.Title</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/AssetHome/AdminDesktopTemp/index.css")
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme() lr-menu-closed" style="padding: 1px;">
+	<div class="yc_tcc" style="right: -175px;height: 42px;">
+		<div class="yc_ove">
+			<div class="yc_an">
+				<i class="fa fa-spin fa-gear"></i>
+			</div>
+			<div class="yc_title">
+				业务系统 
+			</div>
+		</div>
+		<div class="yc_list">
+			<ul class="yc_ul">
+				<li class="yc_li" onclick="parent.location.href='../../portal/index'">
+					<i class="fa fa-pie-chart"></i>
+					<span>OA管理系统</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+				<!--<li class="yc_li" onclick="parent.location.href='../../assethome/index'">
+					<i class="fa fa-bar-chart-o"></i>
+					<span>工程项目监管</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>-->
+				<li class="yc_li" onclick="parent.location.href='../../projecthome/index'">
+					<i class="fa fa-globe"></i>
+					<span>工程项目监管系统</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+				<li class="yc_li" onclick="parent.location.href='../../leaderhome/index'">
+					<i class="fa fa-windows"></i>
+					<span>领导驾驶舱</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div class="lr-desktop-panel">
+        <div class="col-xs-12" style="display: none;">
+            <div class="portal-panel-title" style="line-height: 60px;">
+                <i class="fa fa-balance-scale"></i>&nbsp;&nbsp;业务系统
+                <div class="box_right">
+                	<div class="box_list" onclick="parent.location.href='../../portal/index'">
+                		<div class="box_ls_left">
+                			<i class="fa fa-pie-chart"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>OA管理系统</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #e45b5a;-->" onclick="parent.location.href='../../projecthome/index'">
+                		<div class="box_ls_left">
+                			<i class="fa fa-bar-chart-o"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>工程项目监管</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #44b6ae;-->">
+                		<div class="box_ls_left">
+                			<i class="fa fa-windows"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>领导驾驶舱</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #8775a7;-->">
+                		<div class="box_ls_left">
+                			<i class="fa fa-windows"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>更多应用</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <div class="portal-panel-content" style="display: none;">
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #578ebe;">
+                        <div class="visual">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                OA管理系统
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #4884b8;" href="javascript:;" onclick="parent.location.href='../../portal/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #e35b5a;">
+                        <div class="visual">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                工程项目监管
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #e04a49;" href="javascript:;" onclick="parent.location.href='../../projecthome/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #44b6ae;">
+                        <div class="visual">
+                            <i class="fa 	s"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                领导驾驶舱
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #3ea7a0;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #8775a7;">
+                        <div class="visual">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                更多应用
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #7c699f;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="overflow:auto;position:absolute;top:0px;bottom:0px;left: 0px;right: 0px;" class="col-xs-12">
+            <div id="mapDiv" style="width:100%; height:100%"></div>
+            <div class="fssj">
+				<ul class="fs_ul" style="float:left">
+                    <li class="fs_li lisd fs_li_style" type="1">土地按单位分布</li>
+					<li class="fs_li">|</li>
+                    <li class="fs_li lisd" type="2">土地按区域分布</li>
+					<li class="fs_li">|</li>
+                    <li class="fs_li lisd" type="3">广告牌分布</li>
+				</ul>
+                <div style="overflow:hidden;background: #fff;height: 23px;line-height: 23px;font-size: 14px;color: #333;">
+                    <div style="float:left;margin-right:15px" class="titsp">
+                        <div style="width:10px;height:10px;float:left;background:#0a9f34;margin: 6px 8px;"></div>
+                        <span>金源</span>
+                    </div>
+                    <div style="float:left;margin-right:15px" class="titsp">
+                        <div style="width:10px;height:10px;float:left;background:#0071ce;margin: 6px 8px;"></div>
+                        <span>金润源</span>
+                    </div>
+                    <div style="float:left;margin-right:15px" class="titsp">
+                        <div style="width:10px;height:10px;float:left;background:#b33a00;margin: 6px 8px;"></div>
+                        <span>国资中心</span>
+                    </div>
+                </div>
+			</div>
+			<div class="xsp_dl">
+				<div class="xs_sou">
+					<input type="text" placeholder="输入你要搜索的内容" class="sx_inp" />
+					<img src="~/Content/images/sousuo.png"/>
+				</div>
+				<div class="xsp_nr">
+					
+				</div>
+				<div class="xsp_fy">
+					<img class="shaye" src="~/Content/images/shangye.png"/>
+					<div class="sxp_ym">
+						1
+					</div>
+					<img class="xiaye" src="~/Content/images/xiaye.png"/>
+				</div>
+				<div class="xsp_ts">
+					共查询到10条内容
+				</div>
+			</div>
+			<div class="xsp" style="display: none;">
+				<div class="arr_jt">
+					<img style="width: 20px;" src="~/Content/images/left_arr.png"/>
+				</div>
+				<div class="xs_title">
+					信息列表
+				</div>
+				<div class="xs_list">
+					
+				</div>
+				<div class="esd" style="">
+					<embed class="" style="width: 100%;height: 105px;" align="center" src="~/Content/images/中原地产.swf"  type="application/x-shockwave-flash" wmode="transparent" quality="high" ;> </embed>
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="tab_list">
+    	<div class="tab_home">
+    		<div class="tab_title">
+    			<span>详细信息</span>
+    			<img src="~/Content/images/gb.png"/>
+    		</div>
+    		<div class="tab_qh">
+    			<div class="tab_left tab_style" type="1">
+    				建筑信息
+    			</div>
+    			<div class="tab_left" type="2">
+    				房屋信息
+    			</div>
+    		</div>
+    		<div class="tab_box">
+    			<div class="tab_one">
+    				
+    			</div>
+    			<div class="tab_two">
+    				<div class="tab_two_left">
+    					
+    				</div>
+    				<div class="tab_two_right">
+    					
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    <div class="cen_aler">
+    	<div class="cen_tc">
+    		<img src="~/Content/images/shangla.png"/>
+    	</div>
+    	<div class="ce_tcc" style="height: 265px;">
+	    	<div class="cea_top" style="display: block;">
+	    		<div class="cetop_box cet_box_style" type="1">
+	    			房屋租金
+	    		</div>
+	    		<div class="cetop_box" type="2">
+	    			广告租金
+	    		</div>
+	    		<div class="cetop_box" type="3">
+	    			房屋合同
+	    		</div>
+	    		<div class="cetop_box" type="4">
+	    			广告合同
+	    		</div>
+	    	</div>
+	    	<div class="cea_bot">
+	    		<ul class="myb_ul">
+	    			<li class="myb_li">
+	    				<div class="myb_left">
+	    					<span class="my_nam">吴晓燕</span><span>(党政办鲁洲宇5月9日)</span>
+	    				</div>
+	    				<div class="myb_right">2019-05-17</div>
+	    			</li>
+	    		</ul>
+	    		<ul class="myb_uld">
+	    			<li class="myb_li">
+	    				<div class="myb_left">
+	    					<span class="my_nam">吴晓燕</span><span>(党政办鲁洲宇5月9日)</span>
+	    				</div>
+	    				<div class="myb_right">2019-05-17</div>
+	    			</li>
+	    		</ul>
+	    		<ul class="myb_ulc">
+	    			<li class="myb_li">
+	    				<div class="myb_left">
+	    					<span class="my_nam">吴晓燕</span><span>(党政办鲁洲宇5月9日)</span>
+	    				</div>
+	    				<div class="myb_right">2019-05-17</div>
+	    			</li>
+	    		</ul>
+	    		<ul class="myb_ule">
+	    			<li class="myb_li">
+	    				<div class="myb_left">
+	    					<span class="my_nam">吴晓燕</span><span>(党政办鲁洲宇5月9日)</span>
+	    				</div>
+	    				<div class="myb_right">2019-05-17</div>
+	    			</li>
+	    		</ul>
+	    	</div>
+    	</div>
+    </div>
+    <input type="hidden" class="sud" value="" />
+	<div class="xt_alert">
+		<div class="xta_title">
+			<span>系统消息</span>
+			<img style="float: right;margin-top: 11px;margin-right: 10px;" src="~/Content/images/guab.png"/>
+		</div>
+		<div class="xta_home">
+			<div class="xta_left">
+				<div class="xta_left_top">
+					<div class="xta_sou">
+						<img src="~/Content/images/sousuo_hei.png"/>
+						<input type="text" class="xta_inp" />
+					</div>
+				</div>
+				<div class="xta_left_bot">
+					<div class="xta_bus">
+						<div class="xta_list">
+							<img src="~/Content/images/quanbu.png"/>
+							<span>全部</span>
+							<div class="bus_numb">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="xta_right">
+				<div class="xta_right_top">
+					<div class="xt_left">
+						全部（99）
+					</div>
+					<div class="xt_right">
+						全部设置已读
+					</div>
+					<div class="type_rig">
+						<div class="tyr_list tyr_list_style">
+							未读
+						</div>
+						<div class="tyr_list">
+							已读
+						</div>
+					</div>
+				</div>
+				<div class="xta_box">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<input type="hidden" class="fidc" />
+	<input type="hidden" class="fwxx"/>
+	<input type="hidden" class="code" value="1" />
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/echarts/echarts.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/jquery.easyui.min.js"></script>
+    <link href="~/Content/jQuery-EasyUi/themes/bootstrap/easyui.css" rel="stylesheet" />
+    @Html.AppendJsFile("/Views/AssetHome/AdminDesktopTemp/index.js")
+    <script type="text/javascript">
+//  	$(".esd").click(function(){
+//			var src=$(this).find("embed").attr("src");
+//			alert(src)
+//			var html="<embed class='ebcd' align='center' src='"+src+"'  type='application/x-shockwave-flash' wmode='transparent' quality='high' ;> </embed>"
+//			$(".xsp").append(html)
+//		})s
+		
+		$(".cetop_box").click(function(){
+			$(".cetop_box").removeClass("cet_box_style")
+			$(this).addClass("cet_box_style")
+			var is=$(this).attr("type");
+			if(is==1){
+				$(".myb_ul").show()
+				$(".myb_uld").hide()
+				$(".myb_ulc").hide()
+				$(".myb_ule").hide()
+			} else if(is==2) {
+				$(".myb_ul").hide()
+				$(".myb_uld").show()
+				$(".myb_ulc").hide()
+				$(".myb_ule").hide()
+			} else if(is==3){
+				$(".myb_ul").hide()
+				$(".myb_uld").hide()
+				$(".myb_ulc").show()
+				$(".myb_ule").hide()
+			} else if(is==4){
+				$(".myb_ul").hide()
+				$(".myb_uld").hide()
+				$(".myb_ulc").hide()
+				$(".myb_ule").show()
+			}
+//			txxx()
+		})
+		
+		txxx()  //房屋租金
+		function txxx(){
+			var type=$(".cet_box_style").attr("type")
+			top.learun.httpAsync('GET', top.$.rootUrl + '/AssetHome/GetTaskData?type=1', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		        	$(".myb_ul").empty();
+		            if (data.rows.length > 0) {
+		                $.each(data.rows, function (index, item) {
+	                		var html="<li class='myb_li' id="+item.Id+"><div class=''><span>"+item.Content+"</span></li>"
+	                   		$(".myb_ul").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		ggzj()  //广告租金
+		function ggzj(){
+			var type=$(".cet_box_style").attr("type")
+			top.learun.httpAsync('GET', top.$.rootUrl + '/AssetHome/GetTaskData?type=2', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		        	$(".myb_ule").empty();
+		            if (data.rows.length > 0) {
+		                $.each(data.rows, function (index, item) {
+	                		var html="<li class='myb_li' id="+item.Id+"><div class=''><span>"+item.Content+"</span></li>"
+	                   		$(".myb_ule").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		fwht()  //房屋合同
+		function fwht(){
+			var type=$(".cet_box_style").attr("type")
+			top.learun.httpAsync('GET', top.$.rootUrl + '/AssetHome/GetTaskHouse?type=3', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		        	$(".myb_ulc").empty();
+		            if (data.rows.length > 0) {
+		                $.each(data.rows, function (index, item) {
+	                		var html="<li class='myb_li' id="+item.Id+"><div class=''><span>"+item.Content+"</span></li>"
+	                   		$(".myb_ulc").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		zjdq() //广告合同
+		function zjdq(){
+			var type=$(".cet_box_style").attr("type")
+			top.learun.httpAsync('GET', top.$.rootUrl + ' /AssetHome/GetTaskboard?type=4', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		        	$(".myb_uld").empty();
+		            if (data.rows.length > 0) {
+		                $.each(data.rows, function (index, item) {
+	                		var html="<li class='myb_li' id="+item.Id+"><div class=''><span>"+item.Content+"</span></li>"
+	                   		$(".myb_uld").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		
+		$("body").delegate(".myb_li", "click", function () {
+            var icd=$(".cet_box_style").attr("type")
+            var keyValue = $(this).attr('id');
+            if(icd==1){
+	            top.learun.layerForm({
+			        id: 'Form',
+			        title: '房屋租金',
+			        url: top.$.rootUrl + '/AssetManager/DC_ASSETS_HouseRentMain/FormRent?keyValue=' + keyValue,
+			        width: 800,
+			        height: 650,
+			         callBack: function (id) {
+                         return top[id].acceptClick(txxx);
+			        }
+			    });
+            } else if(icd==2) {
+            	top.learun.layerForm({
+			        id: 'Form',
+			        title: '广告租金',
+			        url: top.$.rootUrl + '/AssetManager/DC_ASSETS_BusStopBillboardsRentDetail/Form?keyValue=' + keyValue,
+			        width: 600,
+			        height: 630,
+			         callBack: function (id) {
+                         return top[id].acceptClick(txxx);
+			        }
+			    });
+            } else if(icd==3){
+            	top.learun.layerForm({
+			        id: 'Form',
+			        title: '房屋合同',
+			        url: top.$.rootUrl + '/AssetManager/DC_ASSETS_HouseRentMain/FormInfo?keyValue=' + keyValue,
+			        width: 600,
+			        height: 630,
+			         callBack: function (id) {
+                         return top[id].acceptClick(txxx);
+			        }
+			    });
+            } else if(icd==4){
+            	top.learun.layerForm({
+			        id: 'Form',
+			        title: '广告合同',
+			        url: top.$.rootUrl + '/AssetManager/DC_ASSETS_BusStopBillboardsRentDetail/Form?keyValue=' + keyValue,
+			        width: 600,
+			        height: 630,
+			         callBack: function (id) {
+                         return top[id].acceptClick(txxx);
+			        }
+			    });
+            }
+            
+        });
+		
+		
+		
+		$(".cen_tc").click(function(){
+			var wid=$(".ce_tcc").css("height");
+			if(wid=="0px"){
+				$(".ce_tcc").animate({
+				height: '265px'
+				}, 300);
+				$(".cen_tc img").attr("src","/Content/images/shangla.png")
+			} else{
+				$(".ce_tcc").animate({
+				height: '0px'
+				}, 300);
+				$(".cen_tc img").attr("src","/Content/images/xiala.png")
+			}
+		});
+		
+    	$(".yc_an").click(function(){
+			var wid=$(".yc_tcc").css("right");
+			if(wid=="10px"){
+				$(".yc_tcc").animate({
+				right: '-175px'
+				}, 300);
+			} else{
+				$(".yc_tcc").animate({
+				right: '10px'
+				}, 300);
+			}
+		});
+		
+		
+		window.parent.$("body").delegate(".xxtx", "click", function (event) {
+		   $(".xt_alert").show()
+		})
+		$(".xta_title img").click(function(){
+    		$(".xt_alert").hide()
+    	})
+		
+		$(".arr_jt").click(function () {
+            var wid = $(".xsp").width();
+            if (wid == 16.4) {
+                $(".xsp").animate({
+                    width: '260px'
+                }, 100);
+                $(this).removeClass("ind_la").addClass("ind_shang");
+            } else {
+                $(".xsp").animate({
+                    width: '38px'
+                }, 100);
+                $(this).removeClass("ind_shang").addClass("ind_la");
+            }
+        });
+        xtxiaoxi()  //系统消息
+		function xtxiaoxi(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetOAMessage', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		            if (data.rows.length > 0) {
+		            	var bcd=0
+		                $(".xta_left_bot").empty();
+		                var html="<div class='xta_bus' id=''><div class='xta_list'><img src='/Content/images/quanbu.png'/><span>全部</span><div class='bus_numb'>"+data.total+"</div></div></div>"
+                    	$(".xta_left_bot").append(html);
+		                $.each(data.rows, function (index, item) {
+		                	bcd++
+	                		var html="<div class='xta_bus' id='"+item.f_strategycode+"'><div class='xta_list'><img src='"+item.f_imageurl+"'/><span>"+item.f_strategyname+"</span><div class='bus_numb'>"+item.count+"</div></div></div>"
+	                   		$(".xta_left_bot").append(html);
+		                    if(item.count<0||item.count==null){
+		                    	$(".bus_numb").eq(bcd).hide()
+		                    }
+		                    
+		                })
+		                mlist()
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		$("body").delegate(".xta_bus", "click", function () {
+			var mid=$(this).attr("id")
+			var src=$(this).find("img").attr("src")
+	    	$(".xta_list").removeClass("xta_list_style")
+	    	$(this).find(".xta_list").addClass("xta_list_style")
+	    	mlist()
+        })
+		
+		$(".tyr_list").click(function(){
+			$(".tyr_list").removeClass("tyr_list_style")
+			$(this).addClass("tyr_list_style")
+			mlist()
+		})
+		
+		function mlist(){
+			var siud=$(".xta_list_style").parents(".xta_bus").attr("id")
+			var yd;
+			if($(".tyr_list_style").text().trim()=="已读"){
+				yd=1
+			} else {
+				yd="";
+			}
+			 var Pagination =
+		{
+		    rows: 5, page: 1, sidx: "F_CreateDate DESC", sord: "Asc", records: 0, total: 0
+		};
+			
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMessageList', {pagination:JSON.stringify(Pagination),code:siud,isRead:yd}, function (data) {
+				console.log(data)
+				$(".xta_box").empty();
+				if(siud==undefined){
+            		var quanb="全部("+data.total+")";
+            		$(".xt_left").text(quanb)
+                } else {
+                	var df=0;
+                	if(data.total!=null){
+                		df=data.total
+                	}
+                	var sty=$(".xta_list_style").find("span").text()
+                	var quanb=sty+"("+df+")";
+            		$(".xt_left").text(quanb)
+                }
+		        if (data) {
+		            if (data.rows.length > 0) {
+		                
+		                $.each(data.rows, function (index, item) {
+		                	var dd=item.F_StrategyName;
+		                	var dq;
+		                	var src="quanbu.png";
+		                	if(dd=="流程审核通知"){src="shenhe.png"} else if(dd=="督办工作下达通知"){src="duban.png"}else if(dd=="流程审核超时通知"){src="chaoshi.png"} else if(dd=="会议消息通知"){src="hytzhi.png"}
+		                	else if(dd=="督办消息提醒"){src="dbxxi.png"}else if(dd=="绩效考核"){src="jixiao.png"}else if(dd=="广告租金到期提醒"){src="ggyq.png"}
+		                	else if(dd=="督办逾期提醒"){src="dbyq.png"}else if(dd=="公文抄送"){src="gongwen.png"}else if(dd=="房屋租金到期提醒"){src="fwzj.png"}
+		                	if(yd==1){
+		                		dq="已读"
+		                	} else {dq="未读"}
+	                		var html="<div class='xta_lb' id='"+item.F_MessageId+"'><div class='lb_top'><img src='/Content/images/"+src+"'><span>"+item.F_StrategyName+"</span><div class='duqu'>"+dq+"</div></div>"+
+							"<div class='lb_box'><div class='lb_box_tit'>"+item.SendContent+"</div>"+
+							"<div class='lb_bo x_list'>"+item.FromUserName+"："+item.F_CreateDate+"</div><div class='lb_ck'>查看日程</div></div></div>"
+	                   		$(".xta_box").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		
+		$("body").delegate(".duqu", "click", function () {
+			var cid=$(this).parents(".xta_lb").attr("id")
+			qryd(cid)
+        })
+		
+		$(".xt_right").click(function(){ //全部已读
+			$(".xta_lb").each(function(){
+				var cid=$(this).attr("id")
+				qryd(cid)
+			})
+		})
+		
+		function qryd(cid){
+			if($(".tyr_list_style").text().trim()=="未读"){
+				top.learun.httpAsync('POST', top.$.rootUrl + '/Portal/EnterMessage', {messageid:cid}, function (data) {
+//					xtxiaoxi()
+					mlist()
+			    })
+			}
+		}
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

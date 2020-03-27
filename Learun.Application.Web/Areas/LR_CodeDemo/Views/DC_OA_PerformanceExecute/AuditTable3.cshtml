@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceExecute";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="btn_info" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看指标</a>
+                        @*<a id="btn_evaluate" class="btn btn-default"><i class="fa fa-gavel"></i>&nbsp;评估</a>
+                        <a id="btn_evaluateSelft" class="btn btn-default"><i class="fa fa-gavel"></i>&nbsp;自评</a>*@
+                        <a id="btn_evaluate2" class="btn btn-default"><i class="fa fa-gavel"></i>&nbsp;评价</a>
+                        @*<a id="btn_audit" class="btn btn-default"><i class="fa fa-gavel"></i>&nbsp;审核</a>*@
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DocLayer.js", "/Areas/LR_CodeDemo/Views/DC_OA_PerformanceExecute/AuditTable3.js")

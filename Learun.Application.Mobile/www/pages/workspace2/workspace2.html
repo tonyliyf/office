@@ -1,0 +1,558 @@
+﻿<!--右侧字母目录-->
+<style type="text/css">
+	.xxct{
+		font-size: 14px;
+	}
+	.tit{
+		font-size: 14px;
+		font-weight: bold;
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000000;
+	}
+	.tcct{
+		position: fixed;
+		top: 0px;
+		left: 0%;
+		background: #ffffff;
+		width: 100%;
+		z-index: 10;
+		font-size: 14px;
+		padding: 10px;
+		overflow: auto;
+		bottom: 0px;
+	}
+	.tcbj{
+		/*position: fixed;*/
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-index: 100;
+		display: none;
+		/*height: 1000px;*/
+		background: rgba(0,0,0,0.5);
+	}
+	.nr_list{
+		overflow: hidden;
+		/*line-height: 24px;
+		margin: 9px auto;*/
+		line-height: 23px;
+		margin: 7px auto;
+	}
+	.nr_left{
+		float: left;
+		width: 36%;
+		color: #626262;
+		font-size: 13px;
+	}
+	.nr_rig{
+		float: right;
+		width: 64%;
+		font-size: 13px;
+	}
+	.tcct_top,.tcct_topc{
+		/*overflow: hidden;*/
+		border-bottom: 1px solid #adadad;
+		position: fixed;
+		left: 5px;
+		right:0px;
+		background:
+		white;
+		padding-top: 10px;
+		top: 44px;
+		z-index: 10000;
+		display: /*none*/;
+		padding-right: 5px;
+	}
+	.tct_rig,.tct_rigg{
+		float: right;
+	}
+	.tct_rig img,.tct_rigg img{
+		width: 25px;
+	}
+	.tct_left{
+		float: left;
+		font-size: 15px;
+		color: #0c86d8;
+	}
+	body{
+		height: 100%;
+		overflow: hidden;
+	}
+	*{
+		touch-action: auto !important;
+	}
+	.xl_ul {
+	    padding: 5px;
+	    color: #333;
+	    margin: 0px;
+	}
+	.xlcd{
+		background: #fff;
+		border: 1px solid #949494;
+		position: absolute;
+		padding-top: 28px;
+		top: 6px;
+		display: none;
+	}
+	.xl_li {
+	    list-style: none;
+	    line-height: 28px;
+	    font-size: 14px;
+		width: 95px;
+	}
+	.amap-logo{
+      display: none;
+    }
+    .amap-copyright{
+      display: none;
+    }
+	.nr{
+		overflow: auto;
+		overflow-y: scroll;
+		padding-top: 29px;
+		display: none;
+		/*min-height: 140px;
+		max-height: 350px;*/
+	}
+	strong{
+		font-size: 15px;
+	}
+	.cuzy .nr_left{
+		width: 58%;
+	}
+	.cuzy .nr_rig{
+		width: 42%;
+	}
+	.f-scroll{
+		/*overflow: hidden;*/
+		/*height: 100%;*/
+	}
+	.f-page{
+		/*overflow: hidden;*/
+	}
+.amap-logo{
+      opacity:0;
+    }
+    .amap-copyright{
+      opacity:0;
+     }
+     
+     .bus_list .nr_left{
+     	width: 42%;
+     }
+	.bus_list .nr_rig{
+     	width: 58%;
+     }
+    .bus_list {
+	    border-bottom: 1px solid #b7b7b7;
+	    margin-bottom: 15px;
+	    padding-bottom: 5px;
+    }
+</style>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<input type="hidden" class="typc" />
+<input type="hidden" class="ydw" />
+<input type="hidden" class="sou" value="" />  <!--搜索内容-->
+<input type="hidden" class="soutyp"  />   <!--搜索框状态-->
+<input type="hidden" class="dbtitle" />   <!--顶部标题-->
+<input type="hidden" class="djcz" />  <!--点击传值-->
+<input type="hidden" class="ggxsz" />  <!--广告类别储存-->
+<input type="hidden" class="sxzz" value="1" />  <!--显示状态（用于招拍挂）-->
+<div class="tcbj">
+	<div class="tcct">
+		<div class="nr nr_one">
+			<div class="nr_type tpo">
+				<div class="bz_tpo">
+					<div class="nr_sou" style="display: block">
+						<div class="nr_sou_left">
+							<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+						</div>
+						<div class="nr_sou_right" type="4">
+							<div class="nr_sou_box">
+								搜索
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nr_sou">
+				<div class="nr_sou_left">
+					<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+				</div>
+				<div class="nr_sou_right" type="1">
+					<div class="nr_sou_box">
+						搜索
+					</div>
+				</div>
+			</div>
+			<div class="td_tc">
+				
+			</div>
+			<div class="fw_tc">
+				
+			</div>
+		</div>
+		<div class="nr nr_two">
+			<div class="nr_type two">
+				<div class="nr_sou" style="display: block">
+					<div class="nr_sou_left">
+						<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+					</div>
+					<div class="nr_sou_right" type="5">
+						<div class="nr_sou_box">
+							搜索
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="nr_sou">
+				<div class="nr_sou_left">
+					<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+				</div>
+				<div class="nr_sou_right" type="2">
+					<div class="nr_sou_box">
+						搜索
+					</div>
+				</div>
+			</div>
+			<div class="td_tc">
+				
+			</div>
+			<div class="fw_tc">
+				
+			</div>
+			
+		</div>
+		<div class="nr nr_thr">
+			<div class="nr_type thr">
+				
+				
+			</div>
+			<div class="nr_sou">
+				<div class="nr_sou_left">
+					<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+				</div>
+				<div class="nr_sou_right" type="3">
+					<div class="nr_sou_box">
+						搜索
+					</div>
+				</div>
+			</div>
+			<div class="td_tc">
+				
+			</div>
+			<div class="fw_tc">
+				
+			</div>
+			
+		</div>
+		<div class="nr nr_for">
+			<div class="nr_type for" style="">
+				<div class="nr_type_listd"><span>招租未成功</span><img src="images/yjt.png"></div>
+				<div class="nr_type_listd"><span>招租已成功</span><img src="images/yjt.png"></div>
+			</div>
+			<div class="nr_sou">
+				<div class="nr_sou_left">
+					<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+				</div>
+				<div class="nr_sou_right" type=4>
+					<div class="nr_sou_box">
+						搜索
+					</div>
+				</div>
+			</div>
+			<div class="td_tc">
+				
+			</div>
+			<div class="fw_tc">
+				
+			</div>
+			
+			
+		</div>
+		<div class="nr">
+			<div class="nr_sou">
+				<div class="nr_sou_left">
+					<input type="text" class="nr_inp"  placeholder="请输入要搜索的内容" style="padding: 0px;height: 30px;font-size: 14px;text-indent: 11px;" />
+				</div>
+				<div class="nr_sou_right">
+					<div class="nr_sou_box">
+						搜索
+					</div>
+				</div>
+			</div>
+			<div class="nr_box">
+				<div class="nr_list">
+					<div class="nr_left">
+						租赁人
+					</div>
+					<div class="nr_rig">
+						城建监察大队
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						合同编号
+					</div>
+					<div class="nr_rig">
+						T20112711
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						CPI指标
+					</div>
+					<div class="nr_rig">
+						1
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						应缴金额
+					</div>
+					<div class="nr_rig">
+						1000000
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						到期时间
+					</div>
+					<div class="nr_rig">
+						2019-11-05
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						实缴金额
+					</div>
+					<div class="nr_rig">
+						1000000
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						缴费日期
+					</div>
+					<div class="nr_rig">
+						2017-11-05
+					</div>
+				</div>
+				<div class="nr_list">
+					<div class="nr_left">
+						备注
+					</div>
+					<div class="nr_rig">
+						2017-11-05
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+</div>
+<div class="mac" style="width: 100%;height: 100%;background: #fff;">
+	<div class="xmgk">
+		<div class="bt_list">
+			资产信息
+		</div>
+		<ul class="box_ul">
+			<li class="box_li" type="0">
+				<img src="images/xmxx.png"/>
+				<br />
+				<span>土地信息</span>
+			</li>
+			<li class="box_li" type="1">
+				<img src="images/htxx.png"/>
+				<br />
+				<span>招拍挂土地</span>
+			</li>
+			<li class="box_li">
+				<img src="images/ls.png"/>
+				<br />
+				<span>粮食土地</span>
+			</li>
+			<li class="box_li" type="2">
+				<img src="images/fdc.png"/>
+				<br />
+				<span>房屋信息</span>
+			</li>
+			<li class="box_li" type="3">
+				<img src="images/kqjl.png"/>
+				<br />
+				<span>广告牌信息</span>
+			</li>
+		</ul>
+		<div class="bt_list">
+			租赁信息
+		</div>
+		<ul class="box_ul box_ul_two">
+			<li class="box_li" type="">
+				<img src="images/hyjl.png"/>
+				<br />
+				<span>房屋租赁</span>
+			</li>
+			<li class="box_li" type="5">
+				<img src="images/kcht.png"/>
+				<br />
+				<span>房屋历史租赁</span>
+			</li>
+			<li class="box_li" type="4">
+				<img src="images/sgrz.png"/>
+				<br />
+				<span>广告租赁</span>
+			</li>
+		</ul>
+		<div class="bt_list">
+			维修信息
+		</div>
+		<ul class="box_ul">
+			<li class="box_li" type="">
+				<img src="images/jsgcsg.png"/>
+				<br />
+				<span>房屋及设备维修</span>
+			</li>
+		</ul>
+	</div>
+	<div class="tu_list">
+		<div class="" style="overflow: hidden;margin: 10px 0;">
+			<div class="box_fh" style="float: right;">
+				<img src="images/fanh.png">
+				<span>返回列表	</span>
+			</div>
+		</div>
+		<div class="bt_box">
+			<div class="bt_title">
+				土地统计图
+			</div>
+			<div id="tu_one">
+			</div>
+		</div>
+		<div class="bt_box" style="border-top: 10px solid #ebebeb;">
+			<div class="bt_title">
+				招拍挂土地统计图
+			</div>
+			<div id="tu_two">
+			</div>
+		</div>
+		<div class="bt_box" style="border-top: 10px solid #ebebeb;">
+			<div class="bt_title">
+				房屋统计
+			</div>
+			<div id="tu_thr">
+			</div>
+		</div>
+		<div class="bt_box bt_for" style="border-top: 10px solid #ebebeb;">
+			<div class="bt_title">
+				广告统计
+			</div>
+			<div id="tu_for">
+			</div>
+		</div>
+		<div class="bt_box bt_for" style="border-top: 10px solid #ebebeb;">
+			<div class="bt_title">
+				广告招租
+			</div>
+			<div id="tu_five">
+			</div>
+		</div>
+		<div class="bt_box">
+			<div class="sg_nr">
+				<div class="bt_list">
+					<span>2017</span>
+					<div class="nd_list">
+						
+					</div>
+				</div>
+				<div class="bt_list">
+					<span>2018</span>
+					<div class="nd_list">
+						
+					</div>
+				</div>
+				<div class="bt_list">
+					<span>2019</span>
+					<div class="nd_list">
+						
+					</div>
+				</div>
+			</div>
+			<div class="sg_bot">
+				
+			</div>
+		</div>
+	</div>
+	
+	<div id="mapDiv" style="width:100%; height:100%;display: none;">
+		
+	</div>
+	
+</div>
+<script type="text/javascript">
+	var myChart = echarts.init(document.getElementById('tu_one'));
+	var myChartt = echarts.init(document.getElementById('tu_two'));
+	var myCharthr = echarts.init(document.getElementById('tu_thr'));
+	var myCharfor = echarts.init(document.getElementById('tu_for'));
+	var myCharfive = echarts.init(document.getElementById('tu_five'));
+	
+	
+
+	
+	option2 = {
+		tooltip: {
+			trigger: 'item',
+			formatter: "{a} <br/>{b} : {c} ({d}%)"
+		},
+		series: [{
+				name: '访问来源',
+				type: 'pie',
+				radius: '55%',
+				center: ['50%', '40%'],
+				data: [{
+						value: 715,
+						name: '金源'
+					},
+					{
+						value: 264,
+						name: '国资中心'
+					},
+					{
+						value: 315,
+						name: '金润源'
+					}
+				],
+				itemStyle: {
+					emphasis: {
+						shadowBlur: 10,
+						shadowOffsetX: 0,
+						shadowColor: 'rgba(0, 0, 0, 0.5)'
+					}
+				},
+				label:{            //饼图图形上的文本标签
+                    normal:{
+                        show:true,
+                        position:'inner', //标签的位置
+                        textStyle : {
+                            fontWeight : 300 ,
+                            fontSize : 13    //文字的字体大小
+                        },
+                        formatter:'{b}:{d}%'
+
+                        
+                    }
+                }
+			},
+		]
+	};
+	
+	
+	
+	
+
+	
+
+</script>

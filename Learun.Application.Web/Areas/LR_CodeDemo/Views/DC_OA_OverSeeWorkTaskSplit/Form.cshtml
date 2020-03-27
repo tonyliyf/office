@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWorkTaskSplit";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">序号<font face="宋体">*</font></div>
+        <input id="F_code" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">任务名称<font face="宋体">*</font></div>
+        <input id="F_TaskName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">主办单位<font face="宋体">*</font></div>
+        <div id="F_OneDepartmentId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">主办人<font face="宋体">*</font></div>
+        <div id="F_OneUserId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">主办领导<font face="宋体">*</font></div>
+        <div id="F_OneLeaderId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">协办单位</div>
+        <div id="F_TwoDepartmentId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">协办人</div>
+        <div id="F_TwoUserId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">状态<font face="宋体">*</font></div>
+        <div id="F_State" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid" style="display:none">
+        <div id="DC_OA_OverSeeWorkTaskExecute"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkTaskSplit/Form.js")

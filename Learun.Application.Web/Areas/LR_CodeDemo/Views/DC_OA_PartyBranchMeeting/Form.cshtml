@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "党员会议通知";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span>党员会议通知</span>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">党支部<font face="宋体">*</font></div>
+        <div id="F_PartyBranchGUID" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">开始时间<font face="宋体">*</font></div>
+        <input id="F_MeetingTimeStart" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#F_MeetingTimeStart').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">会议简介<font face="宋体">*</font></div>
+        <input id="F_MeetingSummary" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">会议内容<font face="宋体">*</font></div>
+        <textarea id="F_MeetingDoc" class="form-control" style="height:100px;" isvalid="yes" checkexpession="NotNull" ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">会议资料</div>
+        <div id="F_Attachments"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">会议地址</div>
+        <div id="F_MeetingPlaceId"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">主持人</div>
+        <div id="F_MeetingCompereCode"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_PartyBranchMeeting" >
+        <div class="lr-form-item-title">参加人员</div>
+        <div id="F_MeetingConventionerId"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PartyBranchMeeting/Form.js")

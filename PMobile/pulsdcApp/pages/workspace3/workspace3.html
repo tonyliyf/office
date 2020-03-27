@@ -1,0 +1,409 @@
+﻿<!--右侧字母目录-->
+<style type="text/css">
+	.xxct{
+		font-size: 14px;
+	}
+	.tit{
+		font-size: 14px;
+		font-weight: bold;
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000000;
+	}
+	.tcct{
+		position: fixed;
+		top: 0px;
+		left: 0%;
+		background: #ffffff;
+		width: 100%;
+		z-index: 10;
+		font-size: 14px;
+		padding: 10px;
+		overflow: auto;
+		bottom: 0px;
+	}
+	.tcbj{
+		/*position: fixed;*/
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-index: 100;
+		display: none;
+		/*height: 1000px;*/
+		background: rgba(0,0,0,0.5);
+	}
+	.nr_list{
+		overflow: hidden;
+		/*line-height: 24px;
+		margin: 9px auto;*/
+		line-height: 23px;
+		margin: 7px auto;
+	}
+	.nr_left{
+		float: left;
+		width: 36%;
+		color: #626262;
+		font-size: 13px;
+	}
+	.nr_rig{
+		float: right;
+		width: 64%;
+		font-size: 13px;
+	}
+	.tcct_top,.tcct_topc{
+		/*overflow: hidden;*/
+		border-bottom: 1px solid #adadad;
+		position: fixed;
+		left: 5px;
+		right:0px;
+		background:
+		white;
+		padding-top: 10px;
+		top: 44px;
+		z-index: 10000;
+		display: /*none*/;
+		padding-right: 5px;
+	}
+	.tct_rig,.tct_rigg,.tct_rigc{
+		float: right;
+	}
+	.tct_rig img,.tct_rigg img,.tct_rigc img{
+		width: 25px;
+	}
+	.tct_left{
+		float: left;
+		font-size: 15px;
+		color: #0c86d8;
+	}
+	body{
+		height: 100%;
+		overflow: hidden;
+	}
+	*{
+		touch-action: auto !important;
+	}
+	.xl_ul {
+	    padding: 5px;
+	    color: #333;
+	    margin: 0px;
+	}
+	.xlcd{
+		background: #fff;
+		border: 1px solid #949494;
+		position: absolute;
+		padding-top: 28px;
+		top: 6px;
+		display: none;
+	}
+	.xl_li {
+	    list-style: none;
+	    line-height: 28px;
+	    font-size: 14px;
+		width: 95px;
+	}
+	.amap-logo{
+      display: none;
+    }
+    .amap-copyright{
+      display: none;
+    }
+	.nr{
+		overflow: auto;
+		overflow-y: scroll;
+		padding-top: 29px;
+		display: none;
+		/*min-height: 140px;
+		max-height: 350px;*/
+	}
+	strong{
+		font-size: 15px;
+	}
+	.cuzy .nr_left{
+		width: 58%;
+	}
+	.cuzy .nr_rig{
+		width: 42%;
+	}
+	.f-scroll{
+		/*overflow: hidden;*/
+		/*height: 100%;*/
+	}
+	.f-page{
+		/*overflow: hidden;*/
+	}
+.amap-logo{
+      opacity:0;
+    }
+    .amap-copyright{
+      opacity:0;
+     }
+     
+     .bus_list .nr_left{
+     	width: 42%;
+     }
+	.bus_list .nr_rig{
+     	width: 58%;
+     }
+    .bus_list {
+	    border-bottom: 1px solid #b7b7b7;
+	    margin-bottom: 15px;
+	    padding-bottom: 5px;
+    }
+</style>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<div class="mac" style="width: 100%;height: 100%;background: #fff;">
+	<div class="xmgk">
+		<div class="bt_list">
+			督查督办
+		</div>
+		<ul class="box_ul">
+			<li class="box_li" type="0">
+				<img src="images/xmxx.png"/>
+				<br />
+				<span>上级督办</span>
+			</li>
+			<li class="box_li" type="1">
+				<img src="images/htxx.png"/>
+				<br />
+				<span>党委会交办</span>
+			</li>
+			<li class="box_li" type="2">
+				<img src="images/hyjl.png"/>
+				<br />
+				<span>公文签批</span>
+			</li>
+			<li class="box_li" type="3">
+				<img src="images/jlht.png"/>
+				<br />
+				<span>董事长交办</span>
+			</li>
+			<li class="box_li" type="4">
+				<img src="images/jdyb.png"/>
+				<br />
+				<span>总经理交办</span>
+			</li>
+			<li class="box_lit" type="0">
+				<img src="images/jsgcsg.png"/>
+				<br />
+				<span>我的任务</span>
+			</li>
+			<li class="box_li" type="5">
+				<img src="images/cjdw.png"/>
+				<br />
+				<span>其他</span>
+			</li>
+			
+		</ul>
+		
+	</div>
+</div>
+<div class="rw_home">
+	<ul class="box_ul">
+		<li class="box_lit" type="1">
+			<img src="images/zbrw.png"/>
+			<br />
+			<span>主办任务</span>
+		</li>
+		<li class="box_lit" type="2">
+			<img src="images/xbrw.png"/>
+			<br />
+			<span>协办任务</span>
+		</li>
+		<li class="box_lit" type="3">
+			<img src="images/ywcrw.png"/>
+			<br />
+			<span>已完结任务</span>
+		</li>
+	</ul>
+</div>
+<div class="dc_home">
+	<div class="dc_wdrw">
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>任务详情<span></span></span>
+			</div>
+			<div class="lr-form-row" style="font-size: 14px;" data-table="DC_OA_MeettingRelation">
+			    <label style="top: 80px;">交办日期</label>
+			    <div id="F_StartDate"></div>
+			</div>
+			<div class="lr-form-row" style="font-size: 14px;" data-table="DC_OA_MeettingRelation">
+			    <label style="top: 122px;width: 120px;">要求办结时间</label>
+			    <div id="F_StartDatec"></div>
+			</div>
+			<div class="dc_rw">
+				
+			</div>
+			<div class="dc_nr">
+				<div class="rwwc">
+					提交
+				</div>
+				<div class="rwbj">
+					任务办结
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="dc_list">
+		
+		
+		<!--<div class='xm_box' id='"+v.F_PIId+"'><div class='xm_box_left'><img src='images/tix.png'/></div>
+			<div class='xm_box_right'><div class='xbox_top'><div class='xbox_tit'>枝江民主路改造</div>
+			<div class='xobx_time'>2019-07-04</div></div>
+			<div class='xbox_bottom'><span style='float: left;'>进行中</span><span style='float: right;'>55</span></div></div>
+		</div>-->
+	</div>
+	<div class="dc_tra">
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>任务详情<span></span></span>
+			</div>
+			<div class="dc_xx">
+				
+			</div>
+		</div>
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>子任务<span></span></span>
+			</div>
+			<div class="dc_zrw">
+				<!--<div class="zrw_list">
+					<div class="zrw_title">
+						子任务1
+					</div>
+					<div class="zrw_bottom">
+						<div class="zrw_left">
+							<span style="margin-right: 10px;">进行中</span><span>主办人</span>
+						</div>
+						<div class="zrw_right">
+							<div class="zrw_jd">
+								
+							</div>
+							<div class="jd_tit">
+								百分之50%
+							</div>
+						</div>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>任务评论区<span></span></span>
+			</div>
+			<div class="dc_pl">
+				<!--<div class="str_ov">
+					<div class="plxq">
+						<div class="jou_left">
+							<img src="images/on-boy.jpg">
+						</div>
+						<div class="jou_right">
+							<div class="jou_title">
+							 <span class="left">王成</span>
+							 
+							</div>
+							<div class="hide_span">
+								新年新气象，新年新气象，新年新气象，新年新气象，新年新气象，新年新气象，新年新气象，新年新气象
+							</div>
+							
+							<div class="hide_bottom">
+								<div class="ping_left">
+									2020年1月2日 21:26
+								</div>
+								<div class="ping_right">
+									<div class="hide_ui pinglun">
+										<img src="images/pinglun-hui.png">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jou_ping">
+						<div class="juo_zan_left">
+							<img src="images/pinglun-zan.png">
+						</div>
+						<div class="jou_zan_right">
+							<div class="zan_rig_list">
+								<div class="rig_list_img">
+									<img src="images/on-boy.jpg">
+								</div>
+								<div class="rig_list_span">
+									<div class="rig_list_top">
+										<span>王成</span>
+										<span class="rig_top_span">09:39</span>
+									</div>
+									<p>进度正在赶制</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jou_ping">
+						<div class="juo_zan_left">
+							<img src="images/pinglun-zan.png">
+						</div>
+						<div class="jou_zan_right">
+							<div class="zan_rig_list">
+								<div class="rig_list_img">
+									<img src="images/on-boy.jpg">
+								</div>
+								<div class="rig_list_span">
+									<div class="rig_list_top">
+										<span>王成</span>
+										<span class="rig_top_span">09:39</span>
+									</div>
+									<p>进度正在赶制</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="dyn_bot_box" style="margin-top: 5px;">
+					<textarea class="dyn_text" placeholder="回复评论" name="" rows="" cols=""></textarea>
+					<div class="box_button">
+						确认回复
+					</div>
+				</div>
+				</div>-->
+			</div>
+		</div>
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>评论<span></span></span>
+			</div>
+			<div class="dyn_box_bottom" style="display: block;">
+				<div class="dyn_bot_box">
+					<textarea class="dyn_text" placeholder="发表你的评论" name="" rows="" cols=""></textarea>
+					<div class="box_button">
+						发表评论
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="dc_zym">
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>子任务详情<span></span></span>
+			</div>
+			<div class="dc_xx">
+				
+			</div>
+		</div>
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>任务评论区<span></span></span>
+			</div>
+			<div class="dc_pl">
+				
+			</div>
+		</div>
+		<div class="xc_list" type="0">
+			<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>评论<span></span></span>
+			</div>
+			<div class="dyn_box_bottom" style="display: block;">
+				<div class="dyn_bot_box">
+					<textarea class="dyn_text" placeholder="发表你的评论" name="" rows="" cols=""></textarea>
+					<div class="box_button">
+						发表评论
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</script>

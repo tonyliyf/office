@@ -1,0 +1,68 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ProjectInfoContract";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">所属项目<font face="宋体">*</font></div>
+        @*<input id="F_PIId" type="text" class="form-control" />*@
+        <div id="F_PIId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">合同类型</div>
+        <div id="F_ContractType" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">合同编号</div>
+        <input id="F_ContractCode" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">合同名称</div>
+        <input id="F_ContractName" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">合同金额（元）</div>
+        <input id="F_ContractMoney" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">结算方式<font face="宋体">*</font></div>
+        <div id="F_SettlementMethod" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">付款方式<font face="宋体">*</font></div>
+        <div id="F_PayMethod" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">合同附件</div>
+        <div id="F_ContractAppendices"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">甲方单位<font face="宋体">*</font></div>
+        <input id="F_PartyAUnit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">甲方负责人</div>
+        <input id="F_PartyABlameMan" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">乙方单位<font face="宋体">*</font></div>
+        <input id="F_PartyBUnit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">乙方负责人</div>
+        <input id="F_PartyBBlameMan" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">签订时间<font face="宋体">*</font></div>
+        <input id="F_SigningTime" type="text" isvalid="yes" checkexpession="NotNull" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_SigningTime').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoContract">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+
+
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectInfoContract/Form.js")
+

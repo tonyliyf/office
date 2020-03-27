@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "节假日设置";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+@Html.AppendCssFile(
+    "/Content/fullcalendar/fullcalendar.min.css",
+    "/Areas/LR_CodeDemo/Views/DC_OA_HolidaySetting/index.css"
+)
+@Html.AppendJsFile(
+    "/Content/fullcalendar/moment.min.js",
+    "/Content/fullcalendar/jquery.min.js",
+    "/Content/fullcalendar/fullcalendar.min.js",
+    "/Content/fullcalendar/zh-cn.js",
+    "/Areas/LR_CodeDemo/Views/DC_OA_HolidaySetting/Index.js"
+    )
+<div id='calendar'></div>

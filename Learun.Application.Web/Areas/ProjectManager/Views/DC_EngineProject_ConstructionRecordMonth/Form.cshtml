@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ConstructionRecordMonth";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">工程项目</div>
+        <div id="F_PIId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">月度</div>
+        <div id="F_Month"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">完成投资额</div>
+        <input id="F_InvestmentCompletion" type="text" class="form-control"  isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">完成投资比例(%)</div>
+        <input id="F_InvestmentRatio" type="text" class="form-control"  isvalid="yes"  checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">成本控制情况</div>
+        <textarea id="F_CostControlInfo" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">选择合同</div>
+        <div id="F_ContractKeys"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">合同名称</div>
+        <input id="F_ContractName" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">合同履约评价</div>
+        <div id="F_ContractPerformanceEvaluation"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">合同履约情况</div>
+        <textarea id="F_ContractPerformanceInfo" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">附件上传</div>
+        <div id="F_Attachments"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth" id="num1">
+        <div class="lr-form-item-title">当前部门</div>
+        <input id="F_CreateDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth" id="num2">
+        <div class="lr-form-item-title">当前人</div>
+        <input id="F_CreateUserid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecordMonth" id="num3">
+        <div class="lr-form-item-title">当前时间</div>
+        <input id="F_CreateDatetime" type="text" readonly class="form-control currentInfo lr-currentInfo-time" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ConstructionRecordMonth/Form.js")

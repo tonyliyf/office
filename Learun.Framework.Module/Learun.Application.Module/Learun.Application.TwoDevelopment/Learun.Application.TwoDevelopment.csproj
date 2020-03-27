@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56F9A112-FD96-4809-98F4-0D7C5DE0711B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Application.TwoDevelopment</RootNamespace>
+    <AssemblyName>Learun.Application.TwoDevelopment</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Base">
+      <HintPath>..\..\..\lib\Learun.Application.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Message, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Message.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Organization">
+      <HintPath>..\..\..\lib\Learun.Application.Organization.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.WorkFlow">
+      <HintPath>..\..\..\lib\Learun.Application.WorkFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Cache.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Cache.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Cache.Factory">
+      <HintPath>..\..\..\lib\Learun.Cache.Factory.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.DataBase">
+      <HintPath>..\..\..\lib\Learun.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.DataBase.Repository">
+      <HintPath>..\..\..\lib\Learun.DataBase.Repository.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfofood\DC_ASSETS_BuildingBaseInfofoodBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfofood\DC_ASSETS_BuildingBaseInfofoodEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfofood\DC_ASSETS_BuildingBaseInfofoodIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfofood\DC_ASSETS_BuildingBaseInfofoodService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMaintenanceRecords\DC_ASSETS_BusStopBillboardsMaintenanceRecordsBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMaintenanceRecords\DC_ASSETS_BusStopBillboardsMaintenanceRecordsEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMaintenanceRecords\DC_ASSETS_BusStopBillboardsMaintenanceRecordsIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMaintenanceRecords\DC_ASSETS_BusStopBillboardsMaintenanceRecordsService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentDetail\DC_ASSETS_BusStopBillboardsRentDetailBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentDetail\DC_ASSETS_BusStopBillboardsRentDetailIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentDetail\DC_ASSETS_BusStopBillboardsRentDetailService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentIncome\DC_ASSETS_BusStopBillboardsRentIncomeBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentIncome\DC_ASSETS_BusStopBillboardsRentIncomeEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentIncome\DC_ASSETS_BusStopBillboardsRentIncomeIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentIncome\DC_ASSETS_BusStopBillboardsRentIncomeService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMain\DC_ASSETS_BusStopBillboardsRentDetailEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMain\DC_ASSETS_BusStopBillboardsRentMainBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMain\DC_ASSETS_BusStopBillboardsRentMainEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMain\DC_ASSETS_BusStopBillboardsRentMainIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMain\DC_ASSETS_BusStopBillboardsRentMainService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\DC_ASSETS_EquipmentMaintenancePartsUseEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\DC_ASSETS_EquipmentMaintenanceRecordsProcessBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\DC_ASSETS_EquipmentMaintenanceRecordsProcessEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\DC_ASSETS_EquipmentMaintenanceRecordsProcessIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\DC_ASSETS_EquipmentMaintenanceRecordsProcessService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcess\PartUseModel.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecords\DC_ASSETS_EquipmentMaintenanceRecordsBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecords\DC_ASSETS_EquipmentMaintenanceRecordsEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecords\DC_ASSETS_EquipmentMaintenanceRecordsIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecords\DC_ASSETS_EquipmentMaintenanceRecordsService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DeviceDetailModel.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOut\DC_ASSETS_EquipmentPartsOutBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOut\DC_ASSETS_EquipmentPartsOutDetailEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOut\DC_ASSETS_EquipmentPartsOutEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOut\DC_ASSETS_EquipmentPartsOutIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOut\DC_ASSETS_EquipmentPartsOutService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetaiHistory\DC_ASSETS_HouseRentDetaiHistoryBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetaiHistory\DC_ASSETS_HouseRentDetaiHistoryIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetaiHistory\DC_ASSETS_HouseRentDetaiHistoryService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail\DC_ASSETS_HouseRentDetailBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail\DC_ASSETS_HouseRentDetailIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail\DC_ASSETS_HouseRentDetailService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail_InfoHistory\DC_ASSETS_HouseRentDetail_InfoHistoryEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncome\DC_ASSETS_HouseRentIncomeBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncome\DC_ASSETS_HouseRentIncomeEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncome\DC_ASSETS_HouseRentIncomeIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncome\DC_ASSETS_HouseRentIncomeService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncome\EChartModel.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\DC_ASSETS_HouseRentDetaiHistoryEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\DC_ASSETS_HouseRentMainHistoryBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\DC_ASSETS_HouseRentMainHistoryEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\DC_ASSETS_HouseRentMainHistoryIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\DC_ASSETS_HouseRentMainHistoryService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainHistory\RentHouseModel.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\DC_ASSETS_HouseRentDetailEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\DC_ASSETS_HouseRentMainBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\DC_ASSETS_HouseRentMainEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\DC_ASSETS_HouseRentMainIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\DC_ASSETS_HouseRentMainService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMain\RentHouseModel.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandHandUpInfo\DC_ASSETS_LandHandUpInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandHandUpInfo\DC_ASSETS_LandHandUpInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandHandUpInfo\DC_ASSETS_LandHandUpInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandHandUpInfo\DC_ASSETS_LandHandUpInfoService.cs" />
+    <Compile Include="AssetManager\MapService\MapMarkerModel.cs" />
+    <Compile Include="AssetManager\MapService\MapService.cs" />
+    <Compile Include="EcologyDemo\formtable_main_139\formtable_main_139BLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_139\formtable_main_139Entity.cs" />
+    <Compile Include="EcologyDemo\formtable_main_139\formtable_main_139IBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_139\formtable_main_139Service.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140\formtable_main_140BLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140\formtable_main_140Entity.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140\formtable_main_140IBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140\formtable_main_140Service.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140_dt1\formtable_main_140_dt1BLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140_dt1\formtable_main_140_dt1Entity.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140_dt1\formtable_main_140_dt1IBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140_dt1\formtable_main_140_dt1Service.cs" />
+    <Compile Include="EcologyDemo\formtable_main_150\formtable_main_150BLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_150\formtable_main_150Entity.cs" />
+    <Compile Include="EcologyDemo\formtable_main_150\formtable_main_150IBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_150\formtable_main_150Service.cs" />
+    <Compile Include="EcologyDemo\SuperviseTask\SuperviseInfoBll.cs" />
+    <Compile Include="EcologyDemo\SuperviseTask\SuperviseInfoIBll.cs" />
+    <Compile Include="EcologyDemo\SuperviseTask\SuperviseInfoService.cs" />
+    <Compile Include="EcologyDemo\uf_durwzxnew\uf_durwzxnewEntity.cs" />
+    <Compile Include="LR_CodeDemo\CachetReq\CachetReqBLL.cs" />
+    <Compile Include="LR_CodeDemo\CachetReq\CachetReqEntity.cs" />
+    <Compile Include="LR_CodeDemo\CachetReq\CachetReqIBLL.cs" />
+    <Compile Include="LR_CodeDemo\CachetReq\CachetReqService.cs" />
+    <Compile Include="LR_CodeDemo\CardPrintReq_Report\CardPrintReq_ReportBLL.cs" />
+    <Compile Include="LR_CodeDemo\CardPrintReq_Report\CardPrintReq_ReportIBLL.cs" />
+    <Compile Include="LR_CodeDemo\CardPrintReq_Report\CardPrintReq_ReportService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Attence\DC_OA_AttenceBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Attence\DC_OA_AttenceEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Attence\DC_OA_AttenceIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Attence\DC_OA_AttenceService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocManager\DC_OA_DispatchOfficialDocEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocManager\DC_OA_DispatchOfficialDocManagerBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocManager\DC_OA_DispatchOfficialDocManagerIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocManager\DC_OA_DispatchOfficialDocManagerService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocManager\EasyUiTreeModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocRead\DC_OA_DispatchOfficialDocReadBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocRead\DC_OA_DispatchOfficialDocReadIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocRead\DC_OA_DispatchOfficialDocReadService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialPaintTemplate\DC_OA_DispatchOfficialPaintTemplateBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialPaintTemplate\DC_OA_DispatchOfficialPaintTemplateEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialPaintTemplate\DC_OA_DispatchOfficialPaintTemplateIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialPaintTemplate\DC_OA_DispatchOfficialPaintTemplateService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_HolidaySetting\DC_OA_HolidaySettingBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_HolidaySetting\DC_OA_HolidaySettingEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_HolidaySetting\DC_OA_HolidaySettingIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_HolidaySetting\DC_OA_HolidaySettingService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStock\DC_OA_InStockBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStock\DC_OA_InStockDetailsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStock\DC_OA_InStockEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStock\DC_OA_InStockIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStock\DC_OA_InStockService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_LargeCostPay\DC_OA_LargeCostPayBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_LargeCostPay\DC_OA_LargeCostPayEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_LargeCostPay\DC_OA_LargeCostPayIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_LargeCostPay\DC_OA_LargeCostPayService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRecord\DC_OA_MeetingRecordBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRecord\DC_OA_MeetingRecordEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRecord\DC_OA_MeetingRecordIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRecord\DC_OA_MeetingRecordService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReply\DC_OA_OfficeWoodsReplyBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReply\DC_OA_OfficeWoodsReplyDetailEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReply\DC_OA_OfficeWoodsReplyEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReply\DC_OA_OfficeWoodsReplyIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReply\DC_OA_OfficeWoodsReplyService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoods\DC_OA_OfficeWoodsBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoods\DC_OA_OfficeWoodsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoods\DC_OA_OfficeWoodsIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoods\DC_OA_OfficeWoodsService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OilAuidt\DC_OA_OilAuidtBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OilAuidt\DC_OA_OilAuidtEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OilAuidt\DC_OA_OilAuidtIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OilAuidt\DC_OA_OilAuidtService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStock\DC_OA_OutStockBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStock\DC_OA_OutStockDetailsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStock\DC_OA_OutStockEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStock\DC_OA_OutStockIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStock\DC_OA_OutStockService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletin\DC_OA_OverSeeWorkBulletinBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletin\DC_OA_OverSeeWorkBulletinDetailedEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletin\DC_OA_OverSeeWorkBulletinEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletin\DC_OA_OverSeeWorkBulletinIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletin\DC_OA_OverSeeWorkBulletinService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverDetail\DC_OA_OverSeeWorkHandoverDetailBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverDetail\DC_OA_OverSeeWorkHandoverDetailEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverDetail\DC_OA_OverSeeWorkHandoverDetailIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverDetail\DC_OA_OverSeeWorkHandoverDetailService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandover\DC_OA_OverSeeWorkHandoverBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandover\DC_OA_OverSeeWorkHandoverEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandover\DC_OA_OverSeeWorkHandoverIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandover\DC_OA_OverSeeWorkHandoverService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkScore\DC_OA_OverSeeWorkScoreEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecute\DC_OA_OverSeeWorkTaskExecuteBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecute\DC_OA_OverSeeWorkTaskExecuteEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecute\DC_OA_OverSeeWorkTaskExecuteIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecute\DC_OA_OverSeeWorkTaskExecuteService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecute\DC_OA_OverSeeWorkTaskSplitEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplitDelete\DC_OA_OverSeeWorkTaskSplitDeleteBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplitDelete\DC_OA_OverSeeWorkTaskSplitDeleteIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplitDelete\DC_OA_OverSeeWorkTaskSplitDeleteService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplit\DC_OA_OverSeeWorkTaskSplitBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplit\DC_OA_OverSeeWorkTaskSplitIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplit\DC_OA_OverSeeWorkTaskSplitService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplit\GanttEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\DC_OA_OverSeeWorkBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\DC_OA_OverSeeWorkEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\DC_OA_OverSeeWorkIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\DC_OA_OverSeeWorkService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\EChartModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\WorkCategoryModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWork\WorkStatisticsModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMeeting\DC_OA_PartyBranchMeetingBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMeeting\DC_OA_PartyBranchMeetingEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMeeting\DC_OA_PartyBranchMeetingIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMeeting\DC_OA_PartyBranchMeetingService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMember\DC_OA_PartyMemberBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMember\DC_OA_PartyMemberDependentsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMember\DC_OA_PartyMemberEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMember\DC_OA_PartyMemberIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMember\DC_OA_PartyMemberService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalTemplate\DC_OA_PerformanceAppraisalTemplateBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalTemplate\DC_OA_PerformanceAppraisalTemplateEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalTemplate\DC_OA_PerformanceAppraisalTemplateIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalTemplate\DC_OA_PerformanceAppraisalTemplateService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisal\DC_OA_PerformanceAppraisalBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisal\DC_OA_PerformanceAppraisalEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisal\DC_OA_PerformanceAppraisalIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisal\DC_OA_PerformanceAppraisalService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckTemplate\DC_OA_PerformanceCheckTemplateBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckTemplate\DC_OA_PerformanceCheckTemplateEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckTemplate\DC_OA_PerformanceCheckTemplateIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckTemplate\DC_OA_PerformanceCheckTemplateService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheck\DC_OA_PerformanceCheckBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheck\DC_OA_PerformanceCheckEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheck\DC_OA_PerformanceCheckIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheck\DC_OA_PerformanceCheckService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceEvaluation\DC_OA_PerformanceEvaluationEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\DC_OA_PerformanceExecuteBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\DC_OA_PerformanceExecuteEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\DC_OA_PerformanceExecuteIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\DC_OA_PerformanceExecuteService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\HeaderInfoData.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecute\TableHeadModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformancePostRelation\DC_OA_PerformancePostRelationEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceRecordRun\DC_OA_PerformanceRecordRunBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceRecordRun\DC_OA_PerformanceRecordRunEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceRecordRun\DC_OA_PerformanceRecordRunIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceRecordRun\DC_OA_PerformanceRecordRunService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkInterview\DC_OA_PerformanceUserWorkInterviewBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkInterview\DC_OA_PerformanceUserWorkInterviewEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkInterview\DC_OA_PerformanceUserWorkInterviewIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkInterview\DC_OA_PerformanceUserWorkInterviewService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkPlan\DC_OA_PerformanceUserWorkPlanBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkPlan\DC_OA_PerformanceUserWorkPlanEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkPlan\DC_OA_PerformanceUserWorkPlanIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkPlan\DC_OA_PerformanceUserWorkPlanService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWork\DC_OA_PerformanceUserWorkBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWork\DC_OA_PerformanceUserWorkEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWork\DC_OA_PerformanceUserWorkIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWork\DC_OA_PerformanceUserWorkService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelation\DC_OA_PRREvaluationUserRelationBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelation\DC_OA_PRREvaluationUserRelationEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelation\DC_OA_PRREvaluationUserRelationIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelation\DC_OA_PRREvaluationUserRelationService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelation\DC_OA_PRRSelfUserRelationEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocManager\ReciveFileReturnDataModel.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_SignContent\DC_OA_SignContentBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_SignContent\DC_OA_SignContentIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_SignContent\DC_OA_SignContentsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_SignContent\DC_OA_SignContentService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Sign\DC_OA_SignBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Sign\DC_OA_SignEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Sign\DC_OA_SignIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Sign\DC_OA_SignService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_StockWoods\DC_OA_StockWoodsBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_StockWoods\DC_OA_StockWoodsEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_StockWoods\DC_OA_StockWoodsIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_StockWoods\DC_OA_StockWoodsService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UserSignature\DC_OA_UserSignatureBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UserSignature\DC_OA_UserSignatureEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UserSignature\DC_OA_UserSignatureIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UserSignature\DC_OA_UserSignatureService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Vehicle\DC_OA_VehicleBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Vehicle\DC_OA_VehicleEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Vehicle\DC_OA_VehicleIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Vehicle\DC_OA_VehicleService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA__PartyBranch\DC_OA_PartyBranchEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA__PartyBranch\DC_OA__PartyBranchBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA__PartyBranch\DC_OA__PartyBranchIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA__PartyBranch\DC_OA__PartyBranchService.cs" />
+    <Compile Include="LR_CodeDemo\DeptNotice\DeptNoticeBLL.cs" />
+    <Compile Include="LR_CodeDemo\DeptNotice\DeptNoticeEntity.cs" />
+    <Compile Include="LR_CodeDemo\DeptNotice\DeptNoticeIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DeptNotice\DeptNoticeService.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq_Edit\EvectionReqEntity.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq_Edit\EvectionReq_EditBLL.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq_Edit\EvectionReq_EditIBLL.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq_Edit\EvectionReq_EditService.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq_Edit\ExtraWorkReqEntity.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq_Edit\ExtraWorkReq_EditBLL.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq_Edit\ExtraWorkReq_EditIBLL.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq_Edit\ExtraWorkReq_EditService.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaver\ImageFileEntity.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq_Edit\LeaveReqEntity.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq_Edit\LeaveReq_EditBLL.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq_Edit\LeaveReq_EditIBLL.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq_Edit\LeaveReq_EditService.cs" />
+    <Compile Include="LR_CodeDemo\MeetingRoom\DC_OA_MeetingRoomEntity.cs" />
+    <Compile Include="LR_CodeDemo\MeetingRoom\FullcalendarResult.cs" />
+    <Compile Include="LR_CodeDemo\MeetingRoom\MeetingRoomBLL.cs" />
+    <Compile Include="LR_CodeDemo\MeetingRoom\MeetingRoomIBLL.cs" />
+    <Compile Include="LR_CodeDemo\MeetingRoom\MeetingRoomService.cs" />
+    <Compile Include="LR_CodeDemo\MyDocument\FileInfoBLL.cs" />
+    <Compile Include="LR_CodeDemo\MyDocument\MyDocumentService.cs" />
+    <Compile Include="LR_CodeDemo\Portal\PortalService.cs" />
+    <Compile Include="LR_ReportModule\PortalService.cs" />
+    <Compile Include="LR_CodeDemo\WorkFlowTree\TreeDbModel.cs" />
+    <Compile Include="LR_CodeDemo\WorkFlowTree\WfTreeModel.cs" />
+    <Compile Include="LR_CodeDemo\WorkFlowTree\WfTreeService.cs" />
+    <Compile Include="LR_ReportModule\VehicleRepairRecord\DC_OA_VehicleRepairRecordEntity.cs" />
+    <Compile Include="LR_ReportModule\VehicleRepairRecord\VehicleRepairRecordBLL.cs" />
+    <Compile Include="LR_ReportModule\VehicleRepairRecord\VehicleRepairRecordIBLL.cs" />
+    <Compile Include="LR_ReportModule\VehicleRepairRecord\VehicleRepairRecordService.cs" />
+    <Compile Include="LR_ReportModule\VehicleReq\VehicleReqBLL.cs" />
+    <Compile Include="LR_ReportModule\VehicleReq\VehicleReqEntity.cs" />
+    <Compile Include="LR_ReportModule\VehicleReq\VehicleReqIBLL.cs" />
+    <Compile Include="LR_ReportModule\VehicleReq\VehicleReqService.cs" />
+    <Compile Include="OAReport\reportBLL.cs" />
+    <Compile Include="OAReport\reportIBLL.cs" />
+    <Compile Include="OAReport\reportService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMain\DC_EngineProject_BuilderDiaryDetailEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMain\DC_EngineProject_BuilderDiaryMainBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMain\DC_EngineProject_BuilderDiaryMainEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMain\DC_EngineProject_BuilderDiaryMainIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMain\DC_EngineProject_BuilderDiaryMainService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMonth\DC_EngineProject_ConstructionRecordMonthBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMonth\DC_EngineProject_ConstructionRecordMonthEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMonth\DC_EngineProject_ConstructionRecordMonthIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMonth\DC_EngineProject_ConstructionRecordMonthService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecord\DC_EngineProject_ConstructionRecordBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecord\DC_EngineProject_ConstructionRecordEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecord\DC_EngineProject_ConstructionRecordIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecord\DC_EngineProject_ConstructionRecordService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_MeetingRecord\DC_EngineProject_MeetingRecordBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_MeetingRecord\DC_EngineProject_MeetingRecordEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_MeetingRecord\DC_EngineProject_MeetingRecordIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_MeetingRecord\DC_EngineProject_MeetingRecordService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoContract\DC_EngineProject_ProjectInfoContractBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoContract\DC_EngineProject_ProjectInfoContractEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoContract\DC_EngineProject_ProjectInfoContractIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoContract\DC_EngineProject_ProjectInfoContractService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoUnit\DC_EngineProject_ProjectInfoUnitBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoUnit\DC_EngineProject_ProjectInfoUnitEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoUnit\DC_EngineProject_ProjectInfoUnitIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoUnit\DC_EngineProject_ProjectInfoUnitService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfo\DC_EngineProject_ProjectInfoBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfo\DC_EngineProject_ProjectInfoEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfo\DC_EngineProject_ProjectInfoIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfo\DC_EngineProject_ProjectInfoService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectProgress\DC_EngineProject_ProjectProgressBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectProgress\DC_EngineProject_ProjectProgressEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectProgress\DC_EngineProject_ProjectProgressIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectProgress\DC_EngineProject_ProjectProgressService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasks\GanttEntity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemDemo\DataConvertSerivers.cs" />
+    <Compile Include="SystemDemo\DataInit.cs" />
+    <Compile Include="SystemDemo\Demoleave\DemoleaveBLL.cs" />
+    <Compile Include="SystemDemo\Demoleave\DemoleaveEntity.cs" />
+    <Compile Include="SystemDemo\Demoleave\DemoleaveIBLL.cs" />
+    <Compile Include="SystemDemo\Demoleave\DemoleaveService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Leave\DC_OA_LeaveEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Leave\DC_OA_LeaveService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Leave\DC_OA_LeaveBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Leave\DC_OA_LeaveIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocManager\DC_OA_ReceiveOfficialDocEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocManager\DC_OA_ReceiveOfficialDocManagerService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocManager\DC_OA_ReceiveOfficialDocManagerBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocManager\DC_OA_ReceiveOfficialDocManagerIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceSetting\DC_OA_AttenceSettingEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceSetting\DC_OA_AttenceSettingService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceSetting\DC_OA_AttenceSettingBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceSetting\DC_OA_AttenceSettingIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Archives\DC_OA_ArchivesEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Archives\DC_OA_ArchivesService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Archives\DC_OA_ArchivesBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Archives\DC_OA_ArchivesIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRecord\DC_OA_AttenceRecordEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRecord\DC_OA_AttenceRecordService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRecord\DC_OA_AttenceRecordBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRecord\DC_OA_AttenceRecordIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseCompany\DC_OA_PurchaseCompanyEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseCompany\DC_OA_PurchaseCompanyService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseCompany\DC_OA_PurchaseCompanyBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseCompany\DC_OA_PurchaseCompanyIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseReply\DC_OA_PurchaseReplyEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseReply\DC_OA_PurchaseReplyService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseReply\DC_OA_PurchaseReplyIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseReply\DC_OA_PurchaseReplyBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAudit\DC_OA_PurchaseAuditEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAudit\DC_OA_PurchaseAuditService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAudit\DC_OA_PurchaseAuditIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAudit\DC_OA_PurchaseAuditBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchasePublic\DC_OA_PurchasePublicEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchasePublic\DC_OA_PurchasePublicService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchasePublic\DC_OA_PurchasePublicIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchasePublic\DC_OA_PurchasePublicBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditResult\DC_OA_PurchaseAuditResultEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditResult\DC_OA_PurchaseAuditResultService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditResult\DC_OA_PurchaseAuditResultIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditResult\DC_OA_PurchaseAuditResultBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDeposit\DC_OA_PurchaseDepositEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDeposit\DC_OA_PurchaseDepositDetailEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDeposit\DC_OA_PurchaseDepositService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDeposit\DC_OA_PurchaseDepositBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDeposit\DC_OA_PurchaseDepositIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRepairRocord\DC_OA_AttenceRepairRocordEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRepairRocord\DC_OA_AttenceRepairRocordService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRepairRocord\DC_OA_AttenceRepairRocordIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRepairRocord\DC_OA_AttenceRepairRocordBLL.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq\LeaveReqService.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq\LeaveReqIBLL.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReq\LeaveReqBLL.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq\EvectionReqService.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq\EvectionReqIBLL.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReq\EvectionReqBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_ContactUnit\DC_ASSETS_ContactUnitEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_ContactUnit\DC_ASSETS_ContactUnitService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_ContactUnit\DC_ASSETS_ContactUnitBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_ContactUnit\DC_ASSETS_ContactUnitIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfo\DC_ASSETS_LandBaseInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfo\DC_ASSETS_LandBaseInfoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfo\DC_ASSETS_LandBaseInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfo\DC_ASSETS_LandBaseInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfo\DC_ASSETS_BuildingBaseInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfo\DC_ASSETS_BuildingBaseInfoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfo\DC_ASSETS_BuildingBaseInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfo\DC_ASSETS_BuildingBaseInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfo\DC_ASSETS_HouseInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfo\DC_ASSETS_HouseInfoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfo\DC_ASSETS_HouseInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfo\DC_ASSETS_HouseInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboards\DC_ASSETS_BusStopBillboardsEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboards\DC_ASSETS_BusStopBillboardsService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboards\DC_ASSETS_BusStopBillboardsBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboards\DC_ASSETS_BusStopBillboardsIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentInfo\DC_ASSETS_EquipmentInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentInfo\DC_ASSETS_EquipmentInfoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentInfo\DC_ASSETS_EquipmentInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentInfo\DC_ASSETS_EquipmentInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInfo\DC_ASSETS_EquipmentPartsInfoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInfo\DC_ASSETS_EquipmentPartsInfoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInfo\DC_ASSETS_EquipmentPartsInfoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInfo\DC_ASSETS_EquipmentPartsInfoIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsRelation\DC_ASSETS_EquipmentPartsRelationEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DC_ASSETS_EquipmentPartsIntoEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DC_ASSETS_EquipmentPartsIntoDetailEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DC_ASSETS_EquipmentPartsIntoService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DC_ASSETS_EquipmentPartsIntoBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInto\DC_ASSETS_EquipmentPartsIntoIBLL.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq\ExtraWorkReqService.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq\ExtraWorkReqIBLL.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReq\ExtraWorkReqBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PersonBackUp\DC_OA_PersonBackUpEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PersonBackUp\DC_OA_PersonBackUpService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PersonBackUp\DC_OA_PersonBackUpIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PersonBackUp\DC_OA_PersonBackUpBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_YearHolidayRule\DC_OA_YearHolidayRuleEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_YearHolidayRule\DC_OA_YearHolidayRuleService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_YearHolidayRule\DC_OA_YearHolidayRuleBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_YearHolidayRule\DC_OA_YearHolidayRuleIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UseHoliday\DC_OA_UseHolidayEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UseHoliday\DC_OA_UseHolidayService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UseHoliday\DC_OA_UseHolidayBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UseHoliday\DC_OA_UseHolidayIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRoom_Edit\DC_OA_MeetingRoom_EditService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRoom_Edit\DC_OA_MeetingRoom_EditBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRoom_Edit\DC_OA_MeetingRoom_EditIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseContract\DC_ASSETS_LandBaseContractEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseContract\DC_ASSETS_LandBaseContractService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseContract\DC_ASSETS_LandBaseContractBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseContract\DC_ASSETS_LandBaseContractIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseCertificates\DC_ASSETS_LandBaseCertificatesEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseCertificates\DC_ASSETS_LandBaseCertificatesService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseCertificates\DC_ASSETS_LandBaseCertificatesBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseCertificates\DC_ASSETS_LandBaseCertificatesIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseIdleFeesPayment\DC_ASSETS_LandBaseIdleFeesPaymentEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseIdleFeesPayment\DC_ASSETS_LandBaseIdleFeesPaymentService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseIdleFeesPayment\DC_ASSETS_LandBaseIdleFeesPaymentBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseIdleFeesPayment\DC_ASSETS_LandBaseIdleFeesPaymentIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseStartComplete\DC_ASSETS_LandBaseStartCompleteEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseStartComplete\DC_ASSETS_LandBaseStartCompleteService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseStartComplete\DC_ASSETS_LandBaseStartCompleteBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseStartComplete\DC_ASSETS_LandBaseStartCompleteIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseMortgage\DC_ASSETS_LandBaseMortgageEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseMortgage\DC_ASSETS_LandBaseMortgageService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseMortgage\DC_ASSETS_LandBaseMortgageBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseMortgage\DC_ASSETS_LandBaseMortgageIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubject\DC_OA_MeetingSubjectEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubject\DC_OA_MeetingSubjectService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubject\DC_OA_MeetingSubjectBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubject\DC_OA_MeetingSubjectIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectSum\DC_OA_MeetingSubjectSumEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectSum\DC_OA_MeetingSubjectSumService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectSum\DC_OA_MeetingSubjectSumBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectSum\DC_OA_MeetingSubjectSumIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_CostReimbursementGather\DC_OA_CostReimbursementGatherEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_CostReimbursementGather\DC_OA_CostReimbursementGatherService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_CostReimbursementGather\DC_OA_CostReimbursementGatherIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_CostReimbursementGather\DC_OA_CostReimbursementGatherBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Meeting\DC_OA_MeetingEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Meeting\DC_OA_MeetingService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Meeting\DC_OA_MeetingBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_Meeting\DC_OA_MeetingIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosing\DC_OA_OverSeeWorkClosingEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosing\DC_OA_OverSeeWorkClosingDetailedEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosing\DC_OA_OverSeeWorkClosingService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosing\DC_OA_OverSeeWorkClosingBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosing\DC_OA_OverSeeWorkClosingIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelay\DC_OA_OverSeeWorkDelayEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelay\DC_OA_OverSeeWorkDelayDetailedEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelay\DC_OA_OverSeeWorkDelayService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelay\DC_OA_OverSeeWorkDelayBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelay\DC_OA_OverSeeWorkDelayIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AppropriationApprove\DC_OA_AppropriationApproveEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AppropriationApprove\DC_OA_AppropriationApproveService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AppropriationApprove\DC_OA_AppropriationApproveBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AppropriationApprove\DC_OA_AppropriationApproveIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasks\DC_EngineProject_ProjectTasksEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasks\DC_EngineProject_ProjectTasksService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasks\DC_EngineProject_ProjectTasksBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasks\DC_EngineProject_ProjectTasksIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksProgress\DC_EngineProject_ProjectTasksProgressEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksProgress\DC_EngineProject_ProjectTasksProgressService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksProgress\DC_EngineProject_ProjectTasksProgressBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksProgress\DC_EngineProject_ProjectTasksProgressIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectExaminationSupervise\DC_EngineProject_ProjectExaminationSuperviseEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectExaminationSupervise\DC_EngineProject_ProjectExaminationSuperviseService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectExaminationSupervise\DC_EngineProject_ProjectExaminationSuperviseBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectExaminationSupervise\DC_EngineProject_ProjectExaminationSuperviseIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectCompanyRiskControl\DC_EngineProject_ProjectCompanyRiskControlEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectCompanyRiskControl\DC_EngineProject_ProjectCompanyRiskControlService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectCompanyRiskControl\DC_EngineProject_ProjectCompanyRiskControlBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectCompanyRiskControl\DC_EngineProject_ProjectCompanyRiskControlIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControl\DC_EngineProject_ProjectPersonRiskControlEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControl\DC_EngineProject_ProjectPersonRiskControlAssessmentEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControl\DC_EngineProject_ProjectPersonRiskControlService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControl\DC_EngineProject_ProjectPersonRiskControlBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControl\DC_EngineProject_ProjectPersonRiskControlIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoApprovalData\DC_EngineProject_ProjectInfoApprovalDataEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoApprovalData\DC_EngineProject_ProjectInfoApprovalDataService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoApprovalData\DC_EngineProject_ProjectInfoApprovalDataBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoApprovalData\DC_EngineProject_ProjectInfoApprovalDataIBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeettingRelation\DC_OA_MeettingRelationEntity.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeettingRelation\DC_OA_MeettingRelationService.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeettingRelation\DC_OA_MeettingRelationBLL.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeettingRelation\DC_OA_MeettingRelationIBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_EvaluationSubject\DC_EngineProject_EvaluationSubjectEntity.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_EvaluationSubject\DC_EngineProject_EvaluationSubjectService.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_EvaluationSubject\DC_EngineProject_EvaluationSubjectBLL.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_EvaluationSubject\DC_EngineProject_EvaluationSubjectIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail_Info\DC_ASSETS_HouseRentDetail_InfoEntity.cs" />
+    <Compile Include="ProjectManager\ProjectAttenceRecord\Project_AttenceRecordEntity.cs" />
+    <Compile Include="ProjectManager\ProjectAttenceRecord\ProjectAttenceRecordService.cs" />
+    <Compile Include="ProjectManager\ProjectAttenceRecord\ProjectAttenceRecordBLL.cs" />
+    <Compile Include="ProjectManager\ProjectAttenceRecord\ProjectAttenceRecordIBLL.cs" />
+    <Compile Include="EcologyDemo\HrmSubCompany\HrmSubCompanyEntity.cs" />
+    <Compile Include="EcologyDemo\HrmSubCompany\HrmSubCompanyService.cs" />
+    <Compile Include="EcologyDemo\HrmSubCompany\HrmSubCompanyIBLL.cs" />
+    <Compile Include="EcologyDemo\HrmSubCompany\HrmSubCompanyBLL.cs" />
+    <Compile Include="EcologyDemo\HrmResource\HrmResourceEntity.cs" />
+    <Compile Include="EcologyDemo\HrmResource\HrmResourceService.cs" />
+    <Compile Include="EcologyDemo\HrmResource\HrmResourceIBLL.cs" />
+    <Compile Include="EcologyDemo\HrmResource\HrmResourceBLL.cs" />
+    <Compile Include="EcologyDemo\HrmDepartment\HrmDepartmentEntity.cs" />
+    <Compile Include="EcologyDemo\HrmDepartment\HrmDepartmentService.cs" />
+    <Compile Include="EcologyDemo\HrmDepartment\HrmDepartmentIBLL.cs" />
+    <Compile Include="EcologyDemo\HrmDepartment\HrmDepartmentBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfofood\DC_ASSETS_LandBaseInfofoodEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfofood\DC_ASSETS_LandBaseInfofoodService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfofood\DC_ASSETS_LandBaseInfofoodIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfofood\DC_ASSETS_LandBaseInfofoodBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfofood\DC_ASSETS_HouseInfofoodEntity.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfofood\DC_ASSETS_HouseInfofoodService.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfofood\DC_ASSETS_HouseInfofoodIBLL.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfofood\DC_ASSETS_HouseInfofoodBLL.cs" />
+    <Compile Include="AssetManager\DC_Assets_HouseRentCPI\DC_Assets_HouseRentCPIEntity.cs" />
+    <Compile Include="AssetManager\DC_Assets_HouseRentCPI\DC_Assets_HouseRentCPIService.cs" />
+    <Compile Include="AssetManager\DC_Assets_HouseRentCPI\DC_Assets_HouseRentCPIBLL.cs" />
+    <Compile Include="AssetManager\DC_Assets_HouseRentCPI\DC_Assets_HouseRentCPIIBLL.cs" />
+    <Compile Include="EcologyDemo\BusStopBillboardsRepairRecord\formtable_main_120Entity.cs" />
+    <Compile Include="EcologyDemo\BusStopBillboardsRepairRecord\BusStopBillboardsRepairRecordService.cs" />
+    <Compile Include="EcologyDemo\BusStopBillboardsRepairRecord\BusStopBillboardsRepairRecordBLL.cs" />
+    <Compile Include="EcologyDemo\BusStopBillboardsRepairRecord\BusStopBillboardsRepairRecordIBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_131\formtable_main_131Entity.cs" />
+    <Compile Include="EcologyDemo\formtable_main_131\formtable_main_131Service.cs" />
+    <Compile Include="EcologyDemo\formtable_main_131\formtable_main_131BLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main_131\formtable_main_131IBLL.cs" />
+    <Compile Include="EcologyDemo\formtable_main134\formtable_main_134Entity.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaver\F_Annxles_weaverEntity.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaver\F_Annxles_weaverService.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaver\F_Annxles_weaverIBLL.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaver\F_Annxles_weaverBLL.cs" />
+    <Compile Include="EcologyDemo\Uf_Dbrwplb\uf_dbrwplbEntity.cs" />
+    <Compile Include="EcologyDemo\Uf_Dbrwplb\Uf_DbrwplbService.cs" />
+    <Compile Include="EcologyDemo\Uf_Dbrwplb\Uf_DbrwplbIBLL.cs" />
+    <Compile Include="EcologyDemo\Uf_Dbrwplb\Uf_DbrwplbBLL.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Learun.Util\Learun.Util.Operat\Learun.Util.Operat.csproj">
+      <Project>{ad556b7a-e0d1-41bd-9d5b-18f8502e9f33}</Project>
+      <Name>Learun.Util.Operat</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Learun.Util\Learun.Util\Learun.Util.csproj">
+      <Project>{cf8ae293-88ab-436c-9720-a8386ba5d7b7}</Project>
+      <Name>Learun.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

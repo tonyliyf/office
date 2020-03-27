@@ -1,0 +1,243 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+    .bd_th {
+        width: 10%;
+        line-height: 20px;
+        padding: 12px 3px 12px 3px;
+    }
+
+    .che_ovh {
+        line-height: 24px;
+    }
+</style>
+<div class="bd_home" style="">
+    <div class="bd_tit" style="text-align:center">
+        金润源集团公司
+        <input id="i1" class="user-edit bd_inp" type="text" style="width: 50px;margin-top: 8px;text-align:center;" class="bd_inp" />
+        月绩效考核评价表(班子成员)
+    </div>
+    <table id="edittable" border="1" width="100%" style="border-collapse:collapse;" cellspacing="" cellpadding="">
+        <tr class="bd_tr">
+            <th class="bd_th" colspan="2" style="">被考核人</th>
+            <th class="bd_th" colspan="2" style="">
+                @ViewBag.name
+            </th>
+            <th class="bd_th" style="">考核周期</th>
+            <th class="bd_th" style="" colspan="4">
+                <input id="i2" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />月
+                <input id="i3" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />日---
+                <input id="i4" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />月
+                <input id="i5" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />日
+            </th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" colspan="5" style="text-align: left;text-indent: 25px;line-height: 22px;">
+                A 绩效指标制定
+                <div>
+                    <span style="float: left;">考核人确认签字：</span>
+                    <div class="su_dv" contenteditable="true">
+
+                    </div>
+                </div>
+            </th>
+            <th class="bd_th" colspan="2">B 绩效评估(自评)</th>
+            <th class="bd_th" colspan="2">C 主管评价</th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">类别</th>
+            <th class="bd_th">项目</th>
+            <th class="bd_th">指标内容描述</th>
+            <th class="bd_th">分值</th>
+            <th class="bd_th">达成标准</th>
+            <th class="bd_th">实际达成</th>
+            <th class="bd_th">达成率</th>
+            <th class="bd_th">评分</th>
+            <th class="bd_th">扣分说明</th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" rowspan="12">工作任务指标<br />(60分)</th>
+            <th class="bd_th" rowspan="6">常规指标</th>
+            <th id="t1" class="bd_th checker-edit"></th>
+            <th id="t2" class="bd_th checker-edit"></th>
+            <th id="t3" class="bd_th checker-edit"></th>
+            <th id="t4" class="bd_th checker-edit"></th>
+            <th id="t5" class="bd_th checker-edit"></th>
+            <th id="t6" class="bd_th checker-edit score"></th>
+            <th id="t7" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t8" class="bd_th checker-edit"></th>
+            <th id="t9" class="bd_th checker-edit"></th>
+            <th id="t10" class="bd_th checker-edit"></th>
+            <th id="t11" class="bd_th checker-edit"></th>
+            <th id="t12" class="bd_th checker-edit"></th>
+            <th id="t13" class="bd_th checker-edit score"></th>
+            <th id="t14" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t15" class="bd_th checker-edit"></th>
+            <th id="t16" class="bd_th checker-edit"></th>
+            <th id="t17" class="bd_th checker-edit"></th>
+            <th id="t18" class="bd_th checker-edit"></th>
+            <th id="t19" class="bd_th checker-edit"></th>
+            <th id="t20" class="bd_th checker-edit score"></th>
+            <th id="t21" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t15z" class="bd_th checker-edit"></th>
+            <th id="t16z" class="bd_th checker-edit"></th>
+            <th id="t17z" class="bd_th checker-edit"></th>
+            <th id="t18z" class="bd_th checker-edit"></th>
+            <th id="t19z" class="bd_th checker-edit"></th>
+            <th id="t20z" class="bd_th checker-edit score"></th>
+            <th id="t21z" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t15a" class="bd_th checker-edit"></th>
+            <th id="t16a" class="bd_th checker-edit"></th>
+            <th id="t17a" class="bd_th checker-edit"></th>
+            <th id="t18a" class="bd_th checker-edit"></th>
+            <th id="t19a" class="bd_th checker-edit"></th>
+            <th id="t20a" class="bd_th checker-edit score"></th>
+            <th id="t21a" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t15q" class="bd_th checker-edit"></th>
+            <th id="t16q" class="bd_th checker-edit"></th>
+            <th id="t17q" class="bd_th checker-edit"></th>
+            <th id="t18q" class="bd_th checker-edit"></th>
+            <th id="t19q" class="bd_th checker-edit"></th>
+            <th id="t20q" class="bd_th checker-edit score"></th>
+            <th id="t21q" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" rowspan="6">临时指标</th>
+            <th id="t22" class="bd_th checker-edit"></th>
+            <th id="t23" class="bd_th checker-edit"></th>
+            <th id="t24" class="bd_th checker-edit"></th>
+            <th id="t25" class="bd_th checker-edit"></th>
+            <th id="t26" class="bd_th checker-edit"></th>
+            <th id="t27" class="bd_th checker-edit score"></th>
+            <th id="t28" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t29" class="bd_th checker-edit"></th>
+            <th id="t30" class="bd_th checker-edit"></th>
+            <th id="t31" class="bd_th checker-edit"></th>
+            <th id="t32" class="bd_th checker-edit"></th>
+            <th id="t33" class="bd_th checker-edit"></th>
+            <th id="t34" class="bd_th checker-edit score"></th>
+            <th id="t35" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t36" class="bd_th checker-edit"></th>
+            <th id="t37" class="bd_th checker-edit"></th>
+            <th id="t38" class="bd_th checker-edit"></th>
+            <th id="t39" class="bd_th checker-edit"></th>
+            <th id="t40" class="bd_th checker-edit"></th>
+            <th id="t41" class="bd_th checker-edit score"></th>
+            <th id="t42" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t36z" class="bd_th checker-edit"></th>
+            <th id="t37z" class="bd_th checker-edit"></th>
+            <th id="t38z" class="bd_th checker-edit"></th>
+            <th id="t39z" class="bd_th checker-edit"></th>
+            <th id="t40z" class="bd_th checker-edit"></th>
+            <th id="t41z" class="bd_th checker-edit score"></th>
+            <th id="t42z" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t36a" class="bd_th checker-edit"></th>
+            <th id="t37a" class="bd_th checker-edit"></th>
+            <th id="t38a" class="bd_th checker-edit"></th>
+            <th id="t39a" class="bd_th checker-edit"></th>
+            <th id="t40a" class="bd_th checker-edit"></th>
+            <th id="t41a" class="bd_th checker-edit score"></th>
+            <th id="t42a" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th id="t36q" class="bd_th checker-edit"></th>
+            <th id="t37q" class="bd_th checker-edit"></th>
+            <th id="t38q" class="bd_th checker-edit"></th>
+            <th id="t39q" class="bd_th checker-edit"></th>
+            <th id="t40q" class="bd_th checker-edit"></th>
+            <th id="t41q" class="bd_th checker-edit score"></th>
+            <th id="t42q" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" rowspan="5">共性指标<br />(40分)</th>
+            <th class="bd_th">意识形态</th>
+            <th id="t43" class="bd_th checker-edit"></th>
+            <th id="t44" class="bd_th checker-edit"></th>
+            <th id="t45" class="bd_th checker-edit"></th>
+            <th id="t46" class="bd_th checker-edit"></th>
+            <th id="t47" class="bd_th checker-edit"></th>
+            <th id="t48" class="bd_th checker-edit score"></th>
+            <th id="t49" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">廉洁自律</th>
+            <th id="t50" class="bd_th checker-edit"></th>
+            <th id="t51" class="bd_th checker-edit"></th>
+            <th id="t52" class="bd_th checker-edit"></th>
+            <th id="t53" class="bd_th checker-edit"></th>
+            <th id="t54" class="bd_th checker-edit"></th>
+            <th id="t55" class="bd_th checker-edit score"></th>
+            <th id="t56" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">作风建设</th>
+            <th id="t57" class="bd_th checker-edit"></th>
+            <th id="t58" class="bd_th checker-edit"></th>
+            <th id="t59" class="bd_th checker-edit"></th>
+            <th id="t60" class="bd_th checker-edit"></th>
+            <th id="t61" class="bd_th checker-edit"></th>
+            <th id="t62" class="bd_th checker-edit score"></th>
+            <th id="t63" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">安全生产</th>
+            <th id="t64" class="bd_th checker-edit"></th>
+            <th id="t65" class="bd_th checker-edit"></th>
+            <th id="t66" class="bd_th checker-edit"></th>
+            <th id="t67" class="bd_th checker-edit"></th>
+            <th id="t68" class="bd_th checker-edit"></th>
+            <th id="t69" class="bd_th checker-edit score"></th>
+            <th id="t70" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">管理责任</th>
+            <th id="t71" class="bd_th checker-edit"></th>
+            <th id="t72" class="bd_th checker-edit"></th>
+            <th id="t73" class="bd_th checker-edit"></th>
+            <th id="t74" class="bd_th checker-edit"></th>
+            <th id="t75" class="bd_th checker-edit"></th>
+            <th id="t76" class="bd_th checker-edit score"></th>
+            <th id="t77" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" colspan="7">合计</th>
+            <th id="t78" class="bd_th none-edit"></th>
+            <th class="bd_th"></th>
+        </tr>
+        <tr class="bd_tr" style="height: 60px;">
+            <th class="bd_th" colspan="3">考核结果确认</th>
+            <th class="bd_th" colspan="7">
+                <div class="che_ovh">
+                    <span style="float: left;">被考核人： </span>
+                    <input type="text" style="width: 40px;" class="bd_inp" />
+                </div>
+                <div class="che_ovh" style="margin-right: 0px;">
+                    <span style="float: left;">被考核人： </span>
+                    <input type="text" style="width: 40px;" class="bd_inp" />
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheck/Form5.js")
+@Html.AppendJsFile("/Content/edittable/edittable.js")
+@Html.AppendCssFile("/Content/edittable/bd.css")

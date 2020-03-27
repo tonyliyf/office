@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout lr-layout-left-center" id="lr_layout">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title lrlg ">文件类型</div>
+            <div id="dataTree" class="lr-layout-body"></div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap  ">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">文件列表</span>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+
+                        <a id="lr_brower" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;浏览所有图片</a>
+                       
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/Index.js")

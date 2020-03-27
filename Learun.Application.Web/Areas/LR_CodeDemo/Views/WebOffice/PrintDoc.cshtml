@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=8;IE=7">
+    <link href="~/Content/pace/pace-theme-loading-bar.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/font/learunfont/iconfont.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/toastr/toastr.css" rel="stylesheet" />
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/LR_Content/plugin/scroll/scroll.css",
+    "/Views/LR_Content/style/lr-admin.css",
+    "/Views/LR_Content/style/lr-layer.css",
+    "/Views/LR_Content/plugin/contextmenu/lr-contextmenu.css",
+    "/Views/LR_Content/plugin/tree/lr-tree.css",
+    "/Views/LR_Content/plugin/select/lr-select.css"
+    )
+
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/signalr/jquery.signalR-2.2.2.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <script src="~/Content/bootstrap/bootstrap.min.js"></script>
+    <script src="~/Content/jquery/plugin/layer/layer.js"></script>
+    <script src="~/Content/jquery/plugin/jquery.cookie.min.js"></script>
+    <script src="~/Content/jquery/jquery.md5.min.js"></script>
+    <script src="~/Content/jquery/plugin/toastr/toastr.min.js"></script>
+
+    <script>
+        $.rootUrl = '@Url.Content("~")'.substr(0, '@Url.Content("~")'.length - 1);
+    </script>
+    @Html.AppendJsFile(
+    "/Views/LR_Content/plugin/resize/resize.js",
+    "/Views/LR_Content/plugin/mousewheel/mousewheel.js",
+
+    "/Views/LR_Content/script/lr-base.js",
+    "/Views/LR_Content/plugin/scroll/scroll.js",
+
+    "/Views/LR_Content/script/lr-tabs.js",
+    "/Views/LR_Content/script/lr-date.js",
+    "/Views/LR_Content/script/lr-validator-helper.js",
+    "/Views/LR_Content/script/lr-layer.js",
+    "/Views/LR_Content/script/lr-ajax.js",
+    "/Views/LR_Content/script/lr-clientdata.js",
+    "/Views/LR_Content/script/lr-language.js",
+
+    "/Views/LR_Content/plugin/tree/lr-tree.js",
+    "/Views/LR_Content/plugin/select/lr-select.js",
+
+
+    "/Views/LR_Content/plugin/workflow/lr-workflow-api.js",
+    "/Views/LR_Content/plugin/contextmenu/lr-contextmenu.js",
+    "/Views/LR_Content/script/lr-im.js"
+    )
+    <script src="~/Content/webOffice/webOffice.js"></script>
+</head>
+<body onload="javascript:init()">
+    <div id="acx" style="width:100%;height:100%">
+    </div>
+    <script src="~/Content/jQuery-EasyUi/jquery.min.js"></script>
+    <script src="~/Content/webOffice/webOffice.js"></script>
+    <script type="text/javascript">
+        function request(d) { for (var c = location.search.slice(1).split("&"), a = 0; a < c.length; a++) { var b = c[a].split("="); if (b[0] == d) if ("undefined" == unescape(b[1])) break; else return unescape(b[1]) } return "" };
+        function init() {
+            var strRoot = window.location.protocol + "//" + window.location.host
+            var keyValue = request('keyValue')
+            var type = request('type')
+            if (type == "send") {
+                $('#acx').WebOffice({
+                    showMenu: false,
+                    editable: false,
+                    openUrl: strRoot + '/LR_CodeDemo/WebOffice/DownAnnexesFileNew?fileId=' + keyValue,
+                    saveUrl: strRoot + '/LR_CodeDemo/WebOffice/UploadAnnexesFileNew?fileId=' + keyValue,
+                    template: [],
+                    btn: ['save', 'signet', 'redprint']
+                })
+                return
+            } else {
+                $('#acx').WebOffice({
+                    showMenu: false,
+                    editable: false,
+                    openUrl: strRoot + '/LR_CodeDemo/WebOffice/DownAnnexesFileNew?fileId=' + keyValue,
+                    saveUrl: strRoot + '/LR_CodeDemo/WebOffice/UploadAnnexesFileNew?fileId=' + keyValue,
+                    template: [],
+                    btn: []
+                })
+            }
+        }
+    </script>
+    <script language="javascript" for="WebOffice" event="OnMenuCommand(param1,param2)">
+        var DID = request('DID')
+        var strRoot = window.location.protocol + "//" + window.location.host
+        switch (param1) {
+            case 50000:
+                $('#acx').WebOffice('save')
+                break;
+            case 50001:
+                $('#acx').WebOffice('download')
+                break;
+            case 50002:
+                $('#acx').WebOffice('print')
+                break;
+            case 50003:
+                top.learun.layerForm({
+                    id: 'StampDetailIndex',
+                    title: '印章列表',
+                    url: strRoot + '/LR_CodeDemo/WebOffice/StampDetailIndex',
+                    width: 1050,
+                    height: 600,
+                    callBack: function (id) {
+                        return top[id].acceptClick(function (imgutl) {
+                            learun.layerForm({
+                                id: 'EqualForm',
+                                title: '密码验证',
+                                url: strRoot + '/LR_CodeDemo/WebOffice/EqualForm?keyValue=' + imgutl,
+                                width: 360,
+                                height: 140,
+                                callBack: function (id) {
+                                    return top[id].acceptClick(function () {
+                                        $('#acx').WebOffice('signet', strRoot + '/LR_CodeDemo/WebOffice/GetImg?keyValue=' + imgutl)
+                                    });
+                                }
+                            });
+                        });
+                    }
+                });
+                break;
+            case 50004:
+                $.post(strRoot + '/LR_CodeDemo/WebOffice/GetDocTemplateFileInfos', { keyValue: DID }, function (data) {
+                    var sub = function (id) {
+                        return (id == '') ? id : (strRoot + '/LR_CodeDemo/WebOffice/DownAnnexesFileByFolder?folderid=' + id)
+                    }
+                    var template = data.template
+                    template.first = sub(template.first)
+                    template.second = sub(template.second)
+                    template.third = sub(template.third)
+                    $('#acx').WebOffice('redprint', template)
+                }, 'json')
+                break;
+            default:
+        }
+    </script>
+</body>
+</html>

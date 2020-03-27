@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79F8E2F1-08E7-4336-93E0-512B39F9DD54}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Learun.Application.Mapping</RootNamespace>
+    <AssemblyName>Learun.Application.Mapping</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.AppMagager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.AppMagager.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Base, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.CRM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.CRM.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Excel, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Form, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Form.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.IM, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.IM.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Message, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Message.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.OA, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.OA.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Organization, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Organization.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.Report, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.WeChat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.WeChat.dll</HintPath>
+    </Reference>
+    <Reference Include="Learun.Application.WorkFlow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Learun.Application.WorkFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMaintenanceRecordsMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentDetailMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentIncomeMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BusStopBillboardsRentMainMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_ContactUnitMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentInfoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenancePartsUseMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentMaintenanceRecordsProcessMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsInfoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsIntoDetailMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsIntoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOutDetailMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsOutMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_EquipmentPartsRelationMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetailHistoryMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetailMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail_InfoHistoryMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentIncomeMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentMainMapHistory.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfoMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandHandUpInfoMap.cs" />
+    <Compile Include="EcologyDemo\formtable_main_139Map.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140Map.cs" />
+    <Compile Include="EcologyDemo\formtable_main_140_dt1Map.cs" />
+    <Compile Include="EcologyDemo\formtable_main_150Map.cs" />
+    <Compile Include="EcologyDemo\uf_durwzxnewMap.cs" />
+    <Compile Include="LR_App\DTImgMap.cs" />
+    <Compile Include="LR_App\FunctionMap.cs" />
+    <Compile Include="LR_App\FunctionSchemeMap.cs" />
+    <Compile Include="LR_App\MyFunctionMap.cs" />
+    <Compile Include="LR_Authorize\AuthorizeMap.cs" />
+    <Compile Include="LR_Authorize\FilterIPMap.cs" />
+    <Compile Include="LR_Authorize\FilterTimeMap.cs" />
+    <Compile Include="LR_Authorize\UserRelationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialPaintTemplateMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_HolidaySettingMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStockDetailsMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_InStockMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRecordMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingRoomMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReplyDetailMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OfficeWoodsReplyMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OilAuidtMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStockDetailsMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OutStockMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletinDetailedMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkBulletinMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverDetailMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkHandoverMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkScoreMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskExecuteMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkTaskSplitMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyBranchMeetingMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMemberDependentsMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PartyMemberMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceCheckTemplateMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkInterviewMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseAuditResultMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDepositDetailMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseDepositMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchasePublicMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseReplyMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_StockWoodsMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UseHolidayMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_UserSignatureMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_VehicleMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_YearHolidayRuleMap.cs" />
+    <Compile Include="LR_CodeDemo\DeptNoticeMap.cs" />
+    <Compile Include="LR_CRM\CrmCustomerContactMap.cs" />
+    <Compile Include="LR_CRM\CrmChanceMap.cs" />
+    <Compile Include="LR_Excel\ExcelExportMap.cs" />
+    <Compile Include="LR_Excel\ExcelImportFieldMap.cs" />
+    <Compile Include="LR_Excel\ExcelImportMap.cs" />
+    <Compile Include="LR_Form\FormRelationMap.cs" />
+    <Compile Include="LR_Form\FormSchemeInfoMap.cs" />
+    <Compile Include="LR_Form\FormSchemeMap.cs" />
+    <Compile Include="LR_IM\IMContactsMap.cs" />
+    <Compile Include="LR_IM\IMMsgMap.cs" />
+    <Compile Include="LR_IM\IMSysUserMap.cs" />
+    <Compile Include="LR_Message\DC_OA_MessageMap.cs" />
+    <Compile Include="LR_Message\LR_MS_StrategyInfoMap.cs" />
+    <Compile Include="LR_OA\EmailConfigMap.cs" />
+    <Compile Include="LR_OA\EmailReceiveMap.cs" />
+    <Compile Include="LR_OA\EmailSendMap.cs" />
+    <Compile Include="LR_OA\FileFolderMap.cs" />
+    <Compile Include="LR_OA\FileInfoMap.cs" />
+    <Compile Include="LR_OA\ScheduleMap.cs" />
+    <Compile Include="LR_OA\NewsMap.cs" />
+    <Compile Include="LR_OA\StampMap.cs" />
+    <Compile Include="LR_Organization\CompanyMap.cs" />
+    <Compile Include="LR_Organization\DepartmentMap.cs" />
+    <Compile Include="LR_Organization\PostMap.cs" />
+    <Compile Include="LR_Organization\RoleMap.cs" />
+    <Compile Include="LR_Organization\UserMap.cs" />
+    <Compile Include="LR_ReportModule\CachetReqMap.cs" />
+    <Compile Include="LR_Report\ReportTempMap.cs" />
+    <Compile Include="LR_SystemDemo\DemoleaveMap.cs" />
+    <Compile Include="LR_System\AnnexesFileMap.cs" />
+    <Compile Include="LR_System\CodeRule\CodeRuleMap.cs" />
+    <Compile Include="LR_System\CodeRule\CodeRuleSeedMap.cs" />
+    <Compile Include="LR_System\CustmerQueryMap.cs" />
+    <Compile Include="LR_System\Database\DatabaseLinkMap.cs" />
+    <Compile Include="LR_System\Database\DbDraftMap.cs" />
+    <Compile Include="LR_System\Database\DbFieldMap.cs" />
+    <Compile Include="LR_System\DataItem\DataItemDetailMap.cs" />
+    <Compile Include="LR_System\DataItem\DataItemMap.cs" />
+    <Compile Include="LR_System\DataSourceMap.cs" />
+    <Compile Include="LR_System\ImgMap.cs" />
+    <Compile Include="LR_System\InterfaceMap.cs" />
+    <Compile Include="LR_System\LogMap.cs" />
+    <Compile Include="LR_System\AreaMap.cs" />
+    <Compile Include="LR_System\LogoImgMap.cs" />
+    <Compile Include="LR_System\Module\ModuleButtonMap.cs" />
+    <Compile Include="LR_System\Module\ModuleColumnMap.cs" />
+    <Compile Include="LR_System\Module\ModuleFormMap.cs" />
+    <Compile Include="LR_System\Module\ModuleMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFConfluenceMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFDelegateRelationMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFDelegateRuleMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFProcessMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFSchemeAuthMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFSchemeInfoMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFSchemeMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFTaskLogMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFTaskMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFTaskMsgMap.cs" />
+    <Compile Include="LR_WorkflowNew\NWFTaskRelationMap.cs" />
+    <Compile Include="LR_WorkFlow\WfConfluenceMap.cs" />
+    <Compile Include="LR_WorkFlow\WfDelegateRuleMap.cs" />
+    <Compile Include="LR_WorkFlow\WfDelegateRuleRelationMap.cs" />
+    <Compile Include="LR_WorkFlow\WfProcessInstanceMap.cs" />
+    <Compile Include="LR_WorkFlow\WfSchemeAuthorizeMap.cs" />
+    <Compile Include="LR_WorkFlow\WfSchemeInfoMap.cs" />
+    <Compile Include="LR_WorkFlow\WfSchemeMap.cs" />
+    <Compile Include="LR_WorkFlow\WfTaskHistoryMap.cs" />
+    <Compile Include="LR_WorkFlow\WfTaskMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryDetailMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_BuilderDiaryMainMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ConstructionRecordMonthMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_MeetingRecordMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectCompanyRiskControlMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectExaminationSuperviseMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoContractMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoUnitMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControlAssessmentMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectPersonRiskControlMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectProgressMap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LR_Authorize\DataAuthorizeConditionMap.cs" />
+    <Compile Include="LR_Authorize\DataAuthorizeRelationMap.cs" />
+    <Compile Include="LR_CRM\CrmOrderMap.cs" />
+    <Compile Include="LR_CRM\CrmOrderEntryMap.cs" />
+    <Compile Include="LR_CRM\CrmCustomerMap.cs" />
+    <Compile Include="LR_CRM\CrmTrailRecordMap.cs" />
+    <Compile Include="LR_CRM\CrmCashBalanceMap.cs" />
+    <Compile Include="LR_CRM\CrmExpensesMap.cs" />
+    <Compile Include="LR_CRM\CrmInvoiceMap.cs" />
+    <Compile Include="LR_CRM\CrmReceivableMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_DispatchOfficialDocMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ReceiveOfficialDocMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceSettingMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_ArchivesMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRecordMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalTemplateMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceAppraisalMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformancePostRelationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceRecordRunMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRREvaluationUserRelationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PRRSelfUserRelationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceUserWorkPlanMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceExecuteMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PerformanceEvaluationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PurchaseCompanyMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AttenceRepairRocordMap.cs" />
+    <Compile Include="LR_CodeDemo\LeaveReqMap.cs" />
+    <Compile Include="LR_CodeDemo\EvectionReqMap.cs" />
+    <Compile Include="LR_CodeDemo\ExtraWorkReqMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_PersonBackUpMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseContractMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseCertificatesMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseIdleFeesPaymentMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseStartCompleteMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseMortgageMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeetingSubjectSumMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_CostReimbursementGatherMap.cs" />
+    <Compile Include="LR_ReportModule\VehicleReqMap.cs" />
+    <Compile Include="LR_ReportModule\DC_OA_VehicleRepairRecordMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosingMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkClosingDetailedMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelayMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_OverSeeWorkDelayDetailedMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_AppropriationApproveMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_LargeCostPayMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectTasksProgressMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_ProjectInfoApprovalDataMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_MeettingRelationMap.cs" />
+    <Compile Include="LR_CodeDemo\DC_OA_SignContentsMap.cs" />
+    <Compile Include="ProjectManager\DC_EngineProject_EvaluationSubjectMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseRentDetail_InfoMap.cs" />
+    <Compile Include="ProjectManager\Project_AttenceRecordMap.cs" />
+    <Compile Include="EcologyDemo\HrmSubCompanyMap.cs" />
+    <Compile Include="EcologyDemo\HrmResourceMap.cs" />
+    <Compile Include="EcologyDemo\HrmDepartmentMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_LandBaseInfofoodMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_BuildingBaseInfofoodMap.cs" />
+    <Compile Include="AssetManager\DC_ASSETS_HouseInfofoodMap.cs" />
+    <Compile Include="AssetManager\DC_Assets_HouseRentCPIMap.cs" />
+    <Compile Include="EcologyDemo\formtable_main_120Map.cs" />
+    <Compile Include="EcologyDemo\formtable_main_131Map.cs" />
+    <Compile Include="EcologyDemo\formtable_main_134Map.cs" />
+    <Compile Include="LR_CodeDemo\F_Annxles_weaverMap.cs" />
+    <Compile Include="EcologyDemo\uf_dbrwplbMap.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Learun.Application.TwoDevelopment\Learun.Application.TwoDevelopment.csproj">
+      <Project>{56f9a112-fd96-4809-98f4-0d7c5de0711b}</Project>
+      <Name>Learun.Application.TwoDevelopment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

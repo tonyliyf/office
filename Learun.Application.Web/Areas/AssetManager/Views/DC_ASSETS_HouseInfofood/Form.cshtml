@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseInfofood";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">主键<font face="宋体">*</font></div>
+        <input id="F_HouseID" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">建筑基本信息表主键<font face="宋体">*</font></div>
+        <input id="F_BBIId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">单元编码，楼栋编号+单元编号<font face="宋体">*</font></div>
+        <input id="F_UnitCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">资产编号，取系统资产编号编码<font face="宋体">*</font></div>
+        <input id="F_AssetsNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">单元编码，楼栋编号+单元编号+楼层编号+房屋编号<font face="宋体">*</font></div>
+        <input id="F_HouseCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋名称<font face="宋体">*</font></div>
+        <input id="F_HouseName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">单元号<font face="宋体">*</font></div>
+        <input id="F_UnitNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">楼层号<font face="宋体">*</font></div>
+        <input id="F_FloorNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房间号<font face="宋体">*</font></div>
+        <input id="F_RoomNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房间用途分类，取值于数据字典，如成套住宅、非成套住宅、集体宿舍、商业服务、办公、经营、公共设施等<font face="宋体">*</font></div>
+        <input id="F_UseCategories" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋使用性质，取值于数据字典，如自住房、出租房、商用房屋等<font face="宋体">*</font></div>
+        <input id="F_RoomUsage" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房产地址<font face="宋体">*</font></div>
+        <input id="F_BuildingAddress" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房产证发证机关<font face="宋体">*</font></div>
+        <input id="F_ProofUnit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房产证号<font face="宋体">*</font></div>
+        <input id="F_CertificateNo" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房产证发放日期<font face="宋体">*</font></div>
+        <input id="F_ProofDate" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">产权人姓名<font face="宋体">*</font></div>
+        <input id="F_PropertyOwner" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">产权人联系电话<font face="宋体">*</font></div>
+        <input id="F_PropertyOwnerPhone" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">产权人证件类型，取值于数据字典，如身份证、居住证、签证、护照、户口本、军人证、团员证、党员证、港澳通行证等<font face="宋体">*</font></div>
+        <input id="F_PropertyOwnerCertificateType" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">产权人证件号<font face="宋体">*</font></div>
+        <input id="F_PropertyOwnerCerfificateNo" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">购置日期<font face="宋体">*</font></div>
+        <input id="F_PurchaseDate" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">使用状态<font face="宋体">*</font></div>
+        <input id="F_UseStatus" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋面积<font face="宋体">*</font></div>
+        <input id="F_HouseArea" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋出租用途，取值于数据字典，如门店、个人居住、单位办公、商用、生产、商住两用、其他<font face="宋体">*</font></div>
+        <input id="F_RentPurpose" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">招租年限<font face="宋体">*</font></div>
+        <input id="F_RentAge" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">图片附件<font face="宋体">*</font></div>
+        <input id="F_PictureAccessories" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">有效状态, 0:有效；1：无效；默认0<font face="宋体">*</font></div>
+        <input id="F_IfUse" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">备注<font face="宋体">*</font></div>
+        <input id="F_Remarks" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">房屋租赁备案证<font face="宋体">*</font></div>
+        <input id="F_Fwzlbaz" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">危房等级，取值于数据字典，如A级、B级、C级<font face="宋体">*</font></div>
+        <input id="F_RentCertificateNo" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">录入部门主键<font face="宋体">*</font></div>
+        <input id="F_CreateDepartmentId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">录入部门<font face="宋体">*</font></div>
+        <input id="F_CreateDepartment" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">录入人主键<font face="宋体">*</font></div>
+        <input id="F_CreateUserid" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">录入人<font face="宋体">*</font></div>
+        <input id="F_CreateUser" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">录入时间<font face="宋体">*</font></div>
+        <input id="F_CreateDatetime" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">土地证号<font face="宋体">*</font></div>
+        <input id="F_LandCertificateNo" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">账面价值<font face="宋体">*</font></div>
+        <input id="F_BuildingValue" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">土地面积<font face="宋体">*</font></div>
+        <input id="F_LandArea" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">权力人<font face="宋体">*</font></div>
+        <input id="F_PowerOwner" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">共有情况<font face="宋体">*</font></div>
+        <input id="F_Situation" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">坐落地址<font face="宋体">*</font></div>
+        <input id="F_Address" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">权力性质<font face="宋体">*</font></div>
+        <input id="F_PoweNervous" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">使用年限<font face="宋体">*</font></div>
+        <input id="F_UtilizeAge" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseInfofood/Form.js")

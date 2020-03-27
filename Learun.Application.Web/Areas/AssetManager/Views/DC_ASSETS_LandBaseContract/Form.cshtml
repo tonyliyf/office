@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_LandBaseContract";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item"  data-table="DC_ASSETS_LandBaseContract" >
+        <div class="lr-form-item-title">所属土地</div>
+        <div id="F_LBIId"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_ASSETS_LandBaseContract" >
+        <div class="lr-form-item-title">合同状态<font face="宋体">*</font></div>
+        <div id="F_ContractState" isvalid="yes" checkexpession="NotNull" ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_ASSETS_LandBaseContract" >
+        <div class="lr-form-item-title">办理日期<font face="宋体">*</font></div>
+        <input id="F_HandleDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_HandleDate').trigger('change'); } })"  isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_ASSETS_LandBaseContract" >
+        <div class="lr-form-item-title">办理人</div>
+        <div id="F_HandleUserId"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_ASSETS_LandBaseContract" >
+        <div class="lr-form-item-title">说明</div>
+        <textarea id="F_HandleDescribe" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_LandBaseContract/Form.js")

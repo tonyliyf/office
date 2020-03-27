@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "HolidayForm";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_HolidaySetting">
+        <div class="lr-form-item-title">类型<font face="宋体">*</font></div>
+        <div id="DC_OA_IsWork" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_HolidaySetting">
+        <div class="lr-form-item-title">备注<font face="宋体">*</font></div>
+        <input id="DC_OA_Remarks" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_HolidaySetting/Form.js")

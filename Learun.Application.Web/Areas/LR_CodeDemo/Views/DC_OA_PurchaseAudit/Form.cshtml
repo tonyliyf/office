@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PurchaseAudit";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">主键<font face="宋体">*</font></div>
+        <input id="F_PurchaseAuditId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">经办人联系电话<font face="宋体">*</font></div>
+        <input id="F_DealUserPhone" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">预算金额（单位万元）<font face="宋体">*</font></div>
+        <input id="F_DealMoney" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购文件附件<font face="宋体">*</font></div>
+        <input id="F_PurchaseFile" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购文件附件清单<font face="宋体">*</font></div>
+        <input id="F_PurchaseListFile" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购方式<font face="宋体">*</font></div>
+        <input id="F_PurchaseMethod" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">代理服务费（单位元）<font face="宋体">*</font></div>
+        <input id="F_ServiceMoney" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">交易平台(自采、集团、枝江中心)<font face="宋体">*</font></div>
+        <input id="F_buyPlatform" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购代理公司<font face="宋体">*</font></div>
+        <input id="F_PurchaseCompanyId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">有效标志0否1是<font face="宋体">*</font></div>
+        <input id="F_EnabledMark" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">经办人ID<font face="宋体">*</font></div>
+        <input id="F_CreateUserId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">当前部门Id<font face="宋体">*</font></div>
+        <input id="F_CurrentDeptId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">编辑人<font face="宋体">*</font></div>
+        <input id="F_ModifyUserName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">当前用户Id<font face="宋体">*</font></div>
+        <input id="F_CurrentUserId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">编辑人ID<font face="宋体">*</font></div>
+        <input id="F_ModifyUserId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">删除标记0否1是<font face="宋体">*</font></div>
+        <input id="F_DeleteMark" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">排序码<font face="宋体">*</font></div>
+        <input id="F_SortCode" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">编辑日期<font face="宋体">*</font></div>
+        <input id="F_ModifyDate" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">创建人<font face="宋体">*</font></div>
+        <input id="F_CreateUserName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">创建时间<font face="宋体">*</font></div>
+        <input id="F_CreateDate" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">补充资料<font face="宋体">*</font></div>
+        <input id="F_Description" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">补充附件<font face="宋体">*</font></div>
+        <input id="F_DescriptionFile" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购项目名称<font face="宋体">*</font></div>
+        <input id="F_PurchaseName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购项目编号<font face="宋体">*</font></div>
+        <input id="F_PurchaseProjectNo" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">当前用户公司<font face="宋体">*</font></div>
+        <input id="F_CurrentCompanyId" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购图纸<font face="宋体">*</font></div>
+        <input id="F_PurchaseImageFile" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">投标保证金<font face="宋体">*</font></div>
+        <input id="F_DepositMoney" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">引用采购申请表主键<font face="宋体">*</font></div>
+        <input id="F_PurchaseReplyRefid" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购公司<font face="宋体">*</font></div>
+        <input id="F_CurrentCompayName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">采购部门<font face="宋体">*</font></div>
+        <input id="F_CurrentDeptName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PurchaseAudit/Form.js")

@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OfficeWoodsReply";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请单号</div>
+        <input id="F_ReplyIdNo" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请月度</div>
+        <div id="F_ReplyMonth"></div>
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请单位</div>
+        <input id="F_CurrentCompanyId" type="text" readonly class="form-control currentInfo lr-currentInfo-company" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请部门</div>
+        <input id="F_CurrentDeptId" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请人</div>
+        <input id="F_CurrentUserId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-4 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">申请日期</div>
+        <input id="F_CreateDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_CreateDate').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">总金额</div>
+        <input id="F_SumMoney" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OfficeWoodsReply">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Description" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid">
+        <div id="DC_OA_OfficeWoodsReplyDetail"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OfficeWoodsReply/TotalForm.js")

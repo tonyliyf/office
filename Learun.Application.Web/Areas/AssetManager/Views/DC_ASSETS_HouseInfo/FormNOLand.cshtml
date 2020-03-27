@@ -1,0 +1,92 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseInfo";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">选择建筑</div>
+        <div id="F_BBIId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BuildingBaseInfo">
+        <div class="lr-form-item-title">建筑名称<font face="宋体">*</font></div>
+        <input id="F_ConstructionName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+     
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">总楼层数</div>
+        <input id="F_HouseFloorCount" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">所属单位</div>
+        <div id="F_FormerUnit"></div>
+
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">原单位</div>
+        <input id="F_Oldunit" type="text" class="form-control" />
+
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">房屋坐落<font face="宋体">*</font></div>
+        <input id="F_Address" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BuildingBaseInfo">
+        <span><i class="fa fa-map-marker"></i></span>
+        <input id="btn_area" type="button" class="btn btn-primary lrUploader-input-btn" value="选择区域" />
+    </div>
+
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">建筑用途</div>
+        <div id="F_UseCategories"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">经营性质</div>
+        <div id="F_BuildingClass"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">原管联系人</div>
+        <input id="F_FormerUnitContacts" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">联系人电话</div>
+        <input id="F_ContactsPhone" type="text" class="form-control" isvalid="yes" checkexpession="MobileOrPhoneOrNull" />
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">房屋名称<font face="宋体">*</font></div>
+        <input id="F_HouseName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">所在楼层</div>
+        <input id="F_FloorNumber" type="text" class="form-control" />
+    </div>
+
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">房产证号</div>
+        <input id="F_CertificateNo" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">资产价值</div>
+        <input id="F_BuildingValue" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">建筑面积</div>
+        <input id="F_HouseArea" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">相关附件</div>
+        <div id="F_PictureAccessories"></div>
+    </div>
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseInfo">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseInfo/FormNoLand.js")

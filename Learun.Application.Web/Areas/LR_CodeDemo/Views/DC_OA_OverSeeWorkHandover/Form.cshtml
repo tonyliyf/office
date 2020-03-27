@@ -1,0 +1,40 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "DC_OA_OverSeeWorkHandover";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkHandover">
+        <div class="lr-form-item-title">交办单标题<font face="宋体">*</font></div>
+        <input id="F_Title" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkHandover">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Attachments"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" style="height:500px;">
+        <div class="lr-form-item-title">交办单</div>
+        <div class="lr-layout">
+            <div class="lr-layout-center">
+                <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+                    <div id='div_tool' class="lr-layout-tool">
+                        <div class="lr-layout-tool-left">
+                        </div>
+                        <div class="lr-layout-tool-right">
+                            <div class="btn-group btn-group-sm" learun-authorize="yes">
+                                <a id="lr_info" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看</a>
+                                <a id="lr_add" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;新增</a>
+                                <a id="lr_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑</a>
+                                <a id="lr_delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;删除</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lr-layout-body" id="gridtable"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DocUpload.js", "/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkHandover/Form.js")
+@Html.AppendCssFile("/Views/LR_Content/plugin/layout/lr-layout.css")

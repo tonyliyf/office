@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_EquipmentMaintenanceRecords";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="multiple_condition_query">
+                            <div class="lr-query-formcontent">
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">维修申请人</div>
+                                    <div id="F_ApplicationUserId"></div>
+                                </div>
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">设备名称</div>
+                                    <input id="F_EIId" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="btn_detail" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;查看维修流程</a>
+                        <a id="btn_complete" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;完成</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_EquipmentMaintenanceRecords/Index.js")

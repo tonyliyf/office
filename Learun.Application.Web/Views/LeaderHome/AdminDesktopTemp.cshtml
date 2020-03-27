@@ -1,0 +1,923 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>综合信息|快速开发平台|开发框架|@ViewBag.Title</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue(" AmapKey ")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    @Html.AppendCssFile("/Views/LR_Content/style/lr-common.css", "/Views/LeaderHome/AdminDesktopTemp/index.css")
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+
+        .lr-frame-top {
+            background: #08897f;
+        }
+
+        .arr_jt {
+            width: 15px;
+            height: 15px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme()" style="overflow-y: hidden;padding: 1px;">
+    <div class="yc_tcc" style="right: -220px;">
+        <div class="yc_ove">
+            <div class="yc_an">
+                <i class="fa fa-spin fa-gear"></i>
+            </div>
+            <div class="yc_title">
+                业务系统
+            </div>
+        </div>
+        <div class="yc_list">
+            <ul class="yc_ul">
+                <li class="yc_li" onclick="parent.location.href='../../portal/index'">
+                    <!--<i class="fa fa-pie-chart"></i>
+                    <span>OA管理系统</span>
+                    <img src="~/Content/images/right_arr.png"/>-->
+                    <div class="box_sl_left yc_lfrt">
+                        <i class="fa fa-pie-chart"></i>
+                    </div>
+                    <div class="box_sl_right">
+                        <span>OA管理系统</span>
+                        <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+                    <img src="~/Content/images/right_arr.png" />
+                </li>
+                <li class="yc_li" onclick="parent.location.href='../../assethome/index'">
+                    <div class="box_sl_left yc_lfrt">
+                        <i class="fa fa-bar-chart-o"></i>
+                    </div>
+                    <div class="box_sl_right">
+                        <span>高投资产管理系统</span>
+                        <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+                    <img src="~/Content/images/right_arr.png" />
+                </li>
+                <!--<li class="yc_li" onclick="parent.location.href='../../leaderhome/index'">
+                    <div class="box_sl_left yc_lfrt">
+                        <i class="fa fa-windows"></i>
+                    </div>
+                    <div class="box_sl_right">
+                        <span>领导驾驶舱</span>
+                        <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+                    <img src="~/Content/images/right_arr.png"/>
+                </li>-->
+                <li class="yc_li" onclick="parent.location.href='../../projecthome/index'">
+                    <div class="box_sl_left yc_lfrt">
+                        <i class="fa fa-globe"></i>
+                    </div>
+                    <div class="box_sl_right">
+                        <span>工程项目监管系统</span>
+                        <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                    </div>
+                    <img src="~/Content/images/right_arr.png" />
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="lr-desktop-panel">
+        <div class="col-xs-12" style="display: none;">
+            <div class="portal-panel-title" style="line-height: 65px;">
+                <i class="fa fa-balance-scale"></i>&nbsp;&nbsp;业务系统
+                <div class="box_right">
+                    <div class="box_list" onclick="parent.location.href='../../portal/index'">
+                        <div class="box_sl_left">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="box_sl_right">
+                            <span>OA管理系统</span>
+                            <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="box_list" onclick="parent.location.href='../../assethome/index'">
+                        <div class="box_sl_left">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="box_sl_right">
+                            <span>资产管理系统</span>
+                            <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="box_list" onclick="parent.location.href='../../leaderhome/index'">
+                        <div class="box_sl_left">
+                            <i class="fa fa-windows"></i>
+                        </div>
+                        <div class="box_sl_right">
+                            <span>领导驾驶舱</span>
+                            <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                        </div>
+                    </div>
+                    <div class="box_list" onclick="parent.location.href='../../projecthome/index'">
+                        <div class="box_sl_left">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="box_sl_right">
+                            <span>项目管理系统</span>
+                            <p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portal-panel-content" style="display: none;">
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #578ebe;">
+                        <div class="visual">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                OA管理系统
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #4884b8;" href="javascript:;" onclick="parent.location.href='../../portal/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #e35b5a;">
+                        <div class="visual">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                资产管理系统
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #e04a49;" href="javascript:;" onclick="parent.location.href='../../assethome/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #44b6ae;">
+                        <div class="visual">
+                            <i class="fa fa-windows"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                项目管理系统
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #3ea7a0;" href="javascript:;" onclick="parent.location.href='../../projecthome/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #8775a7;">
+                        <div class="visual">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+								</div>
+								<div class="desc">
+									更多应用
+								</div>
+							</div>
+							<a class="more" style="background-color: #7c699f;" href="javascript:;">
+								查看更多 <i class="fa fa-arrow-circle-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="zst_home">
+				<img class="zs_img" src="~/Content/images/map_bg.png"/>
+				<style type="text/css">
+					.zst_title{
+						color: #fff;
+					}
+				</style>
+				<div class="zxt">
+					<div class="zst_zhu">
+						<div class="zst_list" style="display: none;">
+							<div class="zst_title">督办工作统计</div>
+							<div id="ect_one"></div>
+						</div>
+						<div class="zst_list"  style="position: fixed;top: 80px;width: 400px;padding-bottom: 25px;left: 65px;">
+							<!--<div class="zst_title">流程统计</div>-->
+							<div id="ect_thr" style="margin-top: -28px;"></div>
+							<div class="" style="position: absolute;top: -29px;color: #0ac9fc;font-size: 15px;font-weight: bold;">
+								流程统计
+							</div>
+						</div>
+						<div class="zst_list" style="position: fixed;bottom:30px;width: 400px;left: 65px;">
+							<!--<div class="zst_title">资产租赁收入统计</div>-->
+							<div id="ect_two"></div>
+							<div class="" style="position: absolute;top: -29px;color: #0ac9fc;font-size: 15px;font-weight: bold;">
+								资产租赁收入统计
+							</div>
+						</div>
+						<div class="zst_list" style="display: none;">
+							<div class="zst_title">管理费用统计</div>
+							<div id="ect_four"></div>
+						</div>
+					</div>
+					<div class="zst_list" style="position: fixed;right: 40px;bottom: 30px;width: 350px;height: 200px;padding: 0px;box-shadow: 0px 0px 25px #1d86f9;">
+						<img style="width: 100%;height: 100%;" src="~/Content/images/xkbj.jpg"/>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div style="position:absolute;top:0px;height: 98%;left: 0px;right: 0px;overflow-y: hidden;" class="col-xs-12 dit">
+				<div id="mapDiv" style="width:100%; height:100%;margin-top: 11px;"></div>
+				<div class="fssj">
+					<ul class="fs_ul">
+						<li class="fs_li lisd fs_li_style" type="1">土地分布</li>
+						<li class="fs_li">|</li>
+						<li class="fs_li lisd" type="2">房产分布</li>
+						<li class="fs_li">|</li>
+						<li class="fs_li lisd" type="3">广告牌</li>
+						<li class="fs_li">|</li>
+						<li class="fs_li lisd" type="4">工程项目</li>
+					</ul>
+				</div>
+				<div class="xsp" >
+					<div class="arr_jt">
+						<img style="width: 20px;" src="~/Content/images/left_arr.png"/>
+					</div>
+					<div class="xs_title">
+						信息列表
+					</div>
+					<div class="xs_list">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="xt_alert">
+		<div class="xta_title">
+			<span>系统消息</span>
+			<img style="float: right;margin-top: 11px;margin-right: 10px;" src="~/Content/images/guab.png"/>
+		</div>
+		<div class="xta_home">
+			<div class="xta_left">
+				<div class="xta_left_top">
+					<div class="xta_sou">
+						<img src="~/Content/images/sousuo_hei.png"/>
+						<input type="text" class="xta_inp" />
+					</div>
+				</div>
+				<div class="xta_left_bot">
+					<div class="xta_bus">
+						<div class="xta_list">
+							<img src="~/Content/images/quanbu.png"/>
+							<span>全部</span>
+							<div class="bus_numb">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="xta_right">
+				<div class="xta_right_top">
+					<div class="xt_left">
+						全部（99）
+					</div>
+					<div class="xt_right">
+						全部设置已读
+					</div>
+					<div class="type_rig">
+						<div class="tyr_list tyr_list_style">
+							未读
+						</div>
+						<div class="tyr_list">
+							已读
+						</div>
+					</div>
+				</div>
+				<div class="xta_box">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <input type="hidden" class="sud" />
+    <input type="hidden" class="nad" name="" id="" value="" />
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/echarts/echarts.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/jquery.easyui.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/demo/map/china.js"></script>
+    <script src="~/Content/jquery/demo/plugin/jquery.cookie.min.js"></script>
+      <script src="https://webapi.amap.com/maps?v=1.4.14&key=f73d50800f65d1aa1533a45ab869a6ac"></script>
+    <link href="~/Content/jQuery-EasyUi/themes/bootstrap/easyui.css" rel="stylesheet" /> @Html.AppendJsFile("/Views/LeaderHome/AdminDesktopTemp/index.js")
+    <script type="text/javascript">
+    	var hei=$(window).height()
+    	var sul=hei/2*1-20
+//  	$(".dit").css("height",sul)
+    	$(".zxt").css("margin-top",hei-299)
+    	$(".zxt").css("height",sul+10)
+    	$(".zst_home").css("height",hei-3)
+        var datab = [
+            { name: '襄阳', value: [112.20, 32.08] },
+            { name: '武汉', value: [114.30, 30.60] },
+            { name: '荆州', value: [112.20, 31.03] },
+            { name: '仙桃', value: [113.45, 30.37] }
+        ];
+        
+        window.parent.$("body").delegate(".xxtx", "click", function (event) {
+		   $(".xt_alert").show()
+		})
+		$(".xta_title img").click(function(){
+    		$(".xt_alert").hide()
+    	})
+		
+		$(".arr_jt").click(function () {
+            var wid = $(".xsp").width();
+            if (wid == 16.4) {
+                $(".xsp").animate({
+                    width: '260px'
+                }, 100);
+                $(this).removeClass("ind_la").addClass("ind_shang");
+            } else {
+                $(".xsp").animate({
+                    width: '38px'
+                }, 100);
+                $(this).removeClass("ind_shang").addClass("ind_la");
+            }
+        });
+        xtxiaoxi()  //系统消息
+		function xtxiaoxi(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetOAMessage', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		            if (data.rows.length > 0) {
+		            	var bcd=0
+		                $(".xta_left_bot").empty();
+		                var html="<div class='xta_bus' id=''><div class='xta_list'><img src='/Content/images/quanbu.png'/><span>全部</span><div class='bus_numb'>"+data.total+"</div></div></div>"
+                    	$(".xta_left_bot").append(html);
+		                $.each(data.rows, function (index, item) {
+		                	bcd++
+	                		var html="<div class='xta_bus' id='"+item.f_strategycode+"'><div class='xta_list'><img src='"+item.f_imageurl+"'/><span>"+item.f_strategyname+"</span><div class='bus_numb'>"+item.count+"</div></div></div>"
+	                   		$(".xta_left_bot").append(html);
+		                    if(item.count<0||item.count==null){
+		                    	$(".bus_numb").eq(bcd).hide()
+		                    }
+		                    
+		                })
+		                mlist()
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		$("body").delegate(".xta_bus", "click", function () {
+			var mid=$(this).attr("id")
+			var src=$(this).find("img").attr("src")
+	    	$(".xta_list").removeClass("xta_list_style")
+	    	$(this).find(".xta_list").addClass("xta_list_style")
+	    	mlist()
+        })
+		
+		$(".tyr_list").click(function(){
+			$(".tyr_list").removeClass("tyr_list_style")
+			$(this).addClass("tyr_list_style")
+			mlist()
+		})
+		
+		function mlist(){
+			var siud=$(".xta_list_style").parents(".xta_bus").attr("id")
+			var yd;
+			if($(".tyr_list_style").text().trim()=="已读"){
+				yd=1
+			} else {
+				yd="";
+			}
+			 var Pagination =
+		{
+		    rows: 5, page: 1, sidx: "F_CreateDate DESC", sord: "Asc", records: 0, total: 0
+		};
+			
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMessageList', {pagination:JSON.stringify(Pagination),code:siud,isRead:yd}, function (data) {
+				console.log(data)
+				$(".xta_box").empty();
+				if(siud==undefined){
+            		var quanb="全部("+data.total+")";
+            		$(".xt_left").text(quanb)
+                } else {
+                	var df=0;
+                	if(data.total!=null){
+                		df=data.total
+                	}
+                	var sty=$(".xta_list_style").find("span").text()
+                	var quanb=sty+"("+df+")";
+            		$(".xt_left").text(quanb)
+                }
+		        if (data) {
+		            if (data.rows.length > 0) {
+		                
+		                $.each(data.rows, function (index, item) {
+		                	var dd=item.F_StrategyName;
+		                	var dq;
+		                	var src="quanbu.png";
+		                	if(dd=="流程审核通知"){src="shenhe.png"} else if(dd=="督办工作下达通知"){src="duban.png"}else if(dd=="流程审核超时通知"){src="chaoshi.png"} else if(dd=="会议消息通知"){src="hytzhi.png"}
+		                	else if(dd=="督办消息提醒"){src="dbxxi.png"}else if(dd=="绩效考核"){src="jixiao.png"}else if(dd=="广告租金到期提醒"){src="ggyq.png"}
+		                	else if(dd=="督办逾期提醒"){src="dbyq.png"}else if(dd=="公文抄送"){src="gongwen.png"}else if(dd=="房屋租金到期提醒"){src="fwzj.png"}
+		                	if(yd==1){
+		                		dq="已读"
+		                	} else {dq="未读"}
+	                		var html="<div class='xta_lb' id='"+item.F_MessageId+"'><div class='lb_top'><img src='/Content/images/"+src+"'><span>"+item.F_StrategyName+"</span><div class='duqu'>"+dq+"</div></div>"+
+							"<div class='lb_box'><div class='lb_box_tit'>"+item.SendContent+"</div>"+
+							"<div class='lb_bo x_list'>"+item.FromUserName+"："+item.F_CreateDate+"</div><div class='lb_ck'>查看日程</div></div></div>"
+	                   		$(".xta_box").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		
+		$("body").delegate(".duqu", "click", function () {
+			var cid=$(this).parents(".xta_lb").attr("id")
+			qryd(cid)
+        })
+		
+		$(".xt_right").click(function(){ //全部已读
+			$(".xta_lb").each(function(){
+				var cid=$(this).attr("id")
+				qryd(cid)
+			})
+		})
+		
+		function qryd(cid){
+			if($(".tyr_list_style").text().trim()=="未读"){
+				top.learun.httpAsync('POST', top.$.rootUrl + '/Portal/EnterMessage', {messageid:cid}, function (data) {
+//					xtxiaoxi()
+					mlist()
+			    })
+			}
+		}
+        zhexian()
+        var param1="";
+	    var zhexone =new Array;
+        var zhextwo =new Array;
+        var zhexthr =new Array;
+        var dat=new Array;
+        function zhexian(){
+            top.learun.httpAsync('GET', top.$.rootUrl + '/LeaderHome/GetLeaderData', param1, function (data) {
+//          	console.log(data)
+                  if (data) {
+		            if (data.rows.length > 0) {
+		            	var d=0;
+		                $.each(data.rows, function (index, item) {
+		                	var sum = item.summoney;
+		                	var month=item.month
+		                	var ac=0
+		                	if(d==0){
+		                		dat.push(month);
+		                	} else {
+		                		for(var b=0;b<dat.length;b++){
+		                			var ths=dat[b]
+		                			if(ths==month){
+		                				ac++
+		                			}
+		                		}
+		                		if(ac==0){
+		                			dat.push(month);
+		                		}
+		                	}
+		                	if(item.type==1){
+		                		zhexone.push(sum)
+		                	}
+		                	if(item.type==2){
+		                		zhextwo.push(sum)
+		                	}
+		                	if(item.type==3){
+		                		zhexthr.push(sum)
+		                	}
+		                	d++
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		       myCharfour.setOption(option4);
+		    })
+        }
+        var dc;
+       	$(".fs_li").click(function(){
+       		var typ;
+        	var typcc=$(this).attr("type");
+        	if(typcc==undefined){
+        		return false;
+        	}
+        	if(typcc==1){
+        		typ='/LeaderHome/GetHouseList'
+        	} else if (typcc==2){
+        		typ='/LeaderHome/GetLandList'
+        	} else if (typcc==3){
+        		typ='/LeaderHome/GetAdBoardList'
+        	} else if (typcc==4){
+        		typ='/LeaderHome/GetProjectList'
+        	}
+        	$(".fs_li").removeClass("fs_li_style")
+        	$(this).addClass("fs_li_style")
+        })
+       	
+       	
+        var cw=new Array;
+        var db=new Array;
+        var gw=new Array;
+        var ht=new Array;
+        var rs=new Array;
+        var xz=new Array;
+        var zl=new Array;
+        bing()
+        function bing(){
+        	top.learun.httpAsync('GET', top.$.rootUrl + '/LeaderHome/GetFlowData', param1, function (data) {
+//		    	console.log(data)
+		        if (data) {
+		            if (data.rows.length > 0) {
+		                $.each(data.rows, function (index, item) {
+		                	var cat = item.f_category;
+		                	var sum = item.sums;
+		                	zl.push(cat)
+		                	if(cat=="财务类"){
+		                		cw.push(sum)
+		                	}
+		                	if(cat=="督办类"){
+		                		db.push(sum)
+		                	}
+		                	if(cat=="公文类"){
+		                		gw.push(sum)
+		                	}
+		                	if(cat=="合同类"){
+		                		ht.push(sum)
+		                	}
+		                	if(cat=="人事类"){
+		                		rs.push(sum)
+		                	}
+		                	if(cat=="行政类"){
+		                		xz.push(sum)
+		                	}
+		                })
+		            }
+		
+		        } else {
+		
+		            console.log("error");
+		
+		        }
+		        myCharthr.setOption(option3);
+		    })
+        }
+
+
+        $(".yc_an").click(function () {
+            var wid = $(".yc_tcc").css("right");
+            if (wid == "0px") {
+                $(".yc_tcc").animate({
+                    right: '-220px'
+                }, 300);
+            } else {
+                $(".yc_tcc").animate({
+                    right: '0px'
+                }, 300);
+            }
+        });
+
+        $(".arr_jt").click(function () {
+            var wid = $(".xsp").width();
+            if (wid == 16.4) {
+                $(".xsp").animate({
+                    width: '260px'
+                }, 300);
+                $(this).removeClass("ind_la").addClass("ind_shang");
+            } else {
+                $(".xsp").animate({
+                    width: '38px'
+                }, 300);
+                $(this).removeClass("ind_shang").addClass("ind_la");
+            }
+        });
+        var myChart = echarts.init(document.getElementById('ect_one'));
+        var myChartwo = echarts.init(document.getElementById('ect_two'));
+        var myCharthr = echarts.init(document.getElementById('ect_thr'));
+        var myCharfour = echarts.init(document.getElementById('ect_four'));
+		
+		
+        option = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['日常督办', '重点建设项目', '投资项目', '政府工作报告', '总经理办公室'],
+                textStyle: { color: "#fff" }
+            },
+			color:['#4ac7f5', '#af89d6','#f5c847','#f36f8a','#0089ff'],
+
+            calculable: true,
+            xAxis: [{
+                type: 'category',
+                data: ['执行中', '完成', '逾期', '临近', '暂停', '终止'],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '2'//坐标线的宽度
+                    }
+                }
+            }],
+            yAxis: [{
+                type: 'value',
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '1'//坐标线的宽度
+                    }
+                }
+            }],
+            series: [{
+                name: '日常督办',
+                type: 'bar',
+                data: [2, 4, 6, 13, 6, 7]
+            },
+            {
+                name: '重点建设项目',
+                type: 'bar',
+                data: [5, 11, 9, 2, 5, 12],
+                itemStyle: {
+	            normal: {
+	                color: function(params) {
+	                    var colorList = ['#C33531','#EFE42A','#64BD3D','#EE9201','#29AAE3', '#B74AE5','#0AAF9F','#E89589','#16A085','#4A235A','#C39BD3 ','#F9E79F','#BA4A00','#ECF0F1','#616A6B','#EAF2F8','#4A235A','#3498DB' ]; 
+	                    return colorList[params.dataIndex] 
+	                }
+	            }
+	        }
+            }, {
+                name: '投资项目',
+                type: 'bar',
+                data: [6, 9, 0, 26, 4, 8]
+            }, {
+                name: '政府工作报告',
+                type: 'bar',
+                data: [3, 1, 9, 24, 1, 8]
+            }, {
+                name: '总经理办公室',
+                type: 'bar',
+                data: [3, 5, 9, 6, 4, 5]
+            },
+			
+            ]
+        };
+        option2 = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+//              data: ['房屋', '广告牌'],
+                textStyle: { color: "#fff" }
+            },
+            color:['#4ac7f5', '#af89d6','#f5c847','#f36f8a','#0089ff'],
+            calculable: true,
+            xAxis: [{
+                type: 'value',
+                boundaryGap: [0, 0.01],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '1'//坐标线的宽度
+                    }
+                }
+            }],
+            yAxis: [{
+                type: 'category',
+                data: ['1月', '2月', '3月', '4月', '5月', '6月'],
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '1'//坐标线的宽度
+                    }
+                }
+            }],
+            series: [{
+                name: '房屋',
+                type: 'bar',
+                data: [134, 14, 134, 442, 124, 523],
+                itemStyle: {
+                    //通常情况下：
+                    normal: {
+                        //每个柱子的颜色即为colorList数组里的每一项，如果柱子数目多于colorList的长度，则柱子颜色循环使用该数组
+                        color: function (params) {
+                            var colorList = ['rgb(255,255,255)'];
+                            return colorList[params.dataIndex];
+                        }
+                    }
+                }
+            },
+            {
+                name: '广告牌',
+                type: 'bar',
+                data: [134, 14, 134, 442, 124, 523]
+            }
+            ]
+        };
+
+        option3 = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                x: 'left',
+//              data: zl,
+                textStyle: { color: "#fff" }
+            },
+            color:['#4ac7f5', '#af89d6','#f5c847','#f36f8a','#0089ff'],
+
+            calculable: true,
+            series: [{
+                name: '流量统计',
+                type: 'pie',
+                radius: '55%',
+                center: ['50%', '60%'],
+                data: [{
+                    value: cw,
+                    name: "财务类"
+                },
+                {
+                    value: db,
+                    name: '督办类'
+                },
+                {
+                    value: gw,
+                    name: '公文类'
+                },
+                {
+                    value: ht,
+                    name: '合同类'
+                },
+                {
+                    value: rs,
+                    name: '人事类'
+                },
+                {
+                    value: xz,
+                    name: '行政类'
+                }
+                ]
+            }]
+        };
+
+        option4 = {
+            tooltip: {
+                trigger: 'axis'
+            },
+            legend: {
+                data: ['费用报销', '资金拨付', '大额资金支出'],
+                textStyle: { color: "#fff" }
+            },
+
+            calculable: true,
+            xAxis: [{
+                type: 'category',
+                boundaryGap: false,
+                data: dat,
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '1'//坐标线的宽度
+                    }
+                }
+            }],
+            yAxis: [{
+                type: 'value',
+                axisLine: {
+                    lineStyle: {
+                        type: 'solid',
+                        color: '#919191',//左边线的颜色
+                        width: '1'//坐标线的宽度
+                    }
+                }
+            }],
+            series: [{
+                name: '费用报销',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        },
+                        color: function (params) {
+                            var colorList = ['rgb(255,255,255)'];
+                            return colorList[params.dataIndex];
+                        }
+                    }
+                },
+                data: zhexone
+            },
+            {
+                name: '资金拨付',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        }
+                    }
+                },
+                data: zhextwo
+            },
+            {
+                name: '大额资金支出',
+                type: 'line',
+                smooth: true,
+                itemStyle: {
+                    normal: {
+                        areaStyle: {
+                            type: 'default'
+                        }
+                    }
+                },
+                data: zhexthr
+            }
+            ]
+        };
+
+        //myChart.setOption(option);
+        $.post(top.$.rootUrl + '/LeaderHome/StatisticsForEchart', {}, function (data) {
+            option.legend.data = data.categoryList
+            var series = []
+            for (var i = 0; i < data.SeriesData.length; i++) {
+                series.push({
+                    name: data.SeriesData[i].Key,
+                    type: 'bar',
+                    data: data.SeriesData[i].Value
+                })
+            }
+            option.series = series
+            option.xAxis[0].data = data.stateList
+            myChart.setOption(option)
+        }, 'json')
+        //myChartwo.setOption(option2);
+        $.post(top.$.rootUrl + '/LeaderHome/StatisticsRentForEChart', {}, function (data) {
+            option2.legend.data = data.categoryList
+            var series = []
+            for (var i = 0; i < data.SeriesData.length; i++) {
+                series.push({
+                    name: data.SeriesData[i].Key,
+                    type: 'bar',
+                    data: data.SeriesData[i].Value
+                })
+            }
+            option2.series = series
+            option2.yAxis[0].data = data.stateList
+            myChartwo.setOption(option2)
+        }, 'json')
+       
+//      myCharfive.setOption(option5);
+    </script>
+</body>
+
+</html>

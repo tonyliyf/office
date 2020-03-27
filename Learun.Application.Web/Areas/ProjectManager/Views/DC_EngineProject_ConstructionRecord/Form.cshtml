@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ConstructionRecord";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">项目名称</div>
+        <div id="F_PIId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">安全施工评价</div>
+        <div id="F_SafetyCivilizationEvaluation"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">施工检查情况</div>
+        <textarea id="F_SafetyCivilizationInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">施工质量评价</div>
+        <div id="F_QualityEvaluation"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">劳动力安排人数</div>
+        <input id="F_LaborNumber" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">质量检查验收情况</div>
+        <textarea id="F_QualityInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">劳动力安排情况</div>
+        <textarea id="F_LaborInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">监理方到岗情况</div>
+        <textarea id="F_SupervisorsComeInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">施工方到岗情况</div>
+        <textarea id="F_ConstructorComeInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">项目业主方到岗情况</div>
+        <textarea id="F_ProjectOwnerComeInfo" class="form-control" style="height:80px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Attachments"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord" id="num1">
+        <div class="lr-form-item-title">当前人</div>
+        <input id="F_CreateUserid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord" id="num2">
+        <div class="lr-form-item-title">当前部门</div>
+        <input id="F_CreateDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ConstructionRecord" id="num3">
+        <div class="lr-form-item-title">当前时间</div>
+        <input id="F_CreateDatetime" type="text" readonly class="form-control currentInfo lr-currentInfo-time" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ConstructionRecord/Form.js")

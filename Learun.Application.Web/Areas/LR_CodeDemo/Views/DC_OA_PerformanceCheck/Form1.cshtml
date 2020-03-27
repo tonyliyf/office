@@ -1,0 +1,113 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+    .bd_th {
+        width: 17%;
+        line-height: 20px;
+        padding: 12px 5px 12px 5px;
+    }
+
+    .che_ovh {
+        line-height: 24px;
+    }
+</style>
+<div class="bd_home" style="">
+    <div class="bd_tit" style="text-align:center">
+        金润源集团公司
+        <input id="i1" class="user-edit bd_inp" type="text" style="width: 50px;margin-top: 8px;text-align:center;" class="bd_inp" />
+        年度绩效考核评价表(员工)
+    </div>
+    <table id="edittable" border="1" width="100%" style="border-collapse:collapse;" cellspacing="" cellpadding="">
+        <tr class="bd_tr">
+            <th class="bd_th"style="">被考核人</th>
+            <th class="bd_th none-edit" id="t0"  style="">@ViewBag.name</th>
+            <th class="bd_th" style="">考核周期</th>
+            <th class="bd_th" style="" colspan="3">
+                <input id="i2" class="user-edit bd_inp" type="text" style="width: 28px;height:20px;margin-top: 8px;" />年
+                <input id="i3" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />月
+                <input id="i4" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />日---
+                <input id="i5" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />月
+                <input id="i6" class="user-edit bd_inp" type="text" style="width: 15px;height:20px;margin-top: 8px;" />日
+            </th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th">类别</th>
+            <th class="bd_th">指标内容描述</th>
+            <th class="bd_th">分值</th>
+            <th class="bd_th">评分</th>
+            <th class="bd_th">评分说明</th>
+            <th class="bd_th">备注</th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" rowspan="2">业务指标</th>
+            <th class="bd_th" style="text-align: left;">常规重点工作完成情况</th>
+            <th id="t1" class="bd_th checker-edit"></th>
+            <th id="t2" class="bd_th checker-edit score"></th>
+            <th id="t3" class="bd_th checker-edit"></th>
+            <th id="t4" class="bd_th checker-edit"></th>
+        </tr>
+
+        <tr class="bd_tr">
+            <th class="bd_th" style="text-align: left;">重点工作完成质量、数量</th>
+            <th id="t5" class="bd_th checker-edit"></th>
+            <th id="t6" class="bd_th checker-edit score"></th>
+            <th id="t7" class="bd_th checker-edit"></th>
+            <th id="t8" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" rowspan="5">共性指标</th>
+            <th class="bd_th" style="text-align: left;">工作能力</th>
+            <th id="t9" class="bd_th checker-edit"></th>
+            <th id="t10" class="bd_th checker-edit score"></th>
+            <th id="t11" class="bd_th checker-edit"></th>
+            <th id="t12" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" style="text-align: left;">工作纪律</th>
+            <th id="t13" class="bd_th checker-edit"></th>
+            <th id="t14" class="bd_th checker-edit score"></th>
+            <th id="t15" class="bd_th checker-edit"></th>
+            <th id="t16" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" style="text-align: left;">工作态度</th>
+            <th id="t17" class="bd_th checker-edit"></th>
+            <th id="t18" class="bd_th checker-edit score"></th>
+            <th id="t19" class="bd_th checker-edit"></th>
+            <th id="t20" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" style="text-align: left;">工作责任心</th>
+            <th id="t21" class="bd_th checker-edit"></th>
+            <th id="t22" class="bd_th checker-edit score"></th>
+            <th id="t23" class="bd_th checker-edit"></th>
+            <th id="t24" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" style="text-align: left;">学习成长</th>
+            <th id="t25" class="bd_th checker-edit"></th>
+            <th id="t26" class="bd_th checker-edit score"></th>
+            <th id="t27" class="bd_th checker-edit"></th>
+            <th id="t28" class="bd_th checker-edit"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" colspan="2">合计得分</th>
+            <th id="t29" class="bd_th none-edit" colspan="4"></th>
+        </tr>
+        <tr class="bd_tr">
+            <th class="bd_th" colspan="1">考核结果确认</th>
+            <th class="bd_th" colspan="5">
+                <div class="che_ovh">
+                    <span style="float: left;">被考核人： </span>
+                </div>
+                <div class="che_ovh" style="margin-right: 0px;">
+                    <span style="float: left;">考核人： </span>
+                </div>
+            </th>
+        </tr>
+    </table>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheck/Form1.js")
+@Html.AppendJsFile("/Content/edittable/edittable.js")
+@Html.AppendCssFile("/Content/edittable/bd.css")

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceAppraisal";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout lr-layout-left-center" id="lr_layout">
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title lrlg ">模板管理</div>
+            <div id="dataTree" class="lr-layout-body"></div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap  ">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">指标管理</span>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_add" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;新增</a>
+                        <a id="lr_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑</a>
+                        <a id="lr_delete" class="btn btn-default"><i class="fa fa-trash-o"></i>&nbsp;删除</a>
+                        <a id="btn_edit" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;编辑模板</a>
+                        <a id="btn_bind" class="btn btn-default"><i class="fa fa-users"></i>&nbsp;关联岗位</a>
+                        <a id="btn_info" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看岗位</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceAppraisal/Index.js")

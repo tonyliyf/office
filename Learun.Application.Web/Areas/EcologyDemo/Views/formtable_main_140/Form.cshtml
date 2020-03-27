@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "formtable_main_140";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140" >
+        <div class="lr-form-item-title">招租单位</div>
+        <input id="zzdw" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140" >
+        <div class="lr-form-item-title">经办人</div>
+        <input id="jbr" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140" >
+        <div class="lr-form-item-title">招租日期</div>
+        <input id="zzrq" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#zzrq').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="formtable_main_140" >
+        <div class="lr-form-item-title">招租总价</div>
+        <input id="zzzj" type="text" class="form-control"  />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/EcologyDemo/Views/formtable_main_140/Form.js")

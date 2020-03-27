@@ -1,0 +1,36 @@
+@{
+    ViewBag.Title = "图片预览";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+    .tpyl{
+		width: 100%;
+		padding: 20px;
+	}
+	.tp_box{
+		float: left;
+		width: 200px;
+		text-align: center;
+	}
+	.tp_box img{
+		width: 180px;
+		cursor: pointer;
+	}
+</style>
+<div style="">
+	<div class="tpyl">
+    	<div class="tp_box">
+    		<img src="/Content/images/quanbu.png"/>
+    	</div>
+    	<div class="tp_box">
+    		<img src="/Content/images/quanbu.png"/>
+    	</div>
+    	<div class="tp_box">
+    		<img src="/Content/images/quanbu.png"/>
+    	</div>
+    </div>
+</div>
+<script type="text/javascript">
+	
+</script>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/FileViewer.js")

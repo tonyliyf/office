@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_BusStopBillboards";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">资产编号</div>
+        <input id="F_BillboardsNumber" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">广告牌名称<font face="宋体">*</font></div>
+        <input id="F_BillboardsName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">面积(平方米)</div>
+        <input id="F_SpecificationType" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">广告牌类别<font face="宋体">*</font></div>
+        <div id="F_BillboardsCategory" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+   
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">发布类型和形式</div>
+        <div id="F_BillboardsIdentification"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">广告发布时间</div>
+        <input id="F_InstallationTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_InstallationTime').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">位置<font face="宋体">*</font></div>
+        <input id="F_InstallationLocation" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">图片附件</div>
+        <div id="F_PictureAccessories"></div>
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BuildingBaseInfo">
+        <span><i class="fa fa-map-marker"></i></span>
+        <input id="btn_area" type="button" class="btn btn-primary lrUploader-input-btn" value="选择区域" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">投放优势</div>
+        <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">特别说明</div>
+        <textarea id="F_Remarks" class="form-control" style="height:50px;"></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">使用部门</div>
+        <div id="F_UseDepartmentId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">负责人</div>
+        <div id="F_LeaderId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">管理人</div>
+        <div id="F_ManagerId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_BusStopBillboards">
+        <div class="lr-form-item-title">使用状态<font face="宋体">*</font></div>
+        <div id="F_UseState" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_BusStopBillboards/Form.js")

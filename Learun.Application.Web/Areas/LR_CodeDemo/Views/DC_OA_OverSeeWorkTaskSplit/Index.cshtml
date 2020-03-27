@@ -1,0 +1,95 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWorkTaskSplit";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<link href="~/Content/jQuery-Gantt/css/style.css" rel="stylesheet" />
+<script src="~/Content/jQuery-Gantt/js/jquery.min.js"></script>
+<script src="~/Content/jQuery-Gantt/js/jquery.fn.gantt.js"></script>
+<style>
+    .state-view {
+        float: right;
+        margin-right: 5px;
+        height: 20px;
+        width: 80px;
+        margin-top: 5px;
+    }
+
+        .state-view > div:nth-child(1) {
+            height: 100%;
+            width: 20px;
+            float: left;
+        }
+
+        .state-view > div:nth-child(2) {
+            float: left;
+            margin-left: 5px;
+            line-height: 21px;
+            font-weight: 900;
+            font-family: 黑体;
+        }
+</style>
+<div class="lr-layout lr-layout-left-center" id="lr_layout" style="padding-left:0">
+    <div class="lr-layout-left" style="top:0;width:100%;height:400px">
+        <div class="lr-layout-wrap" style="padding-top:87px">
+            <div style="position:absolute;bottom:0;right:0;height:34px;z-index:100">
+                <div class="state-view">
+                    <div style="background-color:#FCD29A"></div><div>终止</div>
+                </div>
+                <div class="state-view">
+                    <div style="background-color:gray"></div><div>暂停</div>
+                </div>
+                <div class="state-view">
+                    <div style="background-color:yellow"></div><div>临近</div>
+                </div>
+                <div class="state-view">
+                    <div style="background-color:red"></div><div>逾期</div>
+                </div>
+                <div class="state-view">
+                    <div style="background-color:#0078D7"></div><div>完成</div>
+                </div>
+                <div class="state-view">
+                    <div style="background-color:#D8EDA3"></div><div>执行中</div>
+                </div>
+            </div>
+
+            <div id="filter_container" style="position:absolute;top:43px;left:250px;height:34px;z-index:100;">
+                <button class="btn btn-default active" text="执行中">执行中</button>
+                <button class="btn btn-default" text="逾期">逾期</button>
+                <button class="btn btn-default" text="临近">临近</button>
+                <button class="btn btn-default" text="办结">办结</button>
+                <button class="btn btn-default" text="延期">延期</button>
+            </div>
+            <div class="lr-layout-title lrlg ">督查任务</div>
+
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch"></div>
+                    </div>
+
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm" learun-authorize="yes">
+                        <a id="lr_taskSplit" class="btn btn-default"><i class="fa fa-book"></i>&nbsp;任务分解</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+
+
+
+        </div>
+    </div>
+    <div class="lr--layout-center" style="position: absolute;top:400px;left: 10px;right: 0;bottom: 10px;overflow-y:auto">
+        <div class="lr-layout-wrap  " style="padding-top:0">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">任务详情</span>
+            </div>
+            <div id="gantt" style="width:100%;height:100%"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkTaskSplit/Index.js")

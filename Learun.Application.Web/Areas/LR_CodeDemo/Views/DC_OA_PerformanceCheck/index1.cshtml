@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceCheck";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_check" class="btn btn-default"><i class="fa fa-plus"></i>&nbsp;评分</a>
+                        <a id="lr_info" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;查看</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheck/Index1.js")

@@ -1,0 +1,1947 @@
+Time:    2020/2/7 11:15:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:15:02
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 3905,3906,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:15:03
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\P\6e5651e0-72dc-4f64-8fd1-c20650020890.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:15:03
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/7372355C-8D49-48CB-880F-A4DAA0A8C4CC_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:15:03
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/6e5651e0-72dc-4f64-8fd1-c20650020890
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:15:03
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 3907,3908,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\R\47ab1919-b5c3-401f-b2b5-10216656a098.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/9F62BB51-AF1B-4BF9-A4D7-A436F1E352E9_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/47ab1919-b5c3-401f-b2b5-10216656a098
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:20:01
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:17
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:17
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:17
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:17
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:17
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:19
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 3960,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:27
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\F\6958583c-d616-4806-b9ea-ba744170db3b.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:27
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/7E0BFB0B-1059-4F06-9B7F-6DCD1EAD709C_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:27
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/6958583c-d616-4806-b9ea-ba744170db3b
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:30:29
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4038,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\M\49f91127-fbae-4e50-859d-f3e583833f44.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/2D9307C5-3B5C-4D0C-8E09-F16EAFC81C47_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/49f91127-fbae-4e50-859d-f3e583833f44
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 11:35:00
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4068,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:01
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\M\e3fa5667-9461-458c-895e-9b2427b6613d.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/9AC979D0-AAD6-4A54-8C18-C842347A06D8_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/e3fa5667-9461-458c-895e-9b2427b6613d
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:20:01
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:26
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:36
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:36
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:36
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:37
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:38
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4094,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:39
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\A\cb4b832b-2077-44c1-a7cc-efc121d648e8.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:39
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/610DBC73-1A36-487B-911B-376F469859A2_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:39
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/cb4b832b-2077-44c1-a7cc-efc121d648e8
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:25:40
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4372,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\T\b9441170-3d38-46c8-8763-d0b68fa6143b.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/68B718EB-3D0D-4F82-868B-75398E1113E8_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/b9441170-3d38-46c8-8763-d0b68fa6143b
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:35:00
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4405,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201911\Y\953bc400-88bd-4243-b9e9-98de8da61419.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/9000508E-E7A9-48E8-B3DF-AE5A2751BC5B_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/953bc400-88bd-4243-b9e9-98de8da61419
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:40:00
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4454,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\J\20a07e25-4d77-4ef1-8981-224658ff8dae.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/09C11A2B-C4B6-41E1-A5BC-C315D6A82873_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/20a07e25-4d77-4ef1-8981-224658ff8dae
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:45:01
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4530,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:01
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\Y\06481acf-5d9c-4218-9ede-086bf06d43e9.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/48954AA9-6447-41F7-8A10-AA47E1DC3D89_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/06481acf-5d9c-4218-9ede-086bf06d43e9
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 14:50:01
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:05
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:40:40
+Action:  formtable_main_134Exception
+Message: 执行超时已过期。完成操作之前已超时或服务器未响应。 
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4603,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\Q\fcfb8ae8-f5ed-4c9c-9e96-d69769f21cce.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/81335AB0-0985-4818-9641-D62EA33857A0_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/fcfb8ae8-f5ed-4c9c-9e96-d69769f21cce
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:45:00
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4658,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:01
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\I\9042af27-5ad4-4bfa-b20f-36626f10a611.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/36/E829D663-0980-42C6-BAEE-89A600A4B3DE_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:01
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/36/9042af27-5ad4-4bfa-b20f-36626f10a611
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 15:55:01
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/36/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4709,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\Z\e8aae934-9122-437f-8a52-08abb6cc060f.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/38/7F12AD5A-C6ED-4FD1-B0F1-9BC4F3AB0984_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/38/e8aae934-9122-437f-8a52-08abb6cc060f
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:00:00
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/36/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/38/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:01
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4774,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:03
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\E\7af74583-09b3-4a45-b3a5-23170874f751.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:03
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/39/4E0F290B-7431-4E2D-98BB-47F22235BA19_picture.jpeg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:03
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/39/7af74583-09b3-4a45-b3a5-23170874f751
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:05:03
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/23/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/24/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/25/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:00
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/27/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/28/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/29/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/31/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/32/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/33/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/34/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/35/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/36/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:10
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/38/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:47
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:47
+Action:  formtable_main_134Exists
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/39/
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:25:47
+Action:  formtable_main_134
+Message: d:/oaSystem/doc/Weaver
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:26:10
+Action:  formtable_main_134sql
+Message: select * from  ecology.dbo.imagefile i join  ecology.dbo.docimagefile d  on  d.imagefileid = i.imagefileid 
+where 1=1  AND d.docid in ( 4816,-1)
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:27:50
+Action:  formtable_main_134UNGIzip
+Message: D:\WEAVER\ecology\filesystem\201912\W\5e93d1a7-2179-44e6-9db7-4503fa03acda.zip
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:27:50
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/40/IMG_20191106_154332.jpg
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:27:50
+Action:  formtable_main_134UNGIzip
+Message: d:/oaSystem/doc/Weaver/formtable_main_134/40/5e93d1a7-2179-44e6-9db7-4503fa03acda
+-----------------------------------------------------------
+
+
+Time:    2020/2/7 16:27:50
+Action:  formtable_main_134Exception
+Message: 无法找到指定文件。
+-----------------------------------------------------------
+
+

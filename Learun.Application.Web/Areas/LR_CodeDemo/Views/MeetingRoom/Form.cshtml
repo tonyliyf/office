@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "会议室管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRoom">
+        <div class="lr-form-item-title">会议室名称</div>
+        <input id="DC_OA_MeetingRoomName" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRoom">
+        <div class="lr-form-item-title">会议室编号</div>
+        <input id="F_RoomNo" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRoom">
+        <div class="lr-form-item-title">可容纳人数</div>
+        <input id="F_Container" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRoom">
+        <div class="lr-form-item-title">会议室地点</div>
+        <textarea id="DC_OA_MeetingRoomPlace" class="form-control" style="height:250px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/MeetingRoom/Form.js")

@@ -1,0 +1,270 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWorkPlatForm";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<link href="~/Content/simple/db_index.css" rel="stylesheet" />
+<div class="db_bx">
+    <div class="db_left">
+        <div class="zx_home">
+            <div class="zx_left">
+                <div class="zx_title">
+                    <div class="zx_title_left">
+                        <div class="title_box" state="执行中" style="background: #3ad87e;">
+                            执行中的(@ViewBag.count1)
+                        </div>
+                        <div class="title_box" state="逾期" style="background: #ff0966;">
+                            逾期(@ViewBag.count2)
+                        </div>
+                        <div class="title_box" state="临近" style="background: #fc8300;">
+                            临近(@ViewBag.count3)
+                        </div>
+                        <div class="title_box" state="办结" style="background: #0090ff;">
+                            办结(@ViewBag.count4)
+                        </div>
+                        <div class="title_box" state="延期" style="background: #2d9e00;">
+                            延期(@ViewBag.count5)
+                        </div>
+                    </div>
+                    <div class="tit_right">
+                        <img src="/Content/images/fh.png">
+                        <span class="rwsp">MORE&gt;&gt;</span>
+                    </div>
+                </div>
+                <div class="zs_bottom">
+                    <ul class="zs_ul" id="osList" style="height:253px">
+                        @*<li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    督办立项流程-系统管理员
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>*@
+                    </ul>
+                </div>
+
+            </div>
+            <div class="zx_right" style="height:unset">
+                <div class="zx_tit">
+                    <div class="my_title">
+                        <div class="tit_left">
+                            <div class="tit_box">
+                                <img src="/Content/images/biaoq.png">
+                            </div>
+                            <div class="tit_span">
+                                会议列表
+                            </div>
+                        </div>
+                        <div class="tit_right">
+                            <img src="/Content/images/fh.png">
+                            <span class="rwsp">MORE&gt;&gt;</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="zs_bottom">
+                    <ul class="zs_ul" id="meettingList" style="height:255px">
+                        @*<li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>
+                            <li class="zs_li">
+                                <div class="zs_li_left">
+                                    领导会议-2楼办公室
+                                </div>
+                                <div class="zs_li_right">
+                                    2019-04-16
+                                </div>
+                            </li>*@
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="zx_each">
+            <div class="zx_each_left">
+                <div class="each_title">
+                    任务状态占比
+                </div>
+                <div id="each_one">
+
+                </div>
+            </div>
+            <div class="zx_each_right">
+                <div class="each_title">
+                    督办类型占比
+                </div>
+                <div id="each_two">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="db_right">
+        <div class="zs_box" style="background: #00aeff;">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.mytaskCount1</span>
+            </div>
+            <div class="zs_bot_bottom">
+                主办任务
+            </div>
+        </div>
+        <div class="zs_box" style="background: #00aeff;">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.mytaskCount2</span>
+            </div>
+            <div class="zs_bot_bottom">
+                协办任务
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.taskCount1</span>
+            </div>
+            <div class="zs_bot_bottom">
+                政府工作报告
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.taskCount2</span>
+            </div>
+            <div class="zs_bot_bottom">
+                总经理办公室
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.taskCount3</span>
+            </div>
+            <div class="zs_bot_bottom">
+                重点建设项目
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.taskCount4</span>
+            </div>
+            <div class="zs_bot_bottom">
+                集团投资项目
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>@ViewBag.taskCount5</span>
+            </div>
+            <div class="zs_bot_bottom">
+                日程工作督办
+            </div>
+        </div>
+        <div class="zs_box">
+            <div class="zs_bot_top">
+                <img src="~/Content/images/renwu.png" />
+                <span>0</span>
+            </div>
+            <div class="zs_bot_bottom">
+                会议纪要
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+<script src="~/Content/echarts/echarts.min.js"></script>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkPlatForm/Index.js")

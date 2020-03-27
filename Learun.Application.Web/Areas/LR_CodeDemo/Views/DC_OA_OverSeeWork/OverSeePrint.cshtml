@@ -1,0 +1,108 @@
+﻿@model Learun.Application.TwoDevelopment.LR_CodeDemo.DC_OA_OverSeeWorkEntity
+@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<table class="mytable" style="margin-top: 62px;">
+    <tbody>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>编码</td>
+            <td colspan="2">牵头部门</td>
+            <td colspan="2">负责人</td>
+            <td colspan="2">责任领导</td>
+            <td colspan="2">督办人</td>
+            <td>督办分类</td>
+            <td>开始时间</td>
+            <td>结束时间</td>
+            <td colspan="3">工作事项</td>
+            <td colspan="3">备注</td>
+        </tr>
+        <tr>
+            <td>@Model.F_OSWCode</td>
+            <td colspan="2">@Model.F_Department</td>
+            <td colspan="2">@Model.F_LeaderUser</td>
+            <td colspan="2">@Model.F_HighLeader</td>
+            <td  colspan="2">@Model.F_OverSeeUser</td>
+            <td>@Model.F_OSWType</td>
+            <td>@(Model.F_BeginDate.HasValue?Model.F_BeginDate.Value.ToString("yyyy-MM-dd"):"")</td>
+            <td>@(Model.F_EndDate.HasValue ? Model.F_EndDate.Value.ToString("yyyy-MM-dd") : "")</td>
+            <td colspan="3">@Model.F_OSWContent</td>
+            <td colspan="3">@Model.F_Marks</td>
+        </tr>
+    </tbody>
+</table>
+<style>
+    table.mytable, table.mytable tr th, table.mytable tr td {
+        border: 1px solid #000;
+        line-height: 35px;
+    }
+
+        table.mytable > tbody > tr:nth-child(1) > td {
+            width: 100px;
+            border: none;
+        }
+
+        table.mytable > tbody > tr:nth-child(1) {
+            border: none;
+        }
+
+    table.mytable {
+        border-top: none;
+        max-width: 290mm;
+        max-height: 290mm;
+    }
+
+    table {
+        width: 100%;
+        min-height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-collapse: collapse;
+        white-space: pre;
+    }
+
+        table.mytable table {
+            border: none
+        }
+
+            table.mytable table > tbody > tr:nth-child(1) > td {
+                border-top: none
+            }
+
+            table.mytable table > tbody > tr:nth-last-child(1) > td {
+                border-bottom: none
+            }
+
+            table.mytable table > tbody > tr > td:nth-child(1) {
+                border-left: none
+            }
+
+            table.mytable table > tbody > tr > td:nth-last-child(1) {
+                border-right: none
+            }
+
+    body {
+        padding: 20px;
+        overflow: auto;
+    }
+</style>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWork/OverSeePrint.js")

@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "租房CPI系数";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="DC_Assets_HouseRentCPI" >
+        <div class="lr-form-item-title">年度（年）<font face="宋体">*</font></div>
+        <input id="F_Year" type="text" class="form-control" isvalid="yes" checkexpession="Num" placeholder="请输入年度比如2019" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_Assets_HouseRentCPI" >
+        <div class="lr-form-item-title">CPI系数<font face="宋体">*</font></div>
+        <input id="F_Value" type="text" class="form-control" isvalid="yes" checkexpession="Num" placeholder="请输入系数比如1.10"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_Assets_HouseRentCPI" >
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:150px;"  ></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_Assets_HouseRentCPI/Form.js")

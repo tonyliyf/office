@@ -1,0 +1,30 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ProjectInfo";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout ">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                    
+                    </div>
+                </div>
+              
+            </div>
+            <div class="lr-layout-body" id="gridtable" style="height:50%"></div>
+
+            <div class="lr-layout-body" style="height:50%">
+                <iframe id="ifr1" src="../DC_EngineProject_ProjectInfoApprovalData/Indexz?keyValue=1" style="width:100%;height:100%;border:none"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .lr-form-wrap {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectInfoApprovalData/Index1z.js")

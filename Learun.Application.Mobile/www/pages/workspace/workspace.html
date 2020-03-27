@@ -1,0 +1,397 @@
+﻿<!--右侧字母目录-->
+<style type="text/css">
+	.xxct{
+		font-size: 14px;
+	}
+	.tit{
+		font-size: 14px;
+		font-weight: bold;
+		padding-top: 8px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid #000000;
+	}
+	.tcct{
+		position: fixed;
+		top: 0px;
+		left: 0%;
+		background: #ffffff;
+		width: 100%;
+		z-index: 10;
+		font-size: 14px;
+		padding: 10px;
+		overflow: auto;
+		bottom: 0px;
+	}
+	.tcbj{
+		/*position: fixed;*/
+		left: 0px;
+		right: 0px;
+		top: 0px;
+		bottom: 0px;
+		z-index: 100;
+		display: none;
+		/*height: 1000px;*/
+		background: rgba(0,0,0,0.5);
+	}
+	.nr_list{
+		overflow: hidden;
+		/*line-height: 24px;
+		margin: 9px auto;*/
+		line-height: 23px;
+		margin: 7px auto;
+	}
+	.cuzy{
+		border-bottom: 1px solid#dfdfdf;
+		height: 59px;
+	}
+	.nr_left{
+		float: left;
+		width: 46%;
+		color: #626262;
+		font-size: 13px;
+	}
+	.nr_rig{
+		float: right;
+		width: 54%;
+		font-size: 13px;
+	}
+	.tcct_top{
+		/*overflow: hidden;*/
+		border-bottom: 1px solid #adadad;
+		position: fixed;
+		left: 5px;
+		right: 5px;
+		background:
+		white;
+		padding-top: 10px;
+		top: 44px;
+		z-index: 10000;
+		display: none;
+	}
+	.tct_rig{
+		float: right;
+		margin-top: -5px;
+		padding-bottom: 5px;
+	}
+	.tct_rig img{
+		/*width: 25px;*/
+	}
+	.tct_left{
+		float: left;
+		font-size: 15px;
+		color: #0c86d8;
+	}
+	body{
+		height: 100%;
+		overflow: hidden;
+	}
+	*{
+		touch-action: auto !important;
+	}
+	.xl_ul {
+	    padding: 5px;
+	    color: #333;
+	    margin: 0px;
+	}
+	.xlcd{
+		background: #fff;
+		border: 1px solid #949494;
+		position: absolute;
+		padding-top: 28px;
+		top: 6px;
+		display: none;
+	}
+	.xl_li {
+	    list-style: none;
+	    line-height: 28px;
+	    font-size: 14px;
+		width: 95px;
+	}
+	.amap-logo{
+      display: none;
+    }
+    .amap-copyright{
+      display: none;
+    }
+	.nr{
+		display: none;
+		overflow: auto;
+		overflow-y: scroll;
+		padding-top: 35px;
+		/*min-height: 140px;
+		max-height: 350px;*/
+	}
+	strong{
+		font-size: 15px;
+	}
+	.cuzy .nr_left{
+		width: 53%;
+	}
+	.cuzy .nr_rig{
+		width: 47%;
+	}
+	.f-scroll{
+		/*overflow: hidden;*/
+		/*height: 100%;*/
+	}
+	.f-page{
+		/*overflow: hidden;*/
+	}
+.amap-logo{
+      opacity:0;
+    }
+    .amap-copyright{
+      opacity:0;
+     }
+     
+     .bus_list .nr_left{
+     	width: 42%;
+     }
+	.bus_list .nr_rig{
+     	width: 58%;
+     }
+    .bus_list {
+	    border-bottom: 1px solid #b7b7b7;
+	    padding-bottom: 5px;
+    }
+</style>
+<script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+<script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<input type="hidden" class="jlid"/>
+<input type="hidden" class="nr_time" value="0" />
+<input type="hidden" class="xmid" />
+<div class="tcbj">
+	<div class="tcct" style="">
+		<!--<div class="tcct_top">
+			<div class="tct_left">
+				<span class="tcsp" style="position: absolute;z-index: 100;margin-left: 5px;">项目信息</span>
+				<div class="xlcd">
+					<ul class="xl_ul">
+						<li class="xl_li" type="0">项目信息</li>
+						<li class="xl_li" type="1">合同管理</li>
+						<li class="xl_li" type="2">前期管理</li>
+						<li class="xl_li" type="3">项目施工信息</li>
+						<li class="xl_li" type="4">考勤统计</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tct_rig">
+				<img src="images/guanb.png"/>
+			</div>
+		</div>-->
+		
+		<div class="nr" style="">
+		</div>
+		<div class="nr ht">
+			<ul class="box_ul box_ul_thr">
+				<li class="box_li">
+					<img src="images/clht.png"/>
+					<br />
+					<span>材料合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/rzht.png"/>
+					<br />
+					<span>融资合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/lwht.png"/>
+					<br />
+					<span>劳务合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/wzcg.png"/>
+					<br />
+					<span>物资设备采购供应合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/djht.png"/>
+					<br />
+					<span>代建合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/fdc.png"/>
+					<br />
+					<span>房地产开发合作合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/jsgcsg.png"/>
+					<br />
+					<span>建设工程施工合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/fbht.png"/>
+					<br />
+					<span>分包合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/zlht.png"/>
+					<br />
+					<span>租赁合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/dbht.png"/>
+					<br />
+					<span>担保合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/gcsj.png"/>
+					<br />
+					<span>工程设计合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/jlht.png"/>
+					<br />
+					<span>监理合同</span>
+				</li>
+				<li class="box_li">
+					<img src="images/kcht.png"/>
+					<br />
+					<span>勘测合同</span>
+				</li>
+			</ul>
+			<div class="ht_list">
+				
+			</div>
+		</div>
+		<div class="nr nrth">
+			
+		</div>
+		<div class="nr">
+			<div class="nr_sg">
+				<!--<div class="nr_sg_list">
+					<img src="images/wjj.png">
+					<br>
+					<span>材料合同</span>
+				</div>-->
+			</div>
+			<div class="sg_list">
+				
+			</div>
+		</div>
+		<div class="nr">
+			
+		</div>
+		<div class="nr">
+			
+		</div>
+		<div class="nr">
+			<ul class="box_ul box_ul_for">
+				<li class="box_li" id="2">
+					<img src="images/cjdw.png"/>
+					<br />
+					<span>参建单位</span>
+				</li>
+				<li class="box_li" id="1">
+					<img src="images/jlht.png"/>
+					<br />
+					<span>监理单位</span>
+				</li>
+			</ul>
+			<div class="lz_list">
+				
+			</div>
+			<!--<div class="xc_list" type="0">
+				<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>参建单位<span></span></span>
+				</div>
+			</div>
+			<div class="xc_list" type="1">
+				<div class="xm_title"><img class="xm_img" src="images/jxz.png"><span>监理单位<span></span></span>
+				</div>
+			</div>-->
+		</div>
+		<div class="" style="overflow: hidden;">
+			<div class="box_fh" style="float: right;">
+				<img src="images/fanh.png"/>
+				<span>返回列表	</span>
+			</div>
+		</div>
+		<div class="box_list">
+			<div class="xmgk">
+				<div class="bt_list">
+					项目概况
+				</div>
+				<ul class="box_ul">
+					<li class="box_li" type="1">
+						<img src="images/xmxx.png"/>
+						<br />
+						<span>项目概况</span>
+					</li>
+					<li class="box_li" type="2">
+						<img src="images/htxx.png"/>
+						<br />
+						<span>合同信息</span>
+					</li>
+					<li class="box_li" type="3">
+						<img src="images/qqxx.png"/>
+						<br />
+						<span>前期信息</span>
+					</li>
+				</ul>
+				<div class="bt_list">
+					实施管理
+				</div>
+				<ul class="box_ul box_ul_two">
+					<li class="box_li" type="4">
+						<img src="images/xmxx.png"/>
+						<br />
+						<span>施工记录</span>
+					</li>
+					<li class="box_li" type="5">
+						<img src="images/htxx.png"/>
+						<br />
+						<span>会议记录</span>
+					</li>
+					<li class="box_li" type="6">
+						<img src="images/qqxx.png"/>
+						<br />
+						<span>进度月报</span>
+					</li>
+					<li class="box_li" type="7">
+						<img src="images/kqjl.png"/>
+						<br />
+						<span>履职记录</span>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mac" style="width: 100%;height: 100%;background: #fff;">
+	<div id="mapDiv" style="width:100%; height:100%;display: none;">
+		
+	</div>
+	<div class="dov">
+		
+	</div>
+	<!--<div class="xm_list">
+		<div class="xm_title">
+			在建项目
+		</div>
+		
+	</div>-->
+	<div class="">
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+<!--<div class="lr-contact-page">
+    <div class="searchBox">
+        <i class="iconfont icon-search"></i>
+        <div class="search" >搜索联系人</div>
+    </div>
+
+    <div class="lr-list"  id="lr_contact_companylist" >
+       
+    </div>
+</div>-->
+<script type="text/javascript">
+			
+		</script>

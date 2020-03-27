@@ -1,0 +1,82 @@
+﻿body {
+    overflow-y: auto;
+    height:unset !important;
+}
+
+
+
+@font-face {
+    font-family: 'FangSong';
+    src: url('../../Resource/Font/FangSong.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'BiaoSong';
+    src: url('../../Resource/Font/BiaoSong.TTF') format('truetype');
+}
+
+h1.title {
+    text-align: center;
+    width: 600px;
+    margin: 20px auto;
+    word-wrap: break-word;
+    font-size: 26px;
+    font-family: BiaoSong;
+    font-weight:900;
+}
+
+.deal-table {
+    margin: 5px auto
+}
+
+    html, body.deal-table, .deal-table div {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .deal-table tr td {
+        border: 1px solid black;
+        padding-left: 5px;
+        line-height: 34px;
+    }
+
+        .deal-table tr td > div {
+            line-height: 34px;
+            top: 0;
+            font-size: 20px;
+            left: 0;
+            right: 0;
+            padding-left: 5px;
+            height: 100%;
+            font-family: FangSong
+        }
+
+            .deal-table tr td > div > p > span:first-child {
+                font-family: 黑体;
+                font-weight: 900;
+                line-height: 34px;
+                top: 0;
+            }
+
+    .deal-table tr td {
+        border-bottom: none;
+    }
+
+    .deal-table > div:last-child tr td {
+        border-bottom: 1px solid black;
+    }
+
+    .deal-table > div > div > span {
+        font-family: 黑体;
+        font-size: 20px;
+        font-weight: 900
+    }
+
+    .deal-table img {
+        width: 140px;
+    }
+
+#div_sendto, #div_copyto, #td_ProofreadUser, #td_ReviewUser, #td_PrintNum {
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceCheck";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout" id="lr_layout">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap  ">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">部室领导绩效考核信息</span>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="multiple_condition_query">
+                            <div class="lr-query-formcontent">
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">被考核员工</div>
+                                    <div id="F_CheckUserid"></div>
+                                </div>
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">考勤月度</div>
+                                    <div id="F_CheckStartTime"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                    
+                        <a id="lr_print" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;打印</a>
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceCheck/baobiao4.js") 

@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "印章管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-4 lr-form-item" style="margin-left:-60px !important;">
+        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入印章名称" />
+    </div>
+    <div class="col-xs-6 lr-form-item" style="margin-left:-95px !important;">
+        <div><a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span class="lrlg">查询</span></a></div>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid">
+        <div id="datagird"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_OAModule/Views/LR_StampInfo/StampDetailIndex.js")
+

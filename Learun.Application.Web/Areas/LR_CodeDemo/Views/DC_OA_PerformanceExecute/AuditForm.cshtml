@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceUserWorkPlan";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    @*<div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceAppraisalTemplate">
+        <div class="lr-form-item-title">考核得分<font face="宋体">*</font></div>
+        <input id="F_PerformanceScore" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>*@
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceAppraisalTemplate">
+        <div class="lr-form-item-title">责任扣减分<font face="宋体">*</font></div>
+        <input id="F_DutyReduceScore" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceAppraisalTemplate">
+        <div class="lr-form-item-title">奖励加分<font face="宋体">*</font></div>
+        <input id="F_AwardAddScore" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceAppraisalTemplate">
+        <div class="lr-form-item-title">审核意见</div>
+        <textarea id="txt_Advice" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceExecute/AuditForm.js")

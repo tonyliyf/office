@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "formtable_main_131";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">设备名称</div>
+        <textarea id="sbmc" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">申请部门</div>
+        <input id="sqbm" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">申请用户</div>
+        <input id="sqyh" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">故障描述</div>
+        <textarea id="gzms" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">申请维修日期</div>
+        <input id="wxrq" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#wxrq').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="formtable_main_131" >
+        <div class="lr-form-item-title">维修地点</div>
+        <input id="wxdd" type="text" class="form-control"  />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/EcologyDemo/Views/formtable_main_131/Form.js")

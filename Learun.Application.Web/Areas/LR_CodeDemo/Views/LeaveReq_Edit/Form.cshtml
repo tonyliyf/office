@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "LeaveReq_Edit";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">姓名</div>
+        <input id="F_UserId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-6 lr-form-item">
+        <div class="lr-form-item-title">岗位</div>
+        <input id="F_PostId" readonly type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">分部</div>
+        <input id="F_CompanyId" type="text" readonly class="form-control currentInfo lr-currentInfo-company" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">部门</div>
+        <input id="F_Dept" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">申请时间</div>
+        <input id="F_ApplyDate" type="text" readonly class="form-control currentInfo lr-currentInfo-time" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">紧急程度<font face="宋体">*</font></div>
+        <div id="F_Degree" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">请假类型<font face="宋体">*</font></div>
+        <div id="F_LeaveType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div id="div_rest" class="col-xs-12 lr-form-item" style="display:none">
+        <div class="lr-form-item-title">剩余年假<font face="宋体">*</font></div>
+        <input id="txt_rest" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">起始日期<font face="宋体">*</font></div>
+        <input id="F_StartDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_StartDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="EvectionReq">
+        <div class="lr-form-item-title">时间<font face="宋体">*</font></div>
+        <div id="select1" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">结束日期<font face="宋体">*</font></div>
+        <input id="F_EndDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_EndDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="EvectionReq">
+        <div class="lr-form-item-title">时间<font face="宋体">*</font></div>
+        <div id="select2" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">请假天数</div>
+        <input id="F_LeaveDays" readonly type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">附件上传</div>
+        <div id="F_Files"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="LeaveReq">
+        <div class="lr-form-item-title">请假理由</div>
+        <textarea id="F_LeaveReason" class="form-control" style="height:100px;"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/LeaveReq_Edit/Form.js")

@@ -1,0 +1,38 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PurchaseAudit";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<div class="lr-layout ui-report ">
+
+    <div class="lr-layout-center ui-report">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title">标题</div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入要查询关键字" />
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_open" class="btn btn-default"><i class="fa fa-pencil-square-o"></i>&nbsp;预览文件</a>
+                        <a id="lr_file" class="btn btn-default"><i class="fa fa-eye"></i>&nbsp;附件查看</a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid">
+                <div class="grid-title">采购文件审核审批统计表</div>
+                <div class="lr-layout-body" id="gridtable"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PurchaseAudit/Index.js")

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "采购报表";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<script src="~/Content/echarts/echarts.min.js"></script>
+<div class="lr-layout ui-report">
+    <div class="lr-layout-center" style="overflow-y:auto">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch"></div>
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <div id="multiple_condition_query">
+                            <div class="lr-query-formcontent">
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">分类选择</div>
+                                    <div id="groupBy"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-replace" class="btn btn-default"><i class="fa fa-refresh"></i>&nbsp;<span class="lrlg">刷新</span></a>
+                        <a id="lr-print" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;<span class="lrlg">打印</span></a>
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid" style="overflow: hidden;">
+            	<div class="" style="float: left;width: 47%;">
+            		<div class="grid-title">资金拨付统计表</div>
+            		<div class="lr-layout-body" id="gridtable" style=""></div>
+            	</div>
+            	<div class="" style="float: right;width: 47%;">
+            		 <div id="statistics_chart" style="height:300px;width:100%;"></div>
+            	</div>
+            </div>
+            <!--<div class="lr-layout-grid" style="height:400px">
+               
+            </div>-->
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_AppropriationApprove/AppropriationApproveReport.js")
+@Html.AppendCssFile("/Views/LR_Content/style/lr-iframe-index.css")

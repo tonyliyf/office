@@ -1,0 +1,39 @@
+﻿@model List<Learun.Application.TwoDevelopment.LR_CodeDemo.DC_OA_PerformanceExecuteEntity>
+@{
+    ViewBag.Title = "考核流程查看";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div style="height:100%;width:100%;overflow-y:auto">
+    <div class="lr-timeline-allwrap" style="min-height:100%;min-width:100%;">
+        <ul>
+            <li class="lr-timeline-header">
+                <div>
+                    当前
+                </div>
+            </li>
+            @foreach (var item in Model)
+            {
+                <li class="lr-timeline-item">
+                    <div class="lr-timeline-wrap lr-timeline-current">
+                        <span class="lr-timeline-date">@(item.F_PointDateTime.HasValue ? item.F_PointDateTime.Value.ToString("yyyy-MM-dd hh:mm:ss") : "")</span>
+                        <div class="lr-timeline-content">
+                            <span class="arrow"></span>
+                            <div class="lr-timeline-title">
+                                @item.F_PEPoint
+                            </div>
+                            <div class="lr-timeline-body">
+                                <span>@item.F_PointUserId：</span>
+                                @(item.F_PointState == 0 ? "执行中" : item.F_PointState == 1 ? "通过" : "不通过")
+                                @if (@item.F_PointText != null && @item.F_PointText.Length > 0)
+                                {<ss>【审批意见】@item.F_PointText</ss>}
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            }
+            <li class="lr-timeline-ender">
+                <div>开始</div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,77 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<h1 class="title">@ViewBag.maintitle</h1>
+<div class="deal-table" style="width:668px;">
+    <div style="line-height:34px">
+        <table>
+            <tr>
+                <td style="width:334px;height:34px"><div><p><span>编号：</span>@ViewBag.code</p></div></td>
+                <td style="width:172px"><div><p><span>密级：</span>@ViewBag.grade</p></div></td>
+                <td style="width:162px"><div><p><span>紧急程度：</span>@ViewBag.level</p></div></td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px">
+        <table>
+            <tr>
+                <td style="width:668px;height:131px"><div><p><span>标题：</span>@ViewBag.title</p></div></td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px" id="div_sendto">
+        <table>
+            <tr>
+                <td style="width:668px;height:106px;">
+                    <div>
+                        <p><span>主发：</span><span id="sp_sendto">@ViewBag.sendto</span></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px" id="div_copyto">
+        <table>
+            <tr>
+                <td style="width:668px;height:98px">
+                    <div>
+                        <p><span>抄送：</span><span id="sp_copyto">@ViewBag.copyto</span></p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px">
+        <table>
+            <tr>
+                <td style="width:351px;height:34px"><div><p><span>拟稿单位：</span>@ViewBag.department</p></div></td>
+                <td style="width:317px;"><div><p><span>经办人：</span>@ViewBag.oper</p></div></td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px">
+        <table>
+            <tr>
+                <td style="width:204px;height:34px" id="td_ProofreadUser"><div><p><span>校对：</span><span id="sp_ProofreadUser">@ViewBag.checkname</span></p></div></td>
+                <td style="width:204px;" id="td_ReviewUser"><div><p><span>审稿：</span><span id="sp_ReviewUser">@ViewBag.reviewname</span></p></div></td>
+                <td style="width:260px;" id="td_PrintNum"><div><p><span>印数：</span><span id="sp_PrintNum">@ViewBag.printnum</span></p></div></td>
+            </tr>
+        </table>
+    </div>
+    <div style="line-height:34px;">
+        <table>
+            <tr>
+                <td style="width:344px;height:242px"><div><p><span>审稿：</span>@Html.Raw(ViewBag.checkadvice)</p></div></td>
+                <td style="width:324px;height:242px"><div><p><span>签发：</span>@Html.Raw(ViewBag.signadvice)</p></div></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<input id="sendtoid" type="hidden" value="@ViewBag.sendtoid" />
+<input id="copytoid" type="hidden" value="@ViewBag.copytoid" />
+<input id="checkname" type="hidden" value="@ViewBag.checkname" />
+<input id="checkid" type="hidden" value="@ViewBag.checkid" />
+<input id="reviewname" type="hidden" value="@ViewBag.reviewname" />
+<input id="reviewid" type="hidden" value="@ViewBag.reviewid" />
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DealTable.js")
+@Html.AppendCssFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DealTable.css")

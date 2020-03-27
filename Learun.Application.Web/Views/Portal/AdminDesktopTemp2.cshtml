@@ -1,0 +1,1612 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>综合信息|快速开发平台|开发框架|@ViewBag.Title</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/simple/simple-calendar.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    @*<script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>*@
+    <style type="text/css">
+    	.sc-item .day{
+    		font-size: 1.2em;
+    	}
+    	.sc-week{font-size: 15px;}
+    </style>
+    
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/Portal/AdminDesktopTemp/index.css")
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    	.lr-theme-setting.opened{
+    		display: none;
+    	}
+    	
+    </style>
+</head>
+<body  class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme()" style="background: #e8edf4;">
+    <div class="lr-desktop-panel">
+        <div class="mh_home">
+        	<div class="my_left">
+        		<div class="my_top">
+        			<ul class="my_top_ul">
+        				<li class="my_top_li hy" style="background: #00a2ff;position: relative;">
+        					<div class="my_img">
+        						<img src="~/Content/images/huiyi.png"/>
+        					</div>
+        					<div class="my_span">
+        						我的会议
+        					</div>
+        					<div class="hy_hide">
+        						<div class="hy_list">
+        							<div class="hy_left">
+        								<span>2018-15:30</span>
+        								<span>领导会议</span>
+        								<span>二楼办公室</span>
+        							</div>
+        							<div class="ht_box">
+        								确定
+        							</div>
+        							<div class="hy_rig">
+        								<div class="hy_box" type="2">
+        									
+        								</div>
+        								<span>参加</span>
+        								<div class="hy_box" type="1">
+        									
+        								</div>
+        								<span>未参加</span>
+        							</div>
+        							
+        						</div>
+        						<div class="hy_list">
+        							<div class="hy_left">
+        								<span>2018-15:30</span>
+        								<span>领导会议</span>
+        								<span>二楼办公室</span>
+        							</div>
+        							<div class="ht_box">
+        								确定
+        							</div>
+        							<div class="hy_rig">
+        								<div class="hy_box" type="2">
+        									
+        								</div>
+        								<span>参加</span>
+        								<div class="hy_box" type="1">
+        									
+        								</div>
+        								<span>未参加</span>
+        							</div>
+        						</div>
+        					</div>
+        				</li>
+        				<li class="my_top_li" style="background: #ff6600;">
+        					<div class="my_img">
+        						<img src="~/Content/images/grkh.png"/>
+        					</div>
+        					<div class="my_span">
+        						我的考核
+        					</div>
+        				</li>
+        				<li class="my_top_li" style="background: #c000a3;">
+        					<div class="my_img">
+        						<img src="~/Content/images/jtkh.png"/>
+        					</div>
+        					<div class="my_span">
+        						部门考核
+        					</div>
+        				</li>
+        				<li class="my_top_li" style="background: #0adb00;">
+        					<div class="my_img">
+        						<img src="~/Content/images/kaoq.png"/>
+        					</div>
+        					<div class="my_span">
+        						部门考勤
+        					</div>
+        				</li>
+    					<li class="my_top_li" style="background: #00d562;">
+    						<div class="my_img">
+        						<img src="~/Content/images/bmwd.png"/>
+        					</div>
+        					<div class="my_span">
+        						部门文档
+        					</div>
+    					</li>
+    					<li class="my_top_li" onclick="parent.location.href='../../leaderhome/index'" style="background: #ed087f;">
+    						<div class="my_img">
+        						<img src="~/Content/images/ldjsc.png"/>
+        					</div>
+        					<div class="my_span">
+        						领导驾驶舱
+        					</div>
+    					</li>
+        			</ul>
+        		</div>
+        		<div class="my_lc">
+        			<div class="my_lc_left">
+        				<div class="my_title">
+        					<div class="tit_left">
+        						<div class="tit_box">
+        							<img src="~/Content/images/biaoq.png"/>
+        						</div>
+        						<div class="tit_span">
+        							流程中心
+        						</div>
+        					</div>
+        					<div class="tit_right">
+        						<img class="lcsx" src="~/Content/images/fh.png"/>
+        						<span class="lcsp">MORE>></span>
+        					</div>
+        				</div>
+        				<div class="my_list lczx">
+        					<div class="my_type type_list" type="1">
+        						<div class="typ_tit">
+        							 <span>
+        							 	待办
+	        							<div class="type_nmb">
+	        								0
+	        							</div>
+        							 </span>
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        					<div class="my_type" type="2">
+        						<div class="typ_tit">
+        							 <span>
+        							 	已办
+        							 	<div class="type_nmb">
+	        								0
+	        							</div>
+        							 </span>
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        					<div class="my_type" type="3">
+        						<div class="typ_tit">
+        							<span>
+        								 传阅
+        								<div class="type_nmb">
+	        								0
+	        							</div>
+        							</span> 
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        					<div class="my_type" type="4">
+        						<div class="typ_tit">
+        							<span>
+        								我发起的
+        								<div class="type_nmb">
+	        								0
+	        							</div>
+        							</span>
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        				</div>
+        				<div class="my_bottom">
+        					<ul class="myb_ul liuc">
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团用车申请审批(市场开发部吴晓燕4月1日)
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团用车申请审批(市场开发部吴晓燕4月1日)
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团用车申请审批(市场开发部吴晓燕4月1日)
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团用车申请审批(市场开发部吴晓燕4月1日)
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团用车申请审批(市场开发部吴晓燕4月1日)
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        			<div class="my_lc_right">
+        				<div class="my_title">
+        					<div class="tit_left">
+        						<div class="tit_box">
+        							<img src="~/Content/images/biaoq.png"/>
+        						</div>
+        						<div class="tit_span">
+        							任务中心
+        						</div>
+        					</div>
+        					<div class="tit_right">
+        						<img class="rwsx" src="~/Content/images/fh.png"/>
+        						<span class="rwsp">MORE>></span>
+        					</div>
+        				</div>
+        				<div class="my_list">
+        					<div class="my_type dbrw type_list" type="1">
+        						<div class="typ_tit">
+        							<span>
+        								执行中的
+        								<div class="type_nmb">
+	        								0
+	        							</div>
+        							</span> 
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        					<div class="my_type dbrw" type="2">
+        						<div class="typ_tit">
+        							<span>
+        							 	已逾期的
+        							 	<div class="type_nmb">
+	        								0
+	        							</div>
+        							</span>
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        					<div class="my_type dbrw" type="3">
+        						<div class="typ_tit">
+        							<span>
+        								已结束的
+        								<div class="type_nmb">
+	        								0
+	        							</div>
+        							</span> 
+        						</div>
+        						<img class="typ_img" src="~/Content/images/sjt.png"/>
+        					</div>
+        				</div>
+        				<div class="my_bottom">
+        					<ul class="myb_ul renw">
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								电商园营销推广[重点建设项目]
+        								<span class="myb_red">-临近</span>
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								电商园营销推广[重点建设项目]
+        								<span class="myb_red">-临近</span>
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								电商园营销推广[重点建设项目]
+        								<span class="myb_red"></span>
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								电商园营销推广[重点建设项目]
+        								<span class="myb_red">-临近</span>
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								电商园营销推广[重点建设项目]
+        								<span class="myb_red"></span>
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+        		<div class="my_lc" style="background: #e8edf4;padding: 0px;">
+        			<div class="myt_left">
+        				<div class="my_title">
+        					<div class="tit_left">
+        						<div class="tit_box">
+        							<img src="~/Content/images/biaoq.png"/>
+        						</div>
+        						<div class="tit_span">
+        							新闻中心
+        						</div>
+        					</div>
+        					<div class="tit_right">
+        						<img class="xwsx" src="~/Content/images/fh.png"/>
+        						<span class="xwsp">MORE>></span>
+        					</div>
+        				</div>
+        				
+        				<div class="my_bottom">
+        					<div class="myd_left" id="b03">
+        						<ul style="" style="">
+        							<li>
+        								<div class="bd_img">
+        									<img src="~/Content/images/timg.jpg"/>
+        								</div>
+        							</li>
+        							<li>
+        								<div class="bd_img">
+        									<img src="~/Content/images/timg.jpg"/>
+        								</div>
+        							</li>
+        							<li>
+        								<div class="bd_img">
+        									<img src="~/Content/images/timg.jpg"/>
+        								</div>
+        							</li>
+        							<li>
+        								<div class="bd_img">
+        									<img src="~/Content/images/timg.jpg"/>
+        								</div>
+        							</li>
+        						</ul>
+        					</div>
+        					<ul class="myb_ul myd_rig">
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团公司开展 脱贫攻坚“三比三看”和知识竞赛活动
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团公司开展 脱贫攻坚“三比三看”和知识竞赛活动
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团公司开展 脱贫攻坚“三比三看”和知识竞赛活动
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团公司开展 脱贫攻坚“三比三看”和知识竞赛活动
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								集团公司开展 脱贫攻坚“三比三看”和知识竞赛活动
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        			<div class="myt_right">
+        				<div class="my_title">
+        					<div class="tit_left">
+        						<div class="tit_box">
+        							<img src="~/Content/images/biaoq.png"/>
+        						</div>
+        						<div class="tit_span">
+        							通知公告
+        						</div>
+        					</div>
+        					<div class="tit_right">
+        						<img class="tzsx" src="~/Content/images/fh.png"/>
+        						<span class="tzsp">MORE>></span>
+        					</div>
+        				</div>
+        				
+        				<div class="my_bottom">
+        					
+        					<ul class="myb_ul rig_tz">
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								金润源综合管理系统测试版本发布
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								金润源综合管理系统测试版本发布
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								金润源综合管理系统测试版本发布
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								金润源综合管理系统测试版本发布
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        						<li class="myb_li">
+        							<div class="myb_left">
+        								金润源综合管理系统测试版本发布
+        							</div>
+        							<div class="myb_right">
+        								2019-04-03
+        							</div>
+        						</li>
+        					</ul>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="my_right">
+        		<div class="myt_ril" style="padding: 10px 10px 14.5px 10px;">
+	        		<div class="eac_left">
+	        			<div class="eac_bt">
+	        				效能分析
+	        			</div>
+	        			<div id="ect_one">
+	        				
+	        			</div>
+	        		</div>
+	        		<div class="eac_left">
+	        			<div class="eac_bt">
+	        				资产收益统计
+	        			</div>
+	        			<div id="ect_two">
+	        				
+	        			</div>
+	        		</div>
+	        		<div class="eac_left">
+	        			<div class="eac_bt">
+	        				任务完成统计
+	        			</div>
+	        			<div id="ect_thr">
+	        				
+	        			</div>
+	        		</div>
+	        		<div class="eac_left">
+	        			<div class="eac_bt">
+	        				费用环比
+	        			</div>
+	        			<div id="ect_for">
+	        				
+	        			</div>
+	        		</div>
+        		</div>
+        		<div class="my_lc" style="background: #e8edf4;padding: 0px;">
+        			<div class="myr_left">
+        				<div class="my_title" style="padding-left: 0px;">
+	    					<div class="tit_left">
+	    						<div class="tit_box">
+	    							<img src="~/Content/images/biaoq.png"/>
+	    						</div>
+	    						<div class="tit_span">
+	    							我的应用
+	    						</div>
+	    					</div>
+	    				</div>
+	    				<div class="yg_list">
+	    					<div class="yg_box" onclick="parent.location.href='../../assethome/index'">
+	    						<div class="yg_tb">
+	    							<img src="~/Content/images/zichan.png"/>
+	    						</div>
+	    						<span>资产管理</span>
+	    					</div>
+	    					<div class="yg_box" style="border-right: 0px;" onclick="parent.location.href='../../projecthome/index'">
+	    						<div class="yg_tb">
+	    							<img src="~/Content/images/gongc.png"/>
+	    						</div>
+	    						<span>工程项目</span>
+	    					</div>
+	    					<div class="yg_box" style="border-bottom: 0px;">
+	    						<div class="yg_tb">
+	    							<img src="~/Content/images/tongx.png"/>
+	    						</div>
+	    						<span>即时通讯</span>
+	    					</div>
+	    					<div class="yg_box" style="border: 0px;">
+	    						<div class="yg_tb">
+	    							<img src="~/Content/images/sphy.png"/>
+	    						</div>
+	    						<span>视频会议</span>
+	    					</div>
+	    				</div>
+        			</div>
+        			<div class="myr_right">
+	        			<div class="my_title">
+	    					<div class="tit_left">
+	    						<div class="tit_box">
+	    							<img src="~/Content/images/biaoq.png"/>
+	    						</div>
+	    						<div class="tit_span">
+	    							最近文档
+	    						</div>
+	    					</div>
+	    					<div class="tit_right">
+	    						<img class="wdsx" src="~/Content/images/fh.png"/>
+	    						<span class="wdsp">MORE>></span>
+	    					</div>
+	    				</div>
+	    				<div class="my_bottom">
+	    					
+	    					<ul class="myb_ul wend">
+	    						<li class="myb_li">
+	    							<div class="myb_left">
+	    								公文管理参考设计.docx
+	    							</div>
+	    							<div class="myb_right">
+	    								2019-04-03
+	    							</div>
+	    						</li>
+	    						<li class="myb_li">
+	    							<div class="myb_left">
+	    								公文管理参考设计.docx
+	    							</div>
+	    							<div class="myb_right">
+	    								2019-04-03
+	    							</div>
+	    						</li>
+	    						<li class="myb_li">
+	    							<div class="myb_left">
+	    								公文管理参考设计.docx
+	    							</div>
+	    							<div class="myb_right">
+	    								2019-04-03
+	    							</div>
+	    						</li>
+	    						<li class="myb_li">
+	    							<div class="myb_left">
+	    								公文管理参考设计.docx
+	    							</div>
+	    							<div class="myb_right">
+	    								2019-04-03
+	    							</div>
+	    						</li>
+	    						<li class="myb_li">
+	    							<div class="myb_left">
+	    								公文管理参考设计.docx
+	    							</div>
+	    							<div class="myb_right">
+	    								2019-04-03
+	    							</div>
+	    						</li>
+	    					</ul>
+	    				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <input type="hidden" class="sw" />
+        <div class="db_bott">
+        	
+        </div>
+    </div>
+	<div class="xt_alert">
+		<div class="xta_title">
+			<span>系统消息</span>
+			<img style="float: right;margin-top: 11px;margin-right: 10px;" src="~/Content/images/guab.png"/>
+		</div>
+		<div class="xta_home">
+			<div class="xta_left">
+				<div class="xta_left_top">
+					<div class="xta_sou">
+						<img src="~/Content/images/sousuo_hei.png"/>
+						<input type="text" class="xta_inp" />
+					</div>
+				</div>
+				<div class="xta_left_bot">
+					<div class="xta_bus">
+						<div class="xta_list">
+							<img src="~/Content/images/quanbu.png"/>
+							<span>全部</span>
+							<div class="bus_numb">
+								3
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="xta_right">
+				<div class="xta_right_top">
+					<div class="xt_left">
+						全部（99）
+					</div>
+					<div class="xt_right">
+						全部设置已读
+					</div>
+					<div class="type_rig">
+						<div class="tyr_list tyr_list_style">
+							未读
+						</div>
+						<div class="tyr_list">
+							已读
+						</div>
+					</div>
+				</div>
+				<div class="xta_box">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/echarts/echarts.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/jquery.easyui.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/demo/unslider/unslider.min.js"></script>
+     <script src="~/Content/simple/timePacker.js"></script>
+    @Html.AppendJsFile("/Views/Portal/AdminDesktopTemp/index.js")
+    <script type="text/javascript">
+    	  $(".hy").mouseover(function(){
+    	  	if($(".hy_list").length==0){
+        		return false;
+        	}
+		    $(".hy_hide").show();
+		  });
+		  $(".hy").mouseout(function(){
+		    $(".hy_hide").hide();
+		  });
+		
+		
+		window.parent.$("body").delegate(".xxtx", "click", function (event) {
+		   $(".xt_alert").show()
+		})
+    	
+    	$(".xta_title img").click(function(){
+    		$(".xt_alert").hide()
+    	})
+		xtxiaoxi()  //系统消息
+		function xtxiaoxi(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetOAMessage', {}, function (data) {
+		        if (data) {
+		        	console.log(data);
+		            if (data.rows.length > 0) {
+		            	var bcd=0
+		                $(".xta_left_bot").empty();
+		                var html="<div class='xta_bus' id=''><div class='xta_list'><img src='/Content/images/quanbu.png'/><span>全部</span><div class='bus_numb'>"+data.total+"</div></div></div>"
+                    	$(".xta_left_bot").append(html);
+		                $.each(data.rows, function (index, item) {
+		                	bcd++
+	                		var html="<div class='xta_bus' id='"+item.f_strategycode+"'><div class='xta_list'><img src='"+item.f_imageurl+"'/><span>"+item.f_strategyname+"</span><div class='bus_numb'>"+item.count+"</div></div></div>"
+	                   		$(".xta_left_bot").append(html);
+		                    if(item.count<0||item.count==null){
+		                    	$(".bus_numb").eq(bcd).hide()
+		                    }
+		                    
+		                })
+		                mlist()
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		$("body").delegate(".xta_bus", "click", function () {
+			var mid=$(this).attr("id")
+			var src=$(this).find("img").attr("src")
+	    	$(".xta_list").removeClass("xta_list_style")
+	    	$(this).find(".xta_list").addClass("xta_list_style")
+	    	mlist()
+        })
+		
+		$(".tyr_list").click(function(){
+			$(".tyr_list").removeClass("tyr_list_style")
+			$(this).addClass("tyr_list_style")
+			mlist()
+		})
+		
+		function mlist(){
+			var siud=$(".xta_list_style").parents(".xta_bus").attr("id")
+			var yd;
+			if($(".tyr_list_style").text().trim()=="已读"){
+				yd=1
+			} else {
+				yd="";
+			}
+			 var Pagination =
+		{
+		    rows: 5, page: 1, sidx: "F_CreateDate DESC", sord: "Asc", records: 0, total: 0
+		};
+			
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMessageList', {pagination:JSON.stringify(Pagination),code:siud,isRead:yd}, function (data) {
+				console.log(data)
+				$(".xta_box").empty();
+				if(siud==undefined){
+            		var quanb="全部("+data.total+")";
+            		$(".xt_left").text(quanb)
+                } else {
+                	var df=0;
+                	if(data.total!=null){
+                		df=data.total
+                	}
+                	var sty=$(".xta_list_style").find("span").text()
+                	var quanb=sty+"("+df+")";
+            		$(".xt_left").text(quanb)
+                }
+		        if (data) {
+		            if (data.rows.length > 0) {
+		                
+		                $.each(data.rows, function (index, item) {
+		                	var dd=item.F_StrategyName;
+		                	var dq;
+		                	var src="quanbu.png";
+		                	if(dd=="流程审核通知"){src="shenhe.png"} else if(dd=="督办工作下达通知"){src="duban.png"}else if(dd=="流程审核超时通知"){src="chaoshi.png"} else if(dd=="会议消息通知"){src="hytzhi.png"}
+		                	else if(dd=="督办消息提醒"){src="dbxxi.png"}else if(dd=="绩效考核"){src="jixiao.png"}else if(dd=="广告租金到期提醒"){src="ggyq.png"}
+		                	else if(dd=="督办逾期提醒"){src="dbyq.png"}else if(dd=="公文抄送"){src="gongwen.png"}else if(dd=="房屋租金到期提醒"){src="fwzj.png"}
+		                	if(yd==1){
+		                		dq="已读"
+		                	} else {dq="未读"}
+	                		var html="<div class='xta_lb' id='"+item.F_MessageId+"'><div class='lb_top'><img src='/Content/images/"+src+"'><span>"+item.F_StrategyName+"</span><div class='duqu'>"+dq+"</div></div>"+
+							"<div class='lb_box'><div class='lb_box_tit'>"+item.SendContent+"</div>"+
+							"<div class='lb_bo x_list'>"+item.FromUserName+"："+item.F_CreateDate+"</div><div class='lb_ck'>查看日程</div></div></div>"
+	                   		$(".xta_box").append(html);
+		                })
+		            }
+		
+		        } else {
+		            console.log("error");
+		        }
+		    })
+		}
+		
+		
+		$("body").delegate(".duqu", "click", function () {
+			var cid=$(this).parents(".xta_lb").attr("id")
+			qryd(cid)
+        })
+		
+		
+		$(".xt_right").click(function(){ //全部已读
+			$(".xta_lb").each(function(){
+				var cid=$(this).attr("id")
+				qryd(cid)
+			})
+		})
+		
+		function qryd(cid){
+			if($(".tyr_list_style").text().trim()=="未读"){
+				top.learun.httpAsync('POST', top.$.rootUrl + '/Portal/EnterMessage', {messageid:cid}, function (data) {
+//					xtxiaoxi()
+					mlist()
+			    })
+			}
+		}
+		  
+		liucheng() //流程中心熟练
+		function liucheng(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/LR_NewWorkFlow/NWFProcess/GetTaskPortalPageListCount', {}, function (data) {
+		        if (data) {
+		        	console.log(data)
+		            if (data.length > 0) {
+		                $(".myd_rig").empty();
+		                $.each(data, function (index, item) {
+		                	$(".lczx").find(".type_nmb").eq(0).text(item.a1)
+		                	$(".lczx").find(".type_nmb").eq(1).text(item.b1)
+		                	$(".lczx").find(".type_nmb").eq(2).text(item.c1)
+		                	$(".lczx").find(".type_nmb").eq(3).text(item.d1)
+		                })
+		            }
+		
+		        } else {
+		
+		            console.log("error");
+		
+		        }
+		    })
+		}
+		
+		renwu()//任务中心熟练
+		function renwu(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetOverSeeListCount', {}, function (data) {
+		        if (data) {
+		        	console.log(data)
+		            if (data.length > 0) {
+		                $(".myd_rig").empty();
+		                $.each(data, function (index, item) {
+		                	$(".dbrw").find(".type_nmb").eq(0).text(item.a1)
+		                	$(".dbrw").find(".type_nmb").eq(1).text(item.b1)
+		                	$(".dbrw").find(".type_nmb").eq(2).text(item.c1)
+		                })
+		            }
+		
+		        } else {
+		
+		            console.log("error");
+		
+		        }
+		    })
+		}  
+		 
+    	$(document).ready(function(e) {
+			$('#b03').unslider({
+				dots: false
+			});
+			$(".sc-actions").eq(3).hide()
+			$(".sc-actions").eq(1).css("width","35%")
+		});
+		Newshow()
+		//新闻部分
+		var Pagination1 =
+		    { rows: 5, page: 1, sidx: "", sord: "", records: 0, total: 0 };
+		
+		var param1 = {
+		    pagination: JSON.stringify(Pagination1),
+		};
+		function Newshow() {
+		    top.learun.httpAsync('GET', top.$.rootUrl + '/LR_OAModule/News/GetPageList', param1, function (data) {
+		        if (data) {
+//		        	console.log(data)
+		            if (data.rows.length > 0) {
+		                $(".myd_rig").empty();
+		                $.each(data.rows, function (index, item) {
+		                	var html="<li class='myb_li' onclick='ShowNewDetail(\"" + item.F_NewsId + "\")'><div class='myb_left'>"+item.F_FullHead+"</div><div class='myb_right'>"+item.F_ModifyDate+"</div>"
+		                    $(".myd_rig").append(html);
+		                })
+		            }
+		
+		        } else {
+		
+		            console.log("error");
+		
+		        }
+		    })
+		}
+		
+		function ShowNewDetail(key) {
+		    top.learun.layerForm({
+		        id: 'Form',
+		        title: '新闻查看',
+		        url: top.$.rootUrl + '/LR_OAModule/News/ShowDetail?key=' + key,
+		        width: 700,
+		        height: 800,
+		        btn: null,
+		        callBack: function (id) {
+		            return false;
+		        }
+		    });
+		}
+		//公告显示
+		Noticeshow()
+	    function Noticeshow() {
+	        top.learun.httpAsync('GET', top.$.rootUrl + '/LR_OAModule/Notice/GetPageList', param1, function (data) {
+	            if (data) {
+	                if (data.rows.length > 0) {
+	                    $(".rig_tz").empty();
+	                    $.each(data.rows, function (index, item) {
+	                    	var html="<li class='myb_li' onclick='ShowNewDetail(\"" + item.F_NewsId + "\")'><div class='myb_left'>"+item.F_FullHead+"</div><div class='myb_right'>"+item.F_CreateDate+"</div>"
+		                    $(".rig_tz").append(html);
+	                    })
+	                }
+	
+	            } else {
+	
+	                console.log("error");
+	
+	            }
+	        })
+	    }
+	    
+	    
+	    var typc=1;
+	    $(".lczx .my_type").click(function(){
+	    	$(".lczx .my_type").removeClass("type_list")
+	    	$(this).addClass("type_list")
+	    	typc=$(".lczx .type_list").attr("type");
+	    	process()
+	    })
+	    
+	    var Pagination =
+		{
+		    rows: 5, page: 1, sidx: "F_CreateDate DESC", sord: "Asc", records: 0, total: 0
+		};
+		
+		var param = {
+		    pagination: JSON.stringify(Pagination),
+		    categoryId: "1",
+		    type:typc
+		};
+	    
+	    
+	     
+	    //流程中心
+	    process()
+	    function process() {
+            top.learun.httpAsync('GET', top.$.rootUrl + '/LR_NewWorkFlow/NWFProcess/GetTaskPortalPageList?type=' + typc, param, function (data) {
+                $(".liuc").empty();
+//              console.log(data);
+                if (data) {
+                    if (data.rows.length > 0) {
+                        $.each(data.rows, function (index, item) {
+                            var html = "<li class='myb_li' id=" + item.F_TaskId + "><input type='hidden' value="+item.F_URl+" class='ycurl' /><div class='myb_left'><span class='my_nam'>" + item.F_CreateUserName + "</span><span>" + item.F_Title + "</span></div><div class='myb_right'>" + (item.F_CreateDate ? item.F_CreateDate.substr(0,10):'') + "</div>"
+                            $(".liuc").append(html);
+                        })
+                        $(".liuc").find('li.myb_li').click(function () {
+                            var url = $(this).find(".ycurl").val()+"&isHeader=1"
+                            var id = $(this).attr("id")
+                            if (typc == '2') {
+                                url = url.replace("type=audit", "type=look");
+                                url = url.replace("type=signAudit", "type=look");
+                            }
+                            if (typc == '3') {
+                                url = url.replace("type=audit", "type=refer");
+                                url = url.replace("type=signAudit", "type=refer");
+                            }
+                            top.learun.frameTab.open({
+                                F_ModuleId: id, F_Icon: '',
+                                F_FullName: '流程', F_UrlAddress: url
+                            });
+                        })
+                    }
+                } else {
+
+                    console.log("error");
+
+                }
+            })
+        }
+	    
+		//通知公告
+		
+		var typd = 1;
+        $(".dbrw").click(function () {
+            $(".dbrw").removeClass("type_list")
+            $(this).addClass("type_list")
+            typd = $(this).attr("type");
+            process1()
+        })
+        process1()
+        function process1() {
+            top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetOverSeeList?type=' + typd, {}, function (data) {
+                $(".renw").empty()
+                if (data) {
+                    if (data.length > 0) {
+                        $.each(data, function (index, item) {
+                            var html = '<li class="myb_li"><div class="myb_left">\
+                                            '+ item.name + '\
+                                            <span class="myb_red"></span>\
+                                        </div>\
+                                        <div class="myb_right">\
+                                            '+ (item.date ? item.date.substr(0, 10) : '') + '\
+                                        </div></li>\
+                                        '
+                            $(".renw").append(html);
+                        })
+                        $(".renw").find('li.myb_li').click(function () {
+                            top.learun.frameTab.open({
+                                F_ModuleId: '7', F_Icon: '',
+                                F_FullName: '任务执行', F_UrlAddress: '/LR_CodeDemo/DC_OA_OverSeeWorkTaskSplit/ExecuteIndex'
+                            });
+                        })
+                    }
+                }
+            })
+        }
+        //获取维修数据
+        function get_maintain_count() {
+            top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMaintainRecordCount', {}, function (data) {
+                $('#div_count_maintain').html(data)
+            })
+        }
+        get_maintain_count()
+        //获取会议数据
+        function get_meetting_data() {
+            top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMeettingDetail', {}, function (data) {
+                $('#div_count_meetting').html(data.length)
+                var _html = ''
+                $.each(data, function (i, v) {
+                    _html += '<div class="hy_list" meetting-id="'+v.id+'">\
+                            <div class="hy_left" >\
+                                <span>'+ (v.time ? v.time.substr(0,10):'') +'</span>\
+                                <span>'+(v.name||'')+'</span>\
+                                <span>'+v.address+'</span>\
+                                        </div >\
+                            <div class="ht_box">\
+                                确定\
+                                        </div>\
+                            <div class="hy_rig">\
+                                <div class="hy_box" type="2">\
+                                </div>\
+                                <span>参加</span>\
+                                <div class="hy_box" type="1">\
+                                </div>\
+                                <span>未参加</span>\
+                            </div>\
+                                    </div >'
+                })
+                $('#div_meetting_list').html(_html).find('.hy_box').click(function () {
+                    $(this).attr('type',2).siblings().attr('type',1)
+                })
+                $('#div_meetting_list').find('.ht_box').click(function () {
+                    var nr;
+                	var atc=$(this).parents(".hy_list").find(".hy_rig").find(".bcj").attr("type")
+                	var idc=$(this).parent().attr('meetting-id')
+                    if(atc==2){
+                    	$(".huiyi_box").show()
+                    	$(".huiyi_butt").click(function(){
+	                    	nr=$(".tex_top").val()
+	                    	$(".huiyi_box").hide()
+	                    	top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/SignForMeetting', {
+		                        id: idc,
+		                        F_Reason:nr
+		                    }, function (data) {
+		                        top.learun.alert.success('操作成功')
+		                        get_meetting_data()
+		                    })
+						})
+                    } else {
+                    	top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/SignForMeetting', {
+	                        id: idc,
+	                        F_Reason:nr
+	                    }, function (data) {
+	                        top.learun.alert.success('操作成功')
+	                        get_meetting_data()
+	                    })
+                    }
+                })
+            })
+        }
+        get_meetting_data()
+        //绑定菜单栏
+        $('#menu_mydocument').click(function () {
+            top.learun.frameTab.open({
+                F_ModuleId: '8', F_Icon: '',
+                F_FullName: '我的文档', F_UrlAddress: '/LR_CodeDemo/MyDocument/Index'
+            });
+        })
+        $('#menu_carmaintain').click(function () {
+            top.learun.frameTab.open({
+                F_ModuleId: '9', F_Icon: '',
+                F_FullName: '车辆维修', F_UrlAddress: '/LR_ReportModule/VehicleRepairRecord/Index'
+            });
+        })
+		
+		  
+		  $(".hy_box").click(function(){
+		  	 if($(this).attr("type")==1){
+		  	 	$(this).parents(".hy_rig").find(".hy_box").attr("type",1)
+		  	 	$(this).attr("type",2)
+		  	 } else {
+		  	 	$(this).attr("type",1)
+		  	 }
+		  })
+		  
+		  $('.lcsp').click(function () {  //流程中心更多
+            top.learun.frameTab.open({
+                F_ModuleId: '10', F_Icon: '',
+                F_FullName: '流程中心', F_UrlAddress: '/LR_NewWorkFlow/NWFProcess/index'
+            });
+        })
+        $('.rwsp').click(function () {  //任务中心更多
+            top.learun.frameTab.open({
+                F_ModuleId: '11', F_Icon: '',
+                F_FullName: '督办任务', F_UrlAddress: '/LR_CodeDemo/DC_OA_OverSeeWork/index'
+            });
+        })
+        $('.xwsp').click(function () {  //新闻中心更多
+            top.learun.frameTab.open({
+                F_ModuleId: '12', F_Icon: '',
+                F_FullName: '新闻中心', F_UrlAddress: '/LR_OAModule/News/index'
+            });
+        })
+        $('.tzsp').click(function () {  //通知公告更多
+            top.learun.frameTab.open({
+                F_ModuleId: '13', F_Icon: '',
+                F_FullName: '通知公告', F_UrlAddress: '/LR_OAModule/Notice/index'
+            });
+        })
+        $('.wdsp').click(function () {  //最近文档更多
+            top.learun.frameTab.open({
+                F_ModuleId: '14', F_Icon: '',
+                F_FullName: '最近文档', F_UrlAddress: '/LR_OAModule/ResourceFile/Index'
+            });
+        })
+		  //最近文档
+        wendang()
+        function wendang() {
+            top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMyDocumentList', {}, function (data) {
+                $(".wend").empty()
+                if (data) {
+                    if (data.length > 0) {
+                        $.each(data, function (index, item) {
+                            var html = "<li class='myb_li' id="+item.id+"><div class='myb_left'>"+item.name+"</div><div class='myb_right'>"+item.date+"</div></li>"
+                            $(".wend").append(html);
+                        })
+                    }
+                }
+            })
+        }
+        
+        
+        $('.my_top_li').eq(1).click(function () {  //我的考核
+            top.learun.frameTab.open({
+                F_ModuleId: '1', F_Icon: '',
+                F_FullName: '我的考核', F_UrlAddress: '/LR_CodeDemo/DC_OA_PerformanceCheck/index?type=1'
+            });
+        })
+	    
+	    $('.my_top_li').eq(2).click(function () {  //部门考核
+            top.learun.frameTab.open({
+                F_ModuleId: '2', F_Icon: '',
+                F_FullName: '部门考核', F_UrlAddress: '/LR_CodeDemo/DC_OA_PerformanceCheck/baobiao'
+            });
+        })
+	    
+	     $('.my_top_li').eq(3).click(function () {  //部门考勤
+            top.learun.frameTab.open({
+                F_ModuleId: '3', F_Icon: '',
+                F_FullName: '部门考勤', F_UrlAddress: '/LR_CodeDemo/DC_OA_Attence/Index'
+            });
+        })
+	    
+	    $('.my_top_li').eq(4).click(function () {  //部门文档
+            top.learun.frameTab.open({
+                F_ModuleId: '4', F_Icon: '',
+                F_FullName: '部门文档', F_UrlAddress: '/LR_CodeDemo/MyDocument/Index'
+            });
+        })
+	    
+	    $('.my_top_li').eq(5).click(function () {  //领导驾驶舱
+            top.learun.frameTab.open({
+                F_ModuleId: '5', F_Icon: '',
+                F_FullName: '领导驾驶舱', F_UrlAddress: '../../leaderhome/index'
+            });
+        })
+		 
+		ds()  //定时刷新10分钟
+    	var tiem=0
+    	function ds(){
+    		setTimeout(function(){
+    			tiem++
+				ds()
+				if(tiem==10){
+					process()
+					process1()
+					liucheng()
+					renwu()
+					tiem=0
+				}
+			},60000);
+    	}
+    	
+    	dst()  //定时刷新30分钟
+    	var tiemt=0
+    	function dst(){
+    		setTimeout(function(){
+    			tiemt++
+				ds()
+				if(tiemt==30){
+					xqwd()
+					wdwx()
+				}
+			},60000);
+    	}
+    	
+    	
+    	dstd()  //定时刷新120分钟
+    	var tiemtd=0
+    	function dstd(){
+    		setTimeout(function(){
+    			tiemtd++
+				ds()
+				if(tiemtd==120){
+					Noticeshow()
+					Newshow()
+				}
+			},60000);
+    	}
+		
+		//刷新数据
+    	$(".lcsx").click(function(){
+    		process()
+    		liucheng()
+    	})
+    	$(".rwsx").click(function(){
+    		process1()
+    		renwu()
+    	})
+    	$(".xwsx").click(function(){
+    		Newshow()
+    	})
+    	$(".tzsx").click(function(){
+    		Noticeshow()
+    	})
+    	$(".wdsx").click(function(){
+    		wendang()
+    	})
+		
+		xiaoxi()//消息中心
+		function xiaoxi(){
+			top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/GetMessage', {}, function (data) {
+		        if (data) {
+		        	console.log(data)
+		            if (data.length > 0) {
+		                window.parent.$(".xx_list").empty();
+		                var duu=0
+		                $.each(data, function (index, item) {
+		                	duu++
+		                	var ftime=item.f_createdate.substring(-1,10)
+		                	var html="<div id="+item.f_messageid+"  class='xl_box'><div class='xl_sub'>确定</div><span class='xl_left'><span style='color: #777777;padding-right: 5px;'>["+item.fromusername+"]</span>"+item.sendcontent+"</span><span class='xl_right'>"+ftime+"</span></div>"
+							window.parent.$(".xx_list").append(html)
+		                })
+		                window.parent.$(".rig_ts").show().text(duu);
+		            }
+		
+		        } else {
+		
+		            console.log("error");
+		
+		        }
+		    })
+		}
+		window.parent.$("body").delegate(".xl_sub", "click", function (event) {
+		   var idc=window.parent.$(this).attr("id");
+		　　top.learun.httpAsync('GET', top.$.rootUrl + '/Portal/EnterMessage', {Messageid:idc}, function (data) {
+		        if (data) {
+		            if (data.length > 0) {
+		                $.each(data, function (index, item) {
+		                })
+		            }
+		
+		        }
+		    })
+		
+		})
+		
+    	$(document).ready(function(e) {
+			$('#b03').unslider({
+				dots: false
+			});
+			$(".sc-actions").eq(3).hide()
+			$(".sc-actions").eq(1).css("width","35%")
+		});
+		var gd=document.body.clientHeight;
+    	var ho=$(".mh_home").height();
+    	$(".db_bott").css("height",gd-ho-30)
+		var myChart = echarts.init(document.getElementById('ect_one'));
+		var myCharttwo = echarts.init(document.getElementById('ect_two'));
+		var myChartthr = echarts.init(document.getElementById('ect_thr'));
+		var myChartfor = echarts.init(document.getElementById('ect_for'));
+		option = {
+		    tooltip: {},
+		   
+		    radar: {
+		        // shape: 'circle',
+		        name: {
+		            textStyle: {
+		                color: '#333',
+		                backgroundColor: '#999',
+		                borderRadius: 3,
+		                padding: [3, 5]
+		           }
+		        },
+		        indicator: [
+		           { name: '管理', max: 6500},
+		           { name: '工程', max: 16000},
+		           { name: '投资', max: 30000},
+		           { name: '决策', max: 38000},
+		           { name: '执行', max: 52000},
+		           { name: '人力', max: 25000}
+		        ]
+		    },
+		    series: [{
+		        name: '预算 vs 开销（Budget vs spending）',
+		        type: 'radar',
+		        // areaStyle: {normal: {}},
+		        data : [
+		            {
+		                value : [4300, 10000, 28000, 35000, 50000, 19000],
+		                name : '预算分配（Allocated Budget）'
+		            },
+		             {
+		                value : [5000, 14000, 28000, 31000, 42000, 21000],
+		                name : '实际开销（Actual Spending）'
+		            }
+		        ]
+		    }]
+		};
+		var app = {};
+		
+	app.config = {
+	    rotate: 90,
+	    align: 'left',
+	    verticalAlign: 'middle',
+	    position: 'insideBottom',
+	    distance: 15,
+	    onChange: function () {
+	        var labelOption = {
+	            normal: {
+	                rotate: app.config.rotate,
+	                align: app.config.align,
+	                verticalAlign: app.config.verticalAlign,
+	                position: app.config.position,
+	                distance: app.config.distance
+	            }
+	        };
+	        myChart.setOption({
+	            series: [{
+	                label: labelOption
+	            }, {
+	                label: labelOption
+	            }, {
+	                label: labelOption
+	            }, {
+	                label: labelOption
+	            }]
+	        });
+	    }
+	};
+	
+	
+	var labelOption = {
+	    normal: {
+	        show: false,
+	        position: app.config.position,
+	        distance: app.config.distance,
+	        align: app.config.align,
+	        verticalAlign: app.config.verticalAlign,
+	        rotate: app.config.rotate,
+	        formatter: '{c}  {name|{a}}',
+	        fontSize: 16,
+	        rich: {
+	            name: {
+	                textBorderColor: '#fff'
+	            }
+	        }
+	    }
+	};
+	
+	option1 = {
+	    color: ['#003366', '#006699', '#4cabce', '#e5323e'],
+	    tooltip: {
+	        trigger: 'axis',
+	        axisPointer: {
+	            type: 'shadow'
+	        }
+	    },
+	    legend: {
+	        data: ['土地', '房屋', '广告牌']
+	    },
+	    
+	    calculable: true,
+	    xAxis: [
+	        {
+	            type: 'category',
+	            axisTick: {show: false},
+	            data: ['2017', '2018', '2019']
+	        }
+	    ],
+	    yAxis: [
+	        {
+	            type: 'value'
+	        }
+	    ],
+	    series: [
+	        {
+	            name: '土地',
+	            type: 'bar',
+	            barGap: 0,
+	            label: labelOption,
+	            data: [320, 332, 301, 334, 390]
+	        },
+	        {
+	            name: '房屋',
+	            type: 'bar',
+	            label: labelOption,
+	            data: [220, 182, 191, 234, 290]
+	        },
+	        {
+	            name: '广告牌',
+	            type: 'bar',
+	            label: labelOption,
+	            data: [150, 232, 201, 154, 190]
+	        }
+	    ]
+	};
+	
+	
+
+option2 = {
+    tooltip: {
+        trigger: 'item',
+        formatter: "{a} <br/>{b}: {c} ({d}%)"
+    },
+    
+    series: [
+        {
+            name:'访问来源',
+            type:'pie',
+            selectedMode: 'single',
+            radius: [0, '30%'],
+
+            label: {
+                normal: {
+                    position: 'inner'
+                }
+            },
+            labelLine: {
+                normal: {
+                    show: false
+                }
+            },
+            data:[
+                {value:335, name:'办结', selected:true},
+                {value:679, name:'延期'},
+                {value:1548, name:'执行中'}
+            ]
+        },
+        {
+            name:'访问来源',
+            type:'pie',
+            radius: ['40%', '55%'],
+            
+            data:[
+                {value:335, name:'日常工作'},
+                {value:310, name:'重点项目'},
+                {value:234, name:'投资项目'},
+                {value:135, name:'政府报告'},
+                {value:1048, name:'总经办'},
+                {value:251, name:'日常工作'},
+                {value:147, name:'重点项目'},
+                {value:102, name:'投资项目'}
+            ]
+        }
+    ]
+};
+		option3 = {
+   
+    tooltip: {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['管理费用','工程支出','融资支出','投资支出','往来支出','资金调度','大额拨付','其他支出']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['12月','1月','2月','3月','4月']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [
+        {
+            name:'管理费用',
+            type:'line',
+            stack: '总量',
+            data:[120, 132, 101, 134, 90,]
+        },
+        {
+            name:'工程支出',
+            type:'line',
+            stack: '总量',
+            data:[220, 182, 191, 234, 290]
+        },
+        {
+            name:'融资支出',
+            type:'line',
+            stack: '总量',
+            data:[150, 232, 201, 154, 190]
+        },
+        {
+            name:'投资支出',
+            type:'line',
+            stack: '总量',
+            data:[320, 332, 301, 334, 390]
+        },
+        {
+            name:'往来支出',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290]
+        },
+        {
+            name:'资金调度',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290]
+        },
+        {
+            name:'大额拨付',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290]
+        },
+        {
+            name:'其他支出',
+            type:'line',
+            stack: '总量',
+            data:[820, 932, 901, 934, 1290]
+        }
+    ]
+};
+		myChart.setOption(option)
+		myCharttwo.setOption(option1)
+		myChartthr.setOption(option2)
+		myChartfor.setOption(option3)
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

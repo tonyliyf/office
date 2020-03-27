@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "日程安排";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+@Html.AppendCssFile(
+    "/Content/fullcalendar/fullcalendar.min.css",
+    "/Areas/LR_CodeDemo/Views/MeetingRoom/Detail.css"
+)
+@Html.AppendJsFile(
+    "/Content/fullcalendar/moment.min.js",
+    "/Content/fullcalendar/jquery.min.js",
+    "/Content/fullcalendar/fullcalendar.min.js",
+        "/Content/fullcalendar/zh-cn.js",
+    "/Areas/LR_CodeDemo/Views/MeetingRoom/Detail.js"
+    )
+<div id='calendar'></div>

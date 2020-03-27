@@ -1,0 +1,55 @@
+
+.bd_th {
+    line-height: 35px;
+    font-weight: 100;
+    position: relative;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+.bd_inp {
+    width: 99%;
+    border: 0px;
+    background:white;
+}
+
+.chk_inp {
+    float: left;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+
+.che_ovh {
+    float: left;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.bd_tit {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.bd_home {
+    width: 500px;
+    margin: 50px auto;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+textarea#temp {
+    border: none;
+    width: 90%;
+    margin: 0px;
+    resize: none;
+    outline: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+body {
+    overflow-y: auto
+}

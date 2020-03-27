@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWorkDelay";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">督办任务</div>
+        <div id="F_OSWId"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">延期时间<font face="宋体">*</font></div>
+        <input id="F_EndDelayDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_EndDelayDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Attachments"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">延期说明</div>
+        <textarea id="F_DelayExplain" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">开始时间</div>
+        <input id="F_BeginDate" type="text" class="form-control lr-input-wdatepicker" readonly />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">结束时间</div>
+        <input id="F_EndDate" type="text" class="form-control lr-input-wdatepicker" readonly />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">牵头部门</div>
+        <div id="F_DepartmentId" readonly></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">负责人</div>
+        <div id="F_LeaderUserId" readonly></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">督办人</div>
+        <div id="F_OverSeeUserId" readonly></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">责任领导</div>
+        <div id="F_HighLeaderId" readonly></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_OverSeeWorkDelay">
+        <div class="lr-form-item-title">督办类型</div>
+        <div id="F_OSWType" readonly></div>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid">
+        <div id="DC_OA_OverSeeWorkDelayDetailed"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkDelay/Form.js")

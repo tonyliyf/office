@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "DC_OA_PerformanceRecordRun";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">考核模板<font face="宋体">*</font></div>
+        <div id="F_PATId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">考核周期<font face="宋体">*</font></div>
+        <div id="F_AppraisalCycleType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">考核名称<font face="宋体">*</font></div>
+        <input id="F_PerformanceName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">起始时间<font face="宋体">*</font></div>
+        <input id="F_PRRStartDatetime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_PRRStartDatetime').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">终止时间<font face="宋体">*</font></div>
+        <input id="F_PRREndDatetime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_PRREndDatetime').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">是否自评项<font face="宋体">*</font></div>
+        <div id="F_IfSelfJudge" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun" id="div_SelfWeight">
+        <div class="lr-form-item-title">自评权重<font face="宋体">*</font></div>
+        <input id="F_SelfWeight" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_PerformanceRecordRun">
+        <div class="lr-form-item-title">是否定期提醒<font face="宋体">*</font></div>
+        <div id="F_IfRemind" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">发起部门</div>
+        <input id="F_PRRDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">发起人</div>
+        <input id="F_PRRUserId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">发起时间</div>
+        <input id="F_PRRCreateDate" type="text" readonly class="form-control lr-currentInfo-time" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">删除标记</div>
+        <input id="F_IsDelete" type="text" value="0" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">运行状态</div>
+        <input id="F_RunState" type="text" value="0" class="form-control" />
+    </div>
+    @*<div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+            <div class="lr-form-item-title">自评</div>
+            <input id="F_IfSelfJudge" value="0" type="text" class="form-control" />
+        </div>*@
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_PerformanceRecordRun" style="display:none">
+        <div class="lr-form-item-title">顺序</div>
+        <input id="F_Iforder" value="0" type="text" class="form-control" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_PerformanceRecordRun/Form.js")

@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "DC_ASSETS_HouseRentMain";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+
+@Html.AppendCssFile("/Areas/LR_CodeGeneratorModule/Views/TemplatePC/CustmerCodeIndex.css")
+
+    <div class="widget-body" >
+
+        <div id="wizard" class="wizard" data-target="#wizard-steps">
+            <ul class="steps">
+                <li data-target="#step-1" class="active"><span class="step">1</span>编写计划<span class="chevron"></span></li>
+                <li data-target="#step-2"><span class="step">2</span>招租批次复制<span class="chevron"></span></li>
+                <li data-target="#step-3"><span class="step">3</span>选择房屋<span class="chevron"></span></li>
+                <li data-target="#step-4"><span class="step">4</span>房屋租赁<span class="chevron"></span></li>
+
+            </ul>
+        </div>
+        <div class="step-content" id="wizard-steps">
+            <div class="step-pane active" id="step-1" style="position:relative;height:100%;width:100%;padding:5px;">
+                <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">年度<font face="宋体">*</font></div>
+                    <input id="F_RentYear" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                </div>
+                <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">批次<font face="宋体">*</font></div>
+                    <input id="F_RentNumber" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                </div>
+                <div class="col-xs-4 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">状态<font face="宋体">*</font></div>
+                    <div id="F_RentState" isvalid="yes" checkexpession="NotNull"></div>
+                </div>
+                <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">招租名称<font face="宋体">*</font></div>
+                    <input id="F_RentName" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                </div>
+                <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">招租单位<font face="宋体">*</font></div>
+                    <input id="F_Unit" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+                </div>
+                <div class="col-xs-6 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">招租时间<font face="宋体">*</font></div>
+                    <input id="F_RentTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_RentTime').trigger('change'); } })" />
+                   
+                </div>
+                <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">备注</div>
+                    <textarea id="F_Remarks" class="form-control" style="height:100px;"></textarea>
+                </div>
+                <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_HouseRentMain">
+                    <div class="lr-form-item-title">附件</div>
+                    <div id="F_Accessories"></div>
+                </div>
+            </div>
+            <div class="step-pane" id="step-2">
+
+                <div class="lr-alert">
+                    <div class="alert alert-danger">
+                        <i class="fa fa-warning alert-dismissible"></i>
+                       提示信息： 可选择复制招租批次失败的房屋信息，再次招租，可多选，也可以不选 ！
+                    </div>
+                </div>
+                <div class="col-xs-12 lr-form-item ">
+
+                    <div class="lr-form-item-title">招租批次<font face="宋体"></font></div>
+                    <div id="F_SendRole" ></div>
+
+                </div>
+             
+            </div>
+            <div class="step-pane" id="step-3">
+                <div style="position:relative;height:100%;width:100%;border:1px solid #ccc;">
+
+                    <div style="position:relative;height:100%;width:100%;padding-top:50px;">
+                        <div style="position:absolute;width:100%;height:50px;border-bottom:1px solid #ccc;top:0;left:0; ">
+                            <div class="lr-layout-tool-item">
+                                <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入查询关键字" />
+                            </div>
+                            <div class="lr-layout-tool-item">
+                                <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;查询</a>
+                            </div>
+                        </div>
+                        <div style="overflow:hidden;width:100%;height:100%">
+                            <div style="position:relative;height:100%;width:70%;border-bottom:1px solid #ccc;float:left;overflow-y: auto;">
+                                <div id="dbtableGrid1"></div>
+                            </div>
+                            <div style="position:relative;width:30%;height:100%;float:left;border-left: 1px solid #aeadad;overflow-y: auto;">
+                                <div id="dbtableGrid2"></div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="step-pane" id="step-4">
+                <div class="col-xs-12 lr-form-item lr-form-item-grid">
+                    <div id="DC_ASSETS_HouseRentDetail"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lr-form-bottom-button" id="wizard-actions">
+            <a id="btn_prev" class="btn btn-default btn-prev" disabled>上一步</a>
+            <a id="btn_next" class="btn btn-default btn-next">下一步</a>
+            <a id="btn_finish" class="btn btn-success" disabled>完成</a>
+        </div>
+    </div>
+    
+    @Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseRentMain/FormFox.js")

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "采购报表";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<div class="lr-layout ui-report">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch"></div>
+                    </div>
+                    <div class="lr-layout-tool-item">
+                        <div id="multiple_condition_query">
+                            <div class="lr-query-formcontent">
+                           
+                                <div class="col-xs-12 lr-form-item">
+                                    <div class="lr-form-item-title">工作主题</div>
+                                    <input id="workTitle" type="text" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-replace" class="btn btn-default"><i class="fa fa-refresh"></i>&nbsp;<span class="lrlg">刷新</span></a>
+                        <a id="lr-print" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;<span class="lrlg">打印</span></a>
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid">
+                <div class="grid-title">督办任务统计表</div>
+                <div class="lr-layout-body" id="gridtable"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .jfgrid-selected, .jfgrid-data-cell-over, jfgrid-data-cell :hover{
+        color: #333 !important;
+        border-bottom: 1px solid #ccc !important;
+        border-right: 1px solid #ccc !important;
+        background-color: white !important;
+    }
+</style>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWork/OverSeeWorkReport.js")
+

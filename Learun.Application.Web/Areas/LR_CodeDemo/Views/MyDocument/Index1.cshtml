@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWork";
+    Layout = "~/Views/Shared/_Index.cshtml";
+}
+<div class="lr-layout lr-layout-left-center"  id="lr_layout"   >
+    <div class="lr-layout-left">
+        <div class="lr-layout-wrap">
+            <div class="lr-layout-title lrlg ">部门列表</div>
+            <div id="dataTree" class="lr-layout-body"></div>
+        </div>
+    </div>
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap  ">
+            <div class="lr-layout-title">
+                <span id="titleinfo" class="lrlg">我的文档</span>
+            </div>
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-body" id="gridtable"></div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DocLayer.js","/Areas/LR_CodeDemo/Views/MyDocument/Index1.js")

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "DC_OA_OverSeeWorkBulletin";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OverSeeWorkBulletin" >
+        <div class="lr-form-item-title">标题<font face="宋体">*</font></div>
+        <input id="F_Title" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OverSeeWorkBulletin" >
+        <div class="lr-form-item-title">正文</div>
+        <textarea id="F_FileContent" class="form-control" style="height:200px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_OverSeeWorkBulletin" >
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Attachments"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" id="div_create">
+        <div class="lr-form-item-title">督办任务</div>
+        <div id="sel_ids"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid" >
+        <div id="DC_OA_OverSeeWorkBulletinDetailed"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkBulletin/Form.js")

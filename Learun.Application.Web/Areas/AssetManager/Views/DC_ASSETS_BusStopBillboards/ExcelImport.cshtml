@@ -1,0 +1,17 @@
+﻿
+
+@{
+    ViewBag.Title = "ExcelImport";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+
+<div class="lr-form-wrap" id="form">
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_ASSETS_LandBaseInfo">
+        <div class="lr-form-item-title">excel导入文件</div>
+        <div id="F_Contract"></div>
+    </div>
+
+</div>
+
+@Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_BusStopBillboards/ExcelImport.js")

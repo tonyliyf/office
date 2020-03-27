@@ -1,0 +1,11 @@
+{
+  "name": "jryAPP",
+  "s3bucket": "jryapp",
+  "s3prefix": "",
+  "s3region": "us-east-1",
+  "ios_identifier": "",
+  "android_identifier": "",
+  "update": "start",
+  "content_url": "http://115.28.155.8:40722",
+  "release": "2019.03.14-20.02.21"
+}

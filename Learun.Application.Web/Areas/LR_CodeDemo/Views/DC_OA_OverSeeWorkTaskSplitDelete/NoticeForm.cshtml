@@ -1,0 +1,17 @@
+﻿@{
+    /**/
+
+    ViewBag.Title = "DC_OA_OverSeeWorkTaskSplit";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">发送人</div>
+        <div id="sel_sendUsers"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_OverSeeWorkTaskSplit">
+        <div class="lr-form-item-title">内容<font face="宋体">*</font></div>
+        <textarea id="area_content" class="form-control" style="height:200px"></textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWorkTaskSplitDelete/NoticeForm.js")

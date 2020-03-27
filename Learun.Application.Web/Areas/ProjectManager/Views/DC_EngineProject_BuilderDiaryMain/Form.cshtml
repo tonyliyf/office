@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_BuilderDiaryMain";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_BuilderDiaryMain">
+        <div class="lr-form-item-title">项目名称</div>
+        <input id="F_PIId" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">日志编号</div>
+        <input id="rzbh" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">填写人</div>
+        <input id="lastname" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">填写时间</div>
+        <input id="txsj" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#F_CreateDatetime').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">天气情况</div>
+        <input id="tqqk" type="text" class="form-control"  />
+    </div>
+    
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">施工人数</div>
+        <input id="sgrs" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">施工机械</div>
+        <input id="sgjx" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">施工进度情况</div>
+        <textarea id="sgjzqk" class="form-control" style="height:100px;" ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">明日计划安排</div>
+        <textarea id="mrjhap" class="form-control" style="height:100px;"  ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_BuilderDiaryMain" >
+        <div class="lr-form-item-title">附件</div>
+        <div id="fj"  ></div>
+    </div>
+    @*<div class="col-xs-12 lr-form-item lr-form-item-grid" >
+        <div id="DC_EngineProject_BuilderDiaryDetail"></div>
+    </div>*@
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_BuilderDiaryMain/Form.js")

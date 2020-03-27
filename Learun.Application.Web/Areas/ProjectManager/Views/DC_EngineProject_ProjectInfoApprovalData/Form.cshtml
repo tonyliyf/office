@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ProjectInfoApprovalData";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">项目信息<font face="宋体">*</font></div>
+        <div id="F_PIId" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">资料编号</div>
+        <input id="F_DataCode" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">项目阶段</div>
+        <div id="F_ProjectStage"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">资料名称</div>
+        <input id="F_DataName" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">计划开始时间<font face="宋体">*</font></div>
+        <input id="F_PlannedStartDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#F_PlannedStartDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">计划结束时间<font face="宋体">*</font></div>
+        <input id="F_PlannedEndDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#F_PlannedEndDate').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">实际完成时间</div>
+        <input id="F_ActualEndDate" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd HH:mm',onpicked: function () { $('#F_ActualEndDate').trigger('change'); } })" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">照片</div>
+        <div id="F_DataPhoto"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">附件上传</div>
+        <div id="F_Attachment"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">备注</div>
+        <textarea id="F_Remarks" class="form-control" style="height:150px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">记录人</div>
+        <input id="F_CreateUserid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_EngineProject_ProjectInfoApprovalData">
+        <div class="lr-form-item-title">记录部门</div>
+        <input id="F_CreateDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectInfoApprovalData/Form.js")

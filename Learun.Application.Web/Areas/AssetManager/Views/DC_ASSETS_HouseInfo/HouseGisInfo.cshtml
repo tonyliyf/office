@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta name=”renderer” content=”webkit|ie-comp|ie-stand” />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="快速开发平台,Web快速开发平台,ASP.NET快速开发平台,工作流,快速开发框架,软件可视化开发平台,快速开发 开源,快速开发平台 开源,APP快速开发,敏捷开发框架,快速开发" />
+    <meta name="description" content="敏捷开发框架，是一个Web可视化开发平台，是一个集PC快速开发、组织架构、工作流、表单设计、自定义报表、APP快速开发等全方位功能于一体的高效、稳定的快速开发平台。" />
+    <link rel="icon" href="~/favicon.ico">
+
+    <title>综合信息|快速开发平台|开发框架|@ViewBag.Title</title>
+    <link href="~/Content/pace/pace-theme-minimal.css" rel="stylesheet" />
+    <link href="~/Content/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet" />
+    <script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    @Html.AppendCssFile(
+    "/Views/LR_Content/style/lr-common.css",
+    "/Views/AssetHome/AdminDesktopTemp/index.css")
+    
+    <!--[if lt IE 9]>
+      <script src="~/Content/bootstrap/html5shiv.min.js"></script>
+      <script src="~/Content/bootstrap/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="@Learun.Util.Net.Browser @Learun.Util.WebHelper.GetUITheme() lr-menu-closed" style="padding: 1px;">
+	<div class="yc_tcc" style="right: -175px;">
+		<div class="yc_ove">
+			<div class="yc_an">
+				<i class="fa fa-spin fa-gear"></i>
+			</div>
+			<div class="yc_title">
+				业务系统 
+			</div>
+		</div>
+		<div class="yc_list">
+			<ul class="yc_ul">
+				<li class="yc_li" onclick="parent.location.href='../../portal/index'">
+					<i class="fa fa-pie-chart"></i>
+					<span>OA管理系统</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+				<!--<li class="yc_li" onclick="parent.location.href='../../assethome/index'">
+					<i class="fa fa-bar-chart-o"></i>
+					<span>工程项目监管</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>-->
+				<li class="yc_li" onclick="parent.location.href='../../projecthome/index'">
+					<i class="fa fa-globe"></i>
+					<span>工程项目监管系统</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+				<li class="yc_li" onclick="parent.location.href='../../leaderhome/index'">
+					<i class="fa fa-windows"></i>
+					<span>领导驾驶舱</span>
+					<img src="~/Content/images/right_arr.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div class="lr-desktop-panel">
+        <div class="col-xs-12" style="display: none;">
+            <div class="portal-panel-title" style="line-height: 60px;">
+                <i class="fa fa-balance-scale"></i>&nbsp;&nbsp;业务系统
+                <div class="box_right">
+                	<div class="box_list" onclick="parent.location.href='../../portal/index'">
+                		<div class="box_ls_left">
+                			<i class="fa fa-pie-chart"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>OA管理系统</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #e45b5a;-->" onclick="parent.location.href='../../projecthome/index'">
+                		<div class="box_ls_left">
+                			<i class="fa fa-bar-chart-o"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>工程项目监管</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #44b6ae;-->">
+                		<div class="box_ls_left">
+                			<i class="fa fa-windows"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>领导驾驶舱</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                	<div class="box_list" style="<!--background: #8775a7;-->">
+                		<div class="box_ls_left">
+                			<i class="fa fa-windows"></i>
+                		</div>
+                		<div class="box_ls_right">
+                			<span>更多应用</span>
+                			<p>查看更多<i class="fa fa-arrow-circle-right"></i></p>
+                		</div>
+                	</div>
+                </div>
+            </div>
+            <div class="portal-panel-content" style="display: none;">
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #578ebe;">
+                        <div class="visual">
+                            <i class="fa fa-pie-chart"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                OA管理系统
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #4884b8;" href="javascript:;" onclick="parent.location.href='../../portal/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #e35b5a;">
+                        <div class="visual">
+                            <i class="fa fa-bar-chart-o"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                工程项目监管
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #e04a49;" href="javascript:;" onclick="parent.location.href='../../projecthome/index'">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #44b6ae;">
+                        <div class="visual">
+                            <i class="fa 	s"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                领导驾驶舱
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #3ea7a0;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lr-item-25">
+                    <div class="task-stat" style="background-color: #8775a7;">
+                        <div class="visual">
+                            <i class="fa fa-globe"></i>
+                        </div>
+                        <div class="details">
+                            <div class="number">
+
+                            </div>
+                            <div class="desc">
+                                更多应用
+                            </div>
+                        </div>
+                        <a class="more" style="background-color: #7c699f;" href="javascript:;">
+                            查看更多 <i class="fa fa-arrow-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div style="overflow:auto;position:absolute;top:0px;bottom:0px;left: 0px;right: 0px;" class="col-xs-12">
+            <div id="mapDiv" style="width:100%; height:100%"></div>
+            <div class="fssj">
+				<ul class="fs_ul">
+					<li class="fs_li lisd" type="1" style="display: none;">土地分布</li>
+					<li class="fs_li" style="display: none;">|</li>
+					<li class="fs_li lisd fs_li_style" type="2">房产分布</li>
+					<li class="fs_li">|</li>
+					<li class="fs_li lisd" type="3">广告牌</li>
+				</ul>
+			</div>
+			<div class="xsp_dl">
+				
+			</div>
+			<div class="xsp" style="width: 38px;">
+				<div class="arr_jt">
+					<img style="width: 20px;" src="~/Content/images/left_arr.png"/>
+				</div>
+				<div class="xs_title">
+					信息列表
+				</div>
+				<div class="xs_list">
+					
+				</div>
+				<embed style="width: 100%;height: 105px;" align="center" src="~/Content/images/中原地产.swf"  type=application/x-shockwave-flash wmode="transparent" quality="high" ;> </embed>
+			</div>
+        </div>
+    </div>
+    <input type="hidden" class="sud" value="" />
+    <input type="hidden" class="daol"/>
+
+
+
+    <script src="~/Content/pace/pace.min.js"></script>
+    <script src="~/Content/jquery/jquery-1.10.2.min.js"></script>
+    <script src="~/Content/jquery/plugin/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="~/Content/echarts/echarts.min.js"></script>
+    <script src="~/Content/jQuery-EasyUi/jquery.easyui.min.js"></script>
+    <link href="~/Content/jQuery-EasyUi/themes/bootstrap/easyui.css" rel="stylesheet" />
+    @Html.AppendJsFile("/Areas/AssetManager/Views/DC_ASSETS_HouseInfo/HouseGisInfo.js")
+    <script type="text/javascript">
+    	$(".yc_an").click(function(){
+			var wid=$(".yc_tcc").css("right");
+			if(wid=="10px"){
+				$(".yc_tcc").animate({
+				right: '-175px'
+				}, 300);
+			} else{
+				$(".yc_tcc").animate({
+				right: '10px'
+				}, 300);
+			}
+		});
+		$(".arr_jt").click(function () {
+            var wid = $(".xsp").width();
+            if (wid == 16.4) {
+                $(".xsp").animate({
+                    width: '260px'
+                }, 100);
+                $(this).removeClass("ind_la").addClass("ind_shang");
+            } else {
+                $(".xsp").animate({
+                    width: '38px'
+                }, 100);
+                $(this).removeClass("ind_shang").addClass("ind_la");
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

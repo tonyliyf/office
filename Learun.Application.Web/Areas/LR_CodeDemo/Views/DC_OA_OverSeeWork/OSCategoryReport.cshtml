@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "采购报表";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<script src="~/Content/echarts/echarts.min.js"></script>
+<div class="lr-layout ui-report">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle" style="position:relative">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch"></div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-replace" class="btn btn-default"><i class="fa fa-refresh"></i>&nbsp;<span class="lrlg">刷新</span></a>
+                        <a id="lr-print" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;<span class="lrlg">打印</span></a>
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div style="position:absolute;top:65px;bottom:0;left:0;width:50%">
+                <div class="lr-layout-grid">
+                    <div class="grid-title">督办任务统计表</div>
+                    <div class="lr-layout-body" id="gridtable"></div>
+                </div>
+            </div>
+            <div style="position:absolute;top:65px;bottom:22px;left:51%;right:5px">
+                <div class="lr-layout-grid" style="height:100%">
+                    <div id="statistics_chart" style="height:100%;width:100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_OverSeeWork/OSCategoryReport.js")
+

@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "DC_OA_MeetingRecord";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议编号</div>
+        <input id="F_MRNum" type="text" readonly class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议通知</div>
+        <div id="F_MNId"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议类型<font face="宋体">*</font></div>
+        <div id="F_MRType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议主题<font face="宋体">*</font></div>
+        <input id="F_MeetingTheme" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议地址<font face="宋体">*</font></div>
+        <input id="F_MeetingAddress" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">召开部门<font face="宋体">*</font></div>
+        <div id="F_ConveningDepartment" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">召集人<font face="宋体">*</font></div>
+        <div id="F_Convenor" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">参会单位</div>
+        <input id="F_MeetingUnits" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">参会人</div>
+        <input id="F_MeetingAttendee" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">主持人</div>
+        <input id="F_MeetingHost" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">开始时间<font face="宋体">*</font></div>
+        <input id="F_StartTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_StartTime').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">结束时间<font face="宋体">*</font></div>
+        <input id="F_EndTime" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_EndTime').trigger('change'); } })" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">时长<font face="宋体">*</font></div>
+        <input id="F_Duration" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">会议议题</div>
+        <input id="F_MeetingtOpics" type="text" class="form-control" />
+    </div>
+
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">议题内容</div>
+        <textarea id="F_MeetingContent" class="form-control" style="height:100px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRecord">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Attachments"></div>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRecord" id="F_CreateDepartmentId1">
+        <div class="lr-form-item-title">当前部门</div>
+        <input id="F_CreateDepartmentId" type="text" readonly class="form-control currentInfo lr-currentInfo-department" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRecord" id="F_CreateUserid1">
+        <div class="lr-form-item-title">当前人</div>
+        <input id="F_CreateUserid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_MeetingRecord" id="F_CreateDatetime1">
+        <div class="lr-form-item-title">当前时间</div>
+        <input id="F_CreateDatetime" type="text" readonly class="form-control currentInfo lr-currentInfo-time" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_MeetingRecord/Form.js")

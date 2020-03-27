@@ -1,0 +1,187 @@
+﻿@{
+    ViewBag.Title = "附件查看";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+   .xz{
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		cursor: pointer;
+		background: rgba(0,0,0,0.5);
+		padding: 5px 0;
+		z-index: 1000000;
+	}
+	.dy{
+		position: absolute;
+		background:#0094ce;
+		color:white;
+		left: 12px;
+		top: 4px;
+		width: 43px;
+		line-height: 23px;
+		border-radius: 4px;
+		z-index: 100;
+		cursor: pointer;
+	}
+	.zoomPad{
+position:relative;
+/*float:left;*/
+z-index:99;
+cursor:crosshair;
+}
+.zoomPreload{
+-moz-opacity:0.8;
+opacity: 0.8;
+filter: alpha(opacity = 80);
+color: #333;
+font-size: 12px;
+font-family: Tahoma;
+text-decoration: none;
+border: 1px solid #CCC;
+padding: 8px;
+text-align:center;
+background-image: url(../images/zoomloader.gif);
+background-repeat: no-repeat;
+background-position: 43px 30px;
+z-index:110;
+width:90px;
+height:43px;
+position:absolute;
+top:0px;
+left:0px;
+* width:100px;
+* height:49px;
+}
+.zoomPup{
+overflow:hidden;
+-moz-opacity:0.6;
+opacity: 0.6;
+filter: alpha(opacity = 60);
+z-index:120;
+position:absolute;
+border:1px solid #CCC;
+z-index:101;
+cursor:crosshair;
+}
+.zoomOverlay{
+position:absolute;
+left:0px;
+top:0px;
+/*opacity:0.5;*/
+z-index:5000;
+width:100%;
+height:100%;
+display:none;
+z-index:101;
+}
+.zoomWindow{
+position:absolute;
+left:77% !important;
+background: #fff;
+top:20px !important;
+z-index:6000;
+height:auto;
+z-index:10000;
+z-index:110;
+}
+.zoomWrapper{
+position:relative;
+border:1px solid #999;
+z-index:110;
+}
+.zoomWrapperTitle{
+display:block;
+background:#999;
+color:#FFF;
+height:18px;
+line-height:18px;
+width:100%;
+overflow:hidden;
+text-align:center;
+font-size:10px;
+position:absolute;
+top:0px;
+left:0px;
+z-index:120;
+-moz-opacity:0.6;
+opacity: 0.6;
+filter: alpha(opacity = 60);
+}
+.zoomWrapperImage{
+display:block;
+position:relative;
+overflow:hidden;
+z-index:110;
+}
+.zoomWrapperImage img{
+border:0px;
+display:block;
+position:absolute;
+z-index:101;
+transform: scale(1.5);
+}
+.zoomIframe{
+z-index: -1;
+filter:alpha(opacity=0);
+-moz-opacity: 0.80;
+opacity: 0.80;
+position:absolute;
+display:block;
+}
+</style>
+<div style="height: 100%;width: 100%;position: absolute;right: 0px;top: 0px;position: relative;text-align:center;">
+	<div class="dy" onclick="doPrint()">
+		打印
+	</div>
+	<!--startprint-->
+	<a href="" class="jqzoom"  title="MYTITLE"> <!--id="lr_verifycode_img"-->
+		<!--<img src="images/404ym.png" title="IMAGE TITLE">--> 
+	    <img class="ims" title="IMAGE TITLE" style="height: 100%;" src=""  id="lr_verifycode_img"  />
+	</a>
+    <!--endprint-->
+    <div class="xz">
+    <div class="xz">
+		<img style="width: 20px;" src="~/Content/images/xuanz.png"/>
+	</div>
+</div>
+</div>
+<script type="text/javascript">
+	
+//	setTimeout(function () {
+//		var bdd=$(".ims").attr("src")
+//		$(".jqzoom").attr("href",bdd)
+//	}, 1500)
+	$(function(){
+		$(".jqzoom").jqzoom({
+		zoomWidth: 250, 
+		zoomHeight: 250,
+		lens:true,
+		preloadImages: false,
+		alwaysOn:false,
+		title:false,
+		xOffset:20,
+		position: "right"
+		});
+	})
+	
+	
+	var r=0
+	$(".xz").click(function(){
+		 r += 45;
+		 $(".ims,.zoomWindow").css('transform', 'rotate(' + r + 'deg)');
+	})
+	function doPrint() {
+        bdhtml=window.document.body.innerHTML;    
+        sprnstr="<!--startprint-->";    
+        eprnstr="<!--endprint-->";    
+        prnhtml=bdhtml.substr(bdhtml.indexOf(sprnstr)+17);
+        prnhtml=prnhtml.substring(0,prnhtml.indexOf(eprnstr));    
+        window.document.body.innerHTML=prnhtml; 
+        window.print();    
+	}    
+</script>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/FileViewer.js")
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/FileViewer/JQZoom.js")

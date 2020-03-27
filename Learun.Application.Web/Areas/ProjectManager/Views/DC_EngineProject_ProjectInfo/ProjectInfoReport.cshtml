@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "采购报表";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<div class="lr-layout ui-report">
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                    <div class="lr-layout-tool-item">
+                        <div id="datesearch"></div>
+                    </div>
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class="btn-group btn-group-sm">
+                        <a id="lr-replace" class="btn btn-default"><i class="fa fa-refresh"></i>&nbsp;<span class="lrlg">刷新</span></a>
+                        <a id="lr-print" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;<span class="lrlg">打印</span></a>
+                        <a id="lr-export1" class="btn btn-default"><i class="fa fa-print"></i>&nbsp;导出</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid">
+                <div class="grid-title">工程项目统计表</div>
+                <div class="lr-layout-body" id="gridtable"></div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectInfo/ProjectInfoReport.js")
+

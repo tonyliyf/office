@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        必要时在以下 META 标记中自定义内容安全策略。将 "unsafe-inline" 添加到 default-src 以启动内联 JavaScript。
+      有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">-->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"> 
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css">
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/lrmui.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <style type="text/css">
+        body, html, #allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=5ZGYmrenkmHE6DUhFM6jmntFkVYA3Qhy"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.12&key=@Learun.Util.Config.GetValue("AmapKey")"></script>
+    <script src="//webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+    <title>资产管理系统</title>
+    
+</head>
+<body>
+	<input type="hidden" class="bbh" />
+    <input type="hidden" class="url" />
+    <div class="lr-tabbar" style="display:none;"></div>
+    <input  type="hidden" class="huiy" value="0" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--<script type="text/javascript" src="data/city.js"></script>-->
+    <script type="text/javascript" src="scripts/echarts.js"></script>
+    <!--<script type="text/javascript" src="scripts/mui.min.js"></script>-->
+
+    <script type="text/javascript" src="scripts/lrmui.js"></script>
+    <script type="text/javascript" src="scripts/lrmuiex.js"></script>
+	<script src="scripts/viewer.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/mui.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="scripts/mui.picker.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="config/config.js"></script>
+    <script type="text/javascript" src="scripts/learun-custmerform.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript" src="scripts/tracking.js"></script>
+    <script type="text/javascript" src="scripts/tracking-min.js"></script>
+    <script type="text/javascript" src="scripts/face-min.js"></script>
+    <script type="text/javascript" src="scripts/Landmarks.js"></script>
+    <script type="text/javascript" src="scripts/Regressor.js"></script>
+    
+    <script type="text/javascript">
+
+	//通过接口请求，获取线上的版本号
+	
+	
+	
+var checkUrl= $(".bbh").val()//通过接口请求，获取线上的版本号。此处默认2.0.0
+// 获取当前版本号
+	
+//	mui.plusReady(function(){
+//      checkUpdate()
+//  });
+//
+//function checkUpdate(){
+//	plus.runtime.getProperty(plus.runtime.appid,function(inf){
+//      wgtVer=inf.version;
+//      console.log("当前应用版本："+wgtVer);
+//	    if(compareVersion(wgtVer, checkUrl)){ // 判断当前版本是否需要更新
+//	    	   plus.nativeUI.confirm('发现新版本'+checkUrl+'是否下载', function(e){ // 此方法请在plusReady()完成后
+//				if(e.index>0){
+//					plus.nativeUI.toast('升级包下载中...');
+//					 downWgt();  // 下载升级包
+//				}
+//				}, 'HelloH5', ['取消','确定']);
+//	    }
+//  });
+// }
+ //版本比较
+function compareVersion( ov, nv ){ // ov为本地历史版本,nv为当前线上版本
+	console.log(ov, nv)
+	if ( !ov || !nv || ov=="" || nv=="" ){
+		return false;
+	}
+	var b=false,
+	ova = ov.split(".",4),
+	nva = nv.split(".",4);
+	for ( var i=0; i<ova.length&&i<nva.length; i++ ) {
+		var so=ova[i],no=parseInt(so),sn=nva[i],nn=parseInt(sn);
+		if ( nn>no || sn.length>so.length  ) {
+			return true;
+		} else if ( nn<no ) {
+			return false;
+		}
+	}
+	if ( nva.length>ova.length && 0==nv.indexOf(ov) ) {
+		return true;
+	}
+}
+
+// 下载wgt文件
+var wgtUrl=$(".url").val() // 线上版本在线更新的.wgt文件路径
+function downWgt(){
+//  plus.nativeUI.showWaiting("下载wgt文件...");
+    plus.downloader.createDownload( wgtUrl, {filename:"_doc/update/"}, function(d,status){
+        if ( status == 200 ) { 
+            console.log("下载wgt成功："+d.filename);
+            plus.nativeUI.confirm('升级包下载完成，是否安装最新版本？', function(e){
+			if(e.index>0){
+				 installWgt(d.filename); // 安装wgt包
+			}
+			}, 'HelloH5', ['取消','确定']);
+           
+        } else {
+            console.log("下载wgt失败！");
+//          plus.nativeUI.alert("下载wgt失败！");
+        }
+//      plus.nativeUI.closeWaiting();
+    }).start();
+}
+// 更新应用资源
+function installWgt(path){
+	console.log(path)
+    plus.nativeUI.showWaiting("安装升级文件...");
+    plus.runtime.install(path,{},function(){
+        plus.nativeUI.closeWaiting();
+        console.log("安装wgt文件成功！");
+        // 是否立即重启
+    	plus.nativeUI.confirm('应用资源更新完成，是否立即重启生效？', function(e){
+		if(e.index>0){
+			plus.runtime.restart();
+		}
+		}, 'HelloH5', ['取消','确定']);
+//      plus.nativeUI.alert("应用资源更新完成！",function(){
+//      	
+//          
+//      });
+    },function(e){
+        plus.nativeUI.closeWaiting();
+        console.log("安装wgt文件失败["+e.code+"]："+e.message);
+        plus.nativeUI.toast("安装wgt文件失败["+e.code+"]："+e.message);
+    });
+}
+// 用户主动除非检测版本更新
+function isCheckUpdate(){
+	plus.runtime.getProperty(plus.runtime.appid,function(inf){
+        wgtVer=inf.version;
+        console.log("当前应用版本："+wgtVer);
+        console.log(compareVersion(wgtVer, checkUrl))
+	    if(compareVersion(wgtVer, checkUrl)){
+	    	  plus.nativeUI.confirm('发现新版本'+wgtVer+'是否下载', function(e){
+				if(e.index>0){
+					plus.nativeUI.toast('升级包下载中...');
+					 downWgt();  // 下载升级包
+				}
+				}, 'HelloH5', ['取消','确定']);
+	    } else {
+//	    	 plus.nativeUI.alert("当前应用版本为最新版本");
+	    	 plus.nativeUI.toast('当前应用版本为最新版本');
+	    }
+    });
+}
+    </script>
+</body>
+</html>

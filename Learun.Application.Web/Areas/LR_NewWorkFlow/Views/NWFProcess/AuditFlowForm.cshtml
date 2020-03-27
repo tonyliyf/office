@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "审核流程";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<style>
+    .lr-select-option {
+        width: 296px !important;
+    }
+</style>
+<div class="lr-form-wrap" id="form">
+ 
+    <div class="col-xs-12 lr-form-item">
+        <div class="lr-form-item-title">审批意见</div>
+       
+            <div id="DC_OA_Sign"></div>
+   
+        <div class="" style="position: relative;">
+            <textarea id="des" class="form-control" style="height: 100px;margin-top: 10px;"></textarea>
+            <div class="" id="save" style="position: absolute;right: 7px;bottom: 7px;cursor: pointer;background: #00a1ff;color: #fff;width: 45px;line-height: 24px;text-align: center;border-radius: 5px;">
+                保存
+            </div>
+        </div>
+    </div>
+    </div>
+    @Html.AppendJsFile("/Areas/LR_NewWorkFlow/Views/NWFProcess/AuditFlowForm.js")
+

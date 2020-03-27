@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "常用签字意见";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" style="padding:0;line-height:38px;text-align:center;font-size:20px;font-weight:bold;color:#333;" >
+        <span>常用签字意见</span>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_SignContents" >
+        <div class="lr-form-item-title">常用意见<font face="宋体">*</font></div>
+        <textarea id="DC_OA_Content" class="form-control" style="height:150px;" isvalid="yes" checkexpession="NotNull" ></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_SignContents" >
+        <div class="lr-form-item-title">设置用户</div>
+        <input id="F_Userid" type="text" readonly class="form-control currentInfo lr-currentInfo-user" />
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_SignContent/Form.js")

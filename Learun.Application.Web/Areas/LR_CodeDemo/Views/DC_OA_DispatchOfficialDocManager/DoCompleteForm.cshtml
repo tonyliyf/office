@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "归档管理";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">类型<font face="宋体">*</font></div>
+        <div id="DC_OA_ArchiveType" isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">宗号</div>
+        <input id="DC_OA_NO" value="152" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">年份<font face="宋体">*</font></div>
+        <input id="DC_OA_Year" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">期限</div>
+        <div id="DC_OA_Limits"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">顺序号</div>
+        <input id="DC_OA_Nums" type="text" class="form-control"  isvalid="yes" checkexpession="NumOrNull"  />
+    </div>
+    <div class="col-xs-6 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">页数</div>
+        <input id="DC_OA_Pages" type="text" class="form-control" isvalid="yes" checkexpession="NumOrNull" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">标题</div>
+        <input id="DC_OA_Title" type="text" class="form-control" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">内容</div>
+        <textarea id="DC_OA_Content" class="form-control" style="height:200px;"></textarea>
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_Archives">
+        <div class="lr-form-item-title">附件</div>
+        <div id="F_Files"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DoCompleteForm.js")

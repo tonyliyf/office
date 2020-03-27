@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "打卡记录";
+    Layout = "~/Views/Shared/_ReportTemplate.cshtml";
+}
+<div class="lr-layout  ui-report "  >
+    <div class="lr-layout-center">
+        <div class="lr-layout-wrap lr-layout-wrap-notitle ">
+            <div class="lr-layout-tool">
+                <div class="lr-layout-tool-left">
+                </div>
+                <div class="lr-layout-tool-right">
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                    </div>
+                    <div class=" btn-group btn-group-sm">
+                        <a id="lr-export" class="btn btn-default"><i class="fa fa-sign-out"></i>&nbsp;<span class="lrlg">导出</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="lr-layout-grid">
+                <div class="grid-title">月考勤统计表</div>
+                <div class="lr-layout-body" id="gridtable"></div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_AttenceRecord/Index.js")

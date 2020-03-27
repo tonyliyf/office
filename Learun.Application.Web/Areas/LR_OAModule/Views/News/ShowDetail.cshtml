@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+    MvcHtmlString thisTest = new MvcHtmlString(ViewData["Content"].ToString());
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <section style="width:100%">
+        <h1 style="text-align:center">@ViewBag.title</h1>
+        <p style="padding-left:20px;padding-right:20px;font-weight:900">
+            <span style="font-weight:500">
+                作者：@ViewBag.author
+            </span>
+            <span style="float:right;font-weight:500">
+                发布时间：@ViewBag.date
+            </span>
+        </p>
+    </section>
+    <div style="margin-top:20px;width:100%">
+        @Html.Raw(thisTest)
+    </div>
+</body>
+</html>

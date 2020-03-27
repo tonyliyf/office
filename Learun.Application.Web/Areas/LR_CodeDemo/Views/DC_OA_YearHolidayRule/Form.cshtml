@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "DC_OA_YearHolidayRule";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_YearHolidayRule" style="line-height:30px;">
+        <div class="lr-form-item-title">工龄>=<font face="宋体">*</font></div>
+        <input id="F_YearTop" type="text" class="form-control" isvalid="yes" checkexpession="Num" style="width:95%;float:left" />&nbsp;年
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_YearHolidayRule">
+        <div class="lr-form-item-title">年假设定天数<font face="宋体">*</font></div>
+        <input id="F_Holiday" type="text" class="form-control" isvalid="yes" checkexpession="Num" />
+    </div>
+    <div class="col-xs-12 lr-form-item" data-table="DC_OA_YearHolidayRule">
+        <div class="lr-form-item-title">备注说明</div>
+        <textarea id="F_Description" class="form-control" style="height:200px;">
+            规定职工在同一单位连续工作一年以上的，享受带薪年休假。职工累计工作已满1年不满10年的，年休假5天；已满10年不满20年的，年休假10天；已满20年的，年休假15天。
+            国家法定休假日、休息日不计入年休假的假期
+        </textarea>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_YearHolidayRule/Form.js")

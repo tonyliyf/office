@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "DC_EngineProject_ProjectPersonRiskControl";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">工程项目</div>
+        <div id="F_PIId"  ></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">部门<font face="宋体">*</font></div>
+        <div id="F_PPRCDepartment"  isvalid="yes" checkexpession="NotNull"></div>
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">姓名<font face="宋体">*</font></div>
+        <input id="F_PPRCUser" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">岗位<font face="宋体">*</font></div>
+        <input id="F_PPRCPost" type="text" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">职务</div>
+        <input id="F_PPRCDuty" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-6 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">填表时间<font face="宋体">*</font></div>
+        <input id="F_PCRCDate" isvalid="yes" checkexpession="NotNull" type="text" class="form-control lr-input-wdatepicker" onfocus="WdatePicker({ dateFmt:'yyyy-MM-dd',onpicked: function () { $('#F_PCRCDate').trigger('change'); } })"   />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">主要职能<font face="宋体">*</font></div>
+        <input id="F_MainFunctions" isvalid="yes" checkexpession="NotNull" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">廉洁风险防控措施<font face="宋体">*</font></div>
+        <input id="F_RiskControlMeasures" isvalid="yes" checkexpession="NotNull" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_EngineProject_ProjectPersonRiskControl" >
+        <div class="lr-form-item-title">主管领导意见</div>
+        <input id="F_ChargeOpinion" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item lr-form-item-grid" >
+        <div id="DC_EngineProject_ProjectPersonRiskControlAssessment"></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/ProjectManager/Views/DC_EngineProject_ProjectPersonRiskControl/Form.js")

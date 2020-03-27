@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "个人中心-我的头像";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<script src="~/Content/jquery/plugin/jqResize.js"></script>
+<script src="~/Content/jQuery_jSignature/jSignature.js"></script>
+<div class="lr-form-item">
+    <div class="lr-form-item-title">签名<font face="宋体">*</font></div>
+    <div class="signature-container">
+        <div id="signature">
+        </div>
+    </div>
+</div>
+<div class=" lr-form-item">
+    <div class="lr-form-item-title">密码<font face="宋体">*</font></div>
+    <input id="iptPassword" type="password" class="form-control" isvalid="yes" checkexpession="NotNull" />
+    <div class="tip"></div>
+</div>
+<div class="lr-form-item">
+    <a class="btn btn-primary" id="btnReset">&nbsp;重&nbsp;置</a>
+    <a class="btn btn-primary" id="btnSave"><i class="fa fa-save"></i>&nbsp;提&nbsp;交</a>
+    <a class="btn btn-primary" id="btnRemove"><i class="fa fa-trash-o"></i>移除签名</a>
+</div>
+@Html.AppendCssFile("/Views/UserCenter/Signature.css")
+@Html.AppendJsFile("/Views/UserCenter/Signature.js")
+

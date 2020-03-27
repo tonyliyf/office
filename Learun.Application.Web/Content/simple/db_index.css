@@ -1,0 +1,186 @@
+.db_home{
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	background: url(../../Content/images/csbj.jpg);
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+.db_bx{
+	width: 100%;
+	padding: 10px;
+	overflow: hidden;
+}
+.db_left{
+	float: left;
+	width: 69.7% ;
+}
+.zx_tit{
+	text-align: center;
+	line-height: 30px;
+	color: #333333;
+	font-size: 14px;
+}
+.db_right{
+	float: right;
+	width: 30%;
+}
+.zx_home{
+	overflow: hidden;
+}
+.zx_left{
+	float: left;
+	width: 55.1%;
+	padding: 10px;
+	background: #fff;
+}
+.zx_right{
+	float: right;
+	width: 44%;
+	background: #fff;
+	padding: 10px;
+	height: 280px;
+}
+.my_title{
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;
+	padding-bottom: 9px;
+	padding-left: 10px;
+}
+.tit_left {
+    float: left;
+}
+.tit_box {
+    width: 27px;
+    text-align: center;
+    line-height: 27px;
+    background: #3592fc;
+    float: left;
+    border-radius: 4px;
+}
+.tit_box img {
+    width: 14px;
+}
+.tit_span {
+    float: left;
+    margin-left: 15px;
+    line-height: 27px;
+    font-size: 14px;
+    color: #333;
+}
+.zx_title{
+	border-bottom: 1px solid #dedede;
+	overflow: hidden;
+	padding-bottom: 9px;
+	padding-left: 10px;
+}
+.zx_title_left{
+	float: left;
+	overflow: hidden;
+}
+.title_box{
+	float: left;
+	width: 70px;
+	margin-right: 10px;
+	line-height: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 12px;
+	cursor: pointer;
+}
+.tit_right{
+	float: right;
+	margin-right: 11px;
+	margin-top: 10px;
+	cursor: pointer;
+	line-height: 18px;
+}
+.tit_right img {
+    float: left;
+    margin-right: 7px;
+    width: 15px;
+}
+.tit_right span {
+    float: left;
+    color: #999;
+    font-size: 12px;
+}
+.zs_bottom{
+	margin-top: 10px;
+}
+.zs_li{
+	margin-left: 15px;
+	list-style: disc;
+	line-height: 30px;
+	cursor: pointer;
+}
+.zs_li_left{
+	float: left;
+}
+.zs_li_right{
+	float: right;
+}
+.zx_each{
+	margin-top: 6px;
+	overflow: hidden;
+	background: #fff;
+}
+.zx_each_left{
+	float: left;
+	width: 47%;
+	float: left;
+}
+.zx_each_right{
+	float: right;
+	width: 47%;
+}
+
+.zs_box{
+	width: 47%;
+	float: left;
+	margin-right: 5px;
+	margin-left: 5px;
+	margin-bottom: 28px;
+	background: #00b3c8;
+	cursor: pointer;
+	
+}
+.zs_bot_top{
+	border-bottom: 1px solid #fff;
+	padding: 10px;
+	line-height: 71px;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+	overflow: hidden;
+}
+.zs_bot_top img{
+	float: left;
+	width: 40px;
+}
+.zs_bot_top span{
+	float: right;
+}
+.zs_bot_bottom{
+	padding: 10px;
+	text-align: right;
+	color: #fff;
+	font-size: 14px;
+}
+#each_one{
+	height: 260px;
+	width: 100%;
+	margin-top: 25px;
+}
+#each_two{
+	height: 250px;
+	width: 100%;
+	margin-top: 25px;
+}
+.each_title{
+	text-align: center;
+	margin-top: 18px;
+	font-size: 15px;
+}

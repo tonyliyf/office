@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<h1 class="title">@ViewBag.maintitle1</h1>
+<h1 class="title">@ViewBag.maintitle2</h1>
+<div class="deal-table" style="width:668px;">
+    <div style="line-height:34px">
+        <table>
+            <tr style="">
+                <td rowspan="2" style="width:60px;"><div><p style="line-height:30px"><span>@ViewBag.txt1</span></p></div></td>
+                <td rowspan="2" style="width:232px"><div><p>@ViewBag.department</p></div></td>
+                <td style="width:45px"><div><p><span>密级</span></p></div></td>
+                <td style="width:52px"><div><p>@ViewBag.grade</p></div></td>
+                <td style="width:95px"><div><p><span>收文号</span></p></div></td>
+                <td style="width:184px"><div><p>@ViewBag.recivecode</p></div></td>
+            </tr>
+            <tr style="height:24px">
+                <td style=""><div><p><span>份数</span></p></div></td>
+                <td><div><p>@ViewBag.printnum</p></div></td>
+                <td><div><p><span>收文时间</span></p></div></td>
+                <td><div><p>@ViewBag.time</p></div></td>
+            </tr>
+            <tr style="height:111px">
+                <td style=""><div><p style="line-height:30px"><span>文件标题</span></p></div></td>
+                <td colspan="3"><div><p>@ViewBag.title</p></div></td>
+                <td style="letter-spacing:15px"><div><p style="line-height:30px"><span>文件字号</span></p></div></td>
+                <td><div><p>@ViewBag.code</p></div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:left;height:96px;padding-left:5px;"><div><p><span>@ViewBag.txt2:</span>@Html.Raw(ViewBag.advice1)</p></div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:left;height:96px;padding-left:5px;"><div><p><span>领导批示:</span>@Html.Raw(ViewBag.advice2)</p></div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:left;height:96px;padding-left:5px;"><div><p><span>承办签字:</span>@Html.Raw(ViewBag.advice3)</p></div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:left;height:96px;padding-left:5px;"><div><p><span>传阅签字:</span>@Html.Raw(ViewBag.advice4)</p></div></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align:left;height:96px;padding-left:5px;"><div><p><span>办理结果:</span>@Html.Raw(ViewBag.advice5)</p></div></td>
+            </tr>
+        </table>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_ReceiveOfficialDocManager/DealTable.js")
+@Html.AppendCssFile("/Areas/LR_CodeDemo/Views/DC_OA_ReceiveOfficialDocManager/DealTable.css")

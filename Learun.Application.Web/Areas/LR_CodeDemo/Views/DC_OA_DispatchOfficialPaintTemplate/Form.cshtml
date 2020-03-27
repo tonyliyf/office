@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "DC_OA_DispatchOfficialPaintTemplate";
+    Layout = "~/Views/Shared/_Form.cshtml";
+}
+<div class="lr-form-wrap" id="form">
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_DispatchOfficialPaintTemplate" >
+        <div class="lr-form-item-title">模板名称</div>
+        <input id="F_TemplateName" type="text" class="form-control"  />
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_DispatchOfficialPaintTemplate" >
+        <div class="lr-form-item-title">头部模板</div>
+        <div id="F_FirstTemplate"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_DispatchOfficialPaintTemplate" >
+        <div class="lr-form-item-title">附属模板</div>
+        <div id="F_SecoundTemplate"  ></div>
+    </div>
+    <div class="col-xs-12 lr-form-item"  data-table="DC_OA_DispatchOfficialPaintTemplate" >
+        <div class="lr-form-item-title">尾部模板</div>
+        <div id="F_ThirdTemplate"  ></div>
+    </div>
+</div>
+@Html.AppendJsFile("/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialDocManager/DocUpload.js", "/Areas/LR_CodeDemo/Views/DC_OA_DispatchOfficialPaintTemplate/Form.js")
